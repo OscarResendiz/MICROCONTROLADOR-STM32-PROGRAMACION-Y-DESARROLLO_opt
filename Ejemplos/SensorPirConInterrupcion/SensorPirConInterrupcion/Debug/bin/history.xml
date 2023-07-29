@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -g -nostartfiles -Map=SensorPirConInterrupcion.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\SensorPirConInterrupcion -TC:\CooCox\CoIDE\configuration\ProgramData\SensorPirConInterrupcion/link.ld -g">
+      <target file="SensorPirConInterrupcion.elf" lastModified="18875e8b5d5">
+         <source file="..\obj\stm32f10x_tim.o" lastModified="18875e8b0e1"/>
+         <source file="..\obj\system_stm32f10x.o" lastModified="18875e8b125"/>
+         <source file="..\obj\stm32f10x_pwr.o" lastModified="18875e8b163"/>
+         <source file="..\obj\startup_stm32f10x_md.o" lastModified="18875e8b18d"/>
+         <source file="..\obj\stm32f10x_gpio.o" lastModified="18875e8b1d6"/>
+         <source file="..\obj\main.o" lastModified="18875e8b224"/>
+         <source file="..\obj\stm32f10x_rcc.o" lastModified="18875e8b276"/>
+         <source file="..\obj\stm32f10x_exti.o" lastModified="18875e8b2ba"/>
+         <source file="..\obj\stm32f10x_usart.o" lastModified="18875e8b30c"/>
+         <source file="..\obj\syscalls.o" lastModified="18875e8b348"/>
+         <source file="..\obj\usart1.o" lastModified="18875e8b390"/>
+         <source file="..\obj\misc.o" lastModified="18875e8b3d0"/>
+      </target>
+   </processor>
+</history>
