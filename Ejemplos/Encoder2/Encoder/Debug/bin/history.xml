@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -g -nostartfiles -Map=Encoder.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\Encoder2 -TC:\CooCox\CoIDE\configuration\ProgramData\Encoder2/link.ld -g">
+      <target file="Encoder.elf" lastModified="189587c80dc">
+         <source file="..\obj\stm32f10x_tim.o" lastModified="189533c8e47"/>
+         <source file="..\obj\system_stm32f10x.o" lastModified="189533c8e88"/>
+         <source file="..\obj\startup_stm32f10x_md.o" lastModified="189533c8eba"/>
+         <source file="..\obj\stm32f10x_gpio.o" lastModified="189533c8f0a"/>
+         <source file="..\obj\main.o" lastModified="189587c7ec9"/>
+         <source file="..\obj\stm32f10x_rcc.o" lastModified="189533c8f9a"/>
+         <source file="..\obj\encoder.o" lastModified="189533c8fbb"/>
+         <source file="..\obj\stm32f10x_exti.o" lastModified="189533c900b"/>
+         <source file="..\obj\stm32f10x_usart.o" lastModified="189533c906a"/>
+         <source file="..\obj\syscalls.o" lastModified="189533c914e"/>
+         <source file="..\obj\usart1.o" lastModified="189533c9194"/>
+         <source file="..\obj\misc.o" lastModified="189533c91dc"/>
+      </target>
+   </processor>
+</history>
