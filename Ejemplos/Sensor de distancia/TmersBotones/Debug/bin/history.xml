@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -g -nostartfiles -Map=TmersBotones.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\SensorDistancia -TC:\CooCox\CoIDE\configuration\ProgramData\SensorDistancia/link.ld -g">
+      <target file="TmersBotones.elf" lastModified="188b87cb1b4">
+         <source file="..\obj\stm32f10x_tim.o" lastModified="188b87cacea"/>
+         <source file="..\obj\system_stm32f10x.o" lastModified="188b87cad25"/>
+         <source file="..\obj\startup_stm32f10x_md.o" lastModified="188b87cad4d"/>
+         <source file="..\obj\stm32f10x_gpio.o" lastModified="188b87cad91"/>
+         <source file="..\obj\main.o" lastModified="188b87cade3"/>
+         <source file="..\obj\stm32f10x_crc.o" lastModified="188b87cae1b"/>
+         <source file="..\obj\stm32f10x_rcc.o" lastModified="188b87cae69"/>
+         <source file="..\obj\stm32f10x_exti.o" lastModified="188b87caea5"/>
+         <source file="..\obj\stm32f10x_usart.o" lastModified="188b87caefe"/>
+         <source file="..\obj\syscalls.o" lastModified="188b87caf3c"/>
+         <source file="..\obj\usart1.o" lastModified="188b87caf82"/>
+         <source file="..\obj\misc.o" lastModified="188b87cafb7"/>
+      </target>
+   </processor>
+</history>
