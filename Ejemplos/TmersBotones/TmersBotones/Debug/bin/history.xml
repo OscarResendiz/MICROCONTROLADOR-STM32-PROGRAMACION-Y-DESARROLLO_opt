@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -g -nostartfiles -Map=TmersBotones.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\TmersBotones -TC:\CooCox\CoIDE\configuration\ProgramData\TmersBotones/link.ld -g">
+      <target file="TmersBotones.elf" lastModified="1889ef67dc4">
+         <source file="..\obj\stm32f10x_tim.o" lastModified="1889ef678a6"/>
+         <source file="..\obj\system_stm32f10x.o" lastModified="1889ef678e0"/>
+         <source file="..\obj\startup_stm32f10x_md.o" lastModified="1889ef67906"/>
+         <source file="..\obj\stm32f10x_gpio.o" lastModified="1889ef6794e"/>
+         <source file="..\obj\main.o" lastModified="1889ef679f3"/>
+         <source file="..\obj\stm32f10x_crc.o" lastModified="1889ef67a31"/>
+         <source file="..\obj\stm32f10x_rcc.o" lastModified="1889ef67a7f"/>
+         <source file="..\obj\stm32f10x_exti.o" lastModified="1889ef67abf"/>
+         <source file="..\obj\stm32f10x_usart.o" lastModified="1889ef67b0e"/>
+         <source file="..\obj\syscalls.o" lastModified="1889ef67b4c"/>
+         <source file="..\obj\usart1.o" lastModified="1889ef67b93"/>
+         <source file="..\obj\misc.o" lastModified="1889ef67bca"/>
+      </target>
+   </processor>
+</history>
