@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -g -nostartfiles -Map=Serial2.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\Serial2 -TC:\CooCox\CoIDE\configuration\ProgramData\Serial2/link.ld -g">
+      <target file="Serial2.elf" lastModified="1884bf34ee0">
+         <source file="..\obj\system_stm32f10x.o" lastModified="1884be4fb6c"/>
+         <source file="..\obj\startup_stm32f10x_md.o" lastModified="1884be4fb92"/>
+         <source file="..\obj\stm32f10x_gpio.o" lastModified="1884be4fbd6"/>
+         <source file="..\obj\main.o" lastModified="1884bf34c8d"/>
+         <source file="..\obj\stm32f10x_rcc.o" lastModified="1884be4fc63"/>
+         <source file="..\obj\stm32f10x_usart.o" lastModified="1884be4fcae"/>
+         <source file="..\obj\syscalls.o" lastModified="1884be4fcea"/>
+         <source file="..\obj\usart2.o" lastModified="1884bf34cd9"/>
+      </target>
+   </processor>
+</history>
