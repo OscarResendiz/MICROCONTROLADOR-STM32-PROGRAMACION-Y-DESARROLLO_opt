@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -g -nostartfiles -Map=Prueba_Led.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\Prueba_Led -TC:\CooCox\CoIDE\configuration\ProgramData\Prueba_Led/link.ld -g">
+      <target file="Prueba_Led.elf" lastModified="1897706d5d2">
+         <source file="..\obj\system_stm32f10x.o" lastModified="18875a357a0"/>
+         <source file="..\obj\startup_stm32f10x_md.o" lastModified="18875a357d9"/>
+         <source file="..\obj\stm32f10x_gpio.o" lastModified="18875a35844"/>
+         <source file="..\obj\main.o" lastModified="18875a35899"/>
+         <source file="..\obj\stm32f10x_rcc.o" lastModified="18875a35912"/>
+         <source file="..\obj\syscalls.o" lastModified="18875a3596c"/>
+      </target>
+   </processor>
+</history>
