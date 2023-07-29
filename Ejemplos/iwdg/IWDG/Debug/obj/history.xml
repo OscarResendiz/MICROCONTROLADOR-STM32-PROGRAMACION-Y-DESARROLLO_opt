@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m3 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F103C8 -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -ID:\Cursos\STM32\Cocox\iwdg -ID:\Cursos\STM32\Cocox\iwdg\stm_lib -ID:\Cursos\STM32\Cocox -ID:\Cursos\STM32\Cocox\iwdg\stm_lib\inc -ID:\Cursos\STM32\Cocox\iwdg\cmsis -ID:\Cursos\STM32\Cocox\iwdg\cmsis_boot">
+      <target file="stm32f10x_pwr.o" lastModified="1899aae950d">
+         <source file="..\..\..\stm_lib\src\stm32f10x_pwr.c" lastModified="1899aad87b9"/>
+      </target>
+      <target file="syscalls.o" lastModified="18976e1d97b">
+         <source file="..\..\..\syscalls\syscalls.c" lastModified="18976c6c8a1"/>
+      </target>
+      <target file="stm32f10x_crc.o" lastModified="18976e1d816">
+         <source file="..\..\..\stm_lib\src\stm32f10x_crc.c" lastModified="18976cbd817"/>
+      </target>
+      <target file="stm32f10x_iwdg.o" lastModified="18976e1d9b6">
+         <source file="..\..\..\stm_lib\src\stm32f10x_iwdg.c" lastModified="18976c715be"/>
+      </target>
+      <target file="system_stm32f10x.o" lastModified="18976e1d6ad">
+         <source file="..\..\..\cmsis_boot\system_stm32f10x.c" lastModified="18976c6e7ae"/>
+      </target>
+      <target file="main.o" lastModified="1899abde3c7">
+         <source file="..\..\..\main.c" lastModified="1899abde24a"/>
+      </target>
+      <target file="stm32f10x_gpio.o" lastModified="18976e1d74d">
+         <source file="..\..\..\stm_lib\src\stm32f10x_gpio.c" lastModified="18976c6fd84"/>
+      </target>
+      <target file="stm32f10x_rcc.o" lastModified="18976e1d87c">
+         <source file="..\..\..\stm_lib\src\stm32f10x_rcc.c" lastModified="18976c6e786"/>
+      </target>
+      <target file="startup_stm32f10x_md.o" lastModified="18976e1d6e4">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f10x_md.c" lastModified="18976c6e791"/>
+      </target>
+      <target file="stm32f10x_bkp.o" lastModified="1899aae9587">
+         <source file="..\..\..\stm_lib\src\stm32f10x_bkp.c" lastModified="1899aae427f"/>
+      </target>
+   </processor>
+</history>
