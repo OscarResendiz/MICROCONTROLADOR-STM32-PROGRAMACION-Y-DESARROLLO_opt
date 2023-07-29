@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m3 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F103C8 -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -ID:\Cursos\STM32\Cocox\Serial1\cmsis -ID:\Cursos\STM32\Cocox -ID:\Cursos\STM32 -ID:\Cursos\STM32\Cocox\Serial1\stm_lib -ID:\Cursos\STM32\Cocox\Serial1\cmsis_boot -ID:\Cursos\STM32\Cocox\Serial1 -ID:\Cursos\STM32\Cocox\Serial1\stm_lib\inc">
+      <target file="stm32f10x_rcc.o" lastModified="18875a3c17d">
+         <source file="..\..\..\stm_lib\src\stm32f10x_rcc.c" lastModified="18832bfc904"/>
+      </target>
+      <target file="startup_stm32f10x_md.o" lastModified="18875a3c049">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f10x_md.c" lastModified="18832bfc8ad"/>
+      </target>
+      <target file="system_stm32f10x.o" lastModified="18875a3c00f">
+         <source file="..\..\..\cmsis_boot\system_stm32f10x.c" lastModified="18832bfc8c7"/>
+      </target>
+      <target file="stm32f10x_usart.o" lastModified="18875a3c1f7">
+         <source file="..\..\..\stm_lib\src\stm32f10x_usart.c" lastModified="18832c0041e"/>
+      </target>
+      <target file="usart1.o" lastModified="18875a3c2b7">
+         <source file="..\..\..\usart1.c" lastModified="18832caeac9"/>
+      </target>
+      <target file="syscalls.o" lastModified="18875a3c24e">
+         <source file="..\..\..\syscalls\syscalls.c" lastModified="18832bfd94f"/>
+      </target>
+      <target file="main.o" lastModified="18875a3c10c">
+         <source file="..\..\..\main.c" lastModified="18832ca54ec"/>
+      </target>
+      <target file="stm32f10x_gpio.o" lastModified="18875a3c0ac">
+         <source file="..\..\..\stm_lib\src\stm32f10x_gpio.c" lastModified="18832bfc8a1"/>
+      </target>
+   </processor>
+</history>
