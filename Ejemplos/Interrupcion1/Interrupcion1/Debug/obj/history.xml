@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m3 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F103C8 -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -ID:\Cursos\STM32\Cocox\Interrupcion1\cmsis -ID:\Cursos\STM32\Cocox -ID:\Cursos\STM32\Cocox\Interrupcion1\stm_lib\inc -ID:\Cursos\STM32\Cocox\Interrupcion1\cmsis_boot -ID:\Cursos\STM32\Cocox\Interrupcion1 -ID:\Cursos\STM32\Cocox\Interrupcion1\stm_lib">
+      <target file="stm32f10x_pwr.o" lastModified="18851983786">
+         <source file="..\..\..\stm_lib\src\stm32f10x_pwr.c" lastModified="18851830083"/>
+      </target>
+      <target file="syscalls.o" lastModified="188519838d1">
+         <source file="..\..\..\syscalls\syscalls.c" lastModified="188515975de"/>
+      </target>
+      <target file="stm32f10x_exti.o" lastModified="18851983897">
+         <source file="..\..\..\stm_lib\src\stm32f10x_exti.c" lastModified="188515b84b3"/>
+      </target>
+      <target file="system_stm32f10x.o" lastModified="18851983727">
+         <source file="..\..\..\cmsis_boot\system_stm32f10x.c" lastModified="1885159615e"/>
+      </target>
+      <target file="main.o" lastModified="1885198380c">
+         <source file="..\..\..\main.c" lastModified="18851983588"/>
+      </target>
+      <target file="stm32f10x_gpio.o" lastModified="188519837d0">
+         <source file="..\..\..\stm_lib\src\stm32f10x_gpio.c" lastModified="18851596144"/>
+      </target>
+      <target file="stm32f10x_rcc.o" lastModified="1885198385b">
+         <source file="..\..\..\stm_lib\src\stm32f10x_rcc.c" lastModified="1885159618f"/>
+      </target>
+      <target file="startup_stm32f10x_md.o" lastModified="1885198374d">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f10x_md.c" lastModified="1885159614f"/>
+      </target>
+      <target file="misc.o" lastModified="1885198390b">
+         <source file="..\..\..\stm_lib\src\misc.c" lastModified="1885174a97e"/>
+      </target>
+   </processor>
+</history>
