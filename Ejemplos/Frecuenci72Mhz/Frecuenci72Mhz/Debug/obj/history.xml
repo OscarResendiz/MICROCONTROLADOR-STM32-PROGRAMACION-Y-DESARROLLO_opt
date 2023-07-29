@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m3 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F103C8 -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -ID:\Cursos\STM32\Cocox -ID:\Cursos\STM32\Cocox\Frecuenci72Mhz\stm_lib -ID:\Cursos\STM32\Cocox\Frecuenci72Mhz\stm_lib\inc -ID:\Cursos\STM32\Cocox\Frecuenci72Mhz\cmsis -ID:\Cursos\STM32\Cocox\Frecuenci72Mhz\cmsis_boot -ID:\Cursos\STM32\Cocox\Frecuenci72Mhz">
+      <target file="stm32f10x_rcc.o" lastModified="1883227dbe6">
+         <source file="..\..\..\stm_lib\src\stm32f10x_rcc.c" lastModified="18831f1d935"/>
+      </target>
+      <target file="startup_stm32f10x_md.o" lastModified="1883227dacd">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f10x_md.c" lastModified="18831f1d92b"/>
+      </target>
+      <target file="misc.o" lastModified="1883227dc86">
+         <source file="..\..\..\stm_lib\src\misc.c" lastModified="1883209651e"/>
+      </target>
+      <target file="system_stm32f10x.o" lastModified="1883227daa2">
+         <source file="..\..\..\cmsis_boot\system_stm32f10x.c" lastModified="18831f1d92e"/>
+      </target>
+      <target file="syscalls.o" lastModified="1883227dc2c">
+         <source file="..\..\..\syscalls\syscalls.c" lastModified="18831f1ee03"/>
+      </target>
+      <target file="main.o" lastModified="1883227db8b">
+         <source file="..\..\..\main.c" lastModified="1883227d86e"/>
+      </target>
+      <target file="stm32f10x_gpio.o" lastModified="1883227db17">
+         <source file="..\..\..\stm_lib\src\stm32f10x_gpio.c" lastModified="18831f1d928"/>
+      </target>
+      <target file="stm32f10x_tim.o" lastModified="1883227da64">
+         <source file="..\..\..\stm_lib\src\stm32f10x_tim.c" lastModified="18831f3c63d"/>
+      </target>
+   </processor>
+</history>

@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dependencies>
+   <includePath signature="/ID:\Cursos\STM32\Cocox /ID:\Cursos\STM32\Cocox\Frecuenci72Mhz\stm_lib /ID:\Cursos\STM32\Cocox\Frecuenci72Mhz\stm_lib\inc /ID:\Cursos\STM32\Cocox\Frecuenci72Mhz\cmsis /ID:\Cursos\STM32\Cocox\Frecuenci72Mhz\cmsis_boot /ID:\Cursos\STM32\Cocox\Frecuenci72Mhz">
+      <source file="..\..\..\cmsis_boot\stm32f10x.h" lastModified="18831f1dd15">
+         <include file="..\..\..\cmsis\core_cm3.h"/>
+         <include file="..\..\..\cmsis_boot\system_stm32f10x.h"/>
+         <include file="..\..\..\cmsis_boot\stm32f10x_conf.h"/>
+      </source>
+      <source file="..\..\..\cmsis\core_cmInstr.h" lastModified="18831f1e102">
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f10x_tim.h" lastModified="18831f3c63c">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\stm32f10x_conf.h" lastModified="18831f1d92d">
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f10x_tim.c" lastModified="18831f3c63d">
+         <include file="..\..\..\stm_lib\inc\stm32f10x_tim.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f10x_gpio.c" lastModified="18831f1d928">
+         <include file="..\..\..\stm_lib\inc\stm32f10x_gpio.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f10x_gpio.h" lastModified="18831f1d927">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f10x_rcc.h" lastModified="18831f1d934">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\cmsis\core_cm3.h" lastModified="18831f1dd19">
+         <include file="..\..\..\cmsis\core_cmInstr.h"/>
+         <include file="..\..\..\cmsis\core_cmFunc.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\src\misc.c" lastModified="1883209651e">
+         <include file="..\..\..\stm_lib\inc\misc.h"/>
+      </source>
+      <source file="..\..\..\syscalls\syscalls.c" lastModified="18831f1fda3">
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f10x_rcc.c" lastModified="18831f1d935">
+         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f10x.h" lastModified="18831f1d92e">
+      </source>
+      <source file="..\..\..\main.c" lastModified="1883227d86e">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_gpio.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_tim.h"/>
+         <include file="..\..\..\stm_lib\inc\misc.h"/>
+      </source>
+      <source file="..\..\..\cmsis\core_cmFunc.h" lastModified="18831f1e101">
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f10x.c" lastModified="18831f1d92e">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\misc.h" lastModified="1883209651d">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\startup\startup_stm32f10x_md.c" lastModified="18831f1d92b">
+      </source>
+   </includePath>
+</dependencies>

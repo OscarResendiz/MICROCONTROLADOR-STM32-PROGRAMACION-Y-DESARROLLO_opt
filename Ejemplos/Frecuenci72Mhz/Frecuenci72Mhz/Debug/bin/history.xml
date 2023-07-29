@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -g -nostartfiles -Map=Frecuenci72Mhz.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\Frecuenci72Mhz -TC:\CooCox\CoIDE\configuration\ProgramData\Frecuenci72Mhz/link.ld -g">
+      <target file="Frecuenci72Mhz.elf" lastModified="18976fa3b9b">
+         <source file="..\obj\stm32f10x_tim.o" lastModified="1883227da64"/>
+         <source file="..\obj\system_stm32f10x.o" lastModified="1883227daa2"/>
+         <source file="..\obj\startup_stm32f10x_md.o" lastModified="1883227dacd"/>
+         <source file="..\obj\stm32f10x_gpio.o" lastModified="1883227db17"/>
+         <source file="..\obj\main.o" lastModified="1883227db8b"/>
+         <source file="..\obj\stm32f10x_rcc.o" lastModified="1883227dbe6"/>
+         <source file="..\obj\syscalls.o" lastModified="1883227dc2c"/>
+         <source file="..\obj\misc.o" lastModified="1883227dc86"/>
+      </target>
+   </processor>
+</history>
