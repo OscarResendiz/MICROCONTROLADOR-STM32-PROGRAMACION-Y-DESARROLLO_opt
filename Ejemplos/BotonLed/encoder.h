@@ -1,0 +1,2 @@
+void configuraEncoder();
+void leeEncoder();

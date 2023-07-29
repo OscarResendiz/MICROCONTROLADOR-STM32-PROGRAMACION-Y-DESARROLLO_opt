@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -g -nostartfiles -Map=BotonLed.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\BotonLed -TC:\CooCox\CoIDE\configuration\ProgramData\BotonLed/link.ld -g">
+      <target file="BotonLed.elf" lastModified="189529ad20a">
+         <source file="..\obj\system_stm32f10x.o" lastModified="189529acee7"/>
+         <source file="..\obj\startup_stm32f10x_md.o" lastModified="189529acf11"/>
+         <source file="..\obj\stm32f10x_gpio.o" lastModified="189529acf59"/>
+         <source file="..\obj\main.o" lastModified="189529acf8c"/>
+         <source file="..\obj\stm32f10x_rcc.o" lastModified="189529acfd8"/>
+         <source file="..\obj\syscalls.o" lastModified="189529ad013"/>
+      </target>
+   </processor>
+</history>
