@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -g -nostartfiles -Map=TimersTIM1TIM2.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\TimersTIM1TIM2 -TC:\CooCox\CoIDE\configuration\ProgramData\TimersTIM1TIM2/link.ld -g">
+      <target file="TimersTIM1TIM2.elf" lastModified="1889976af2c">
+         <source file="..\obj\stm32f10x_tim.o" lastModified="1889976aa60"/>
+         <source file="..\obj\system_stm32f10x.o" lastModified="1889976aa94"/>
+         <source file="..\obj\startup_stm32f10x_md.o" lastModified="1889976aac0"/>
+         <source file="..\obj\stm32f10x_pwr.o" lastModified="1889976aaf8"/>
+         <source file="..\obj\stm32f10x_gpio.o" lastModified="1889976ab3b"/>
+         <source file="..\obj\main.o" lastModified="1889976ab74"/>
+         <source file="..\obj\stm32f10x_rcc.o" lastModified="1889976abbe"/>
+         <source file="..\obj\stm32f10x_exti.o" lastModified="1889976abf4"/>
+         <source file="..\obj\syscalls.o" lastModified="1889976ac2d"/>
+         <source file="..\obj\misc.o" lastModified="1889976ac63"/>
+      </target>
+   </processor>
+</history>
