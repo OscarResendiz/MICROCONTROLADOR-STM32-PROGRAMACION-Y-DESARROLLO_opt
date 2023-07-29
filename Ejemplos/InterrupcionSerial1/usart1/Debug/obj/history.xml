@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m3 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F103C8 -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -ID:\Cursos\STM32\Cocox -ID:\Cursos\STM32\Cocox\InterrupcionSerial1\stm_lib -ID:\Cursos\STM32 -ID:\Cursos\STM32\Cocox\InterrupcionSerial1\cmsis -ID:\Cursos\STM32\Cocox\InterrupcionSerial1 -ID:\Cursos\STM32\Cocox\InterrupcionSerial1\cmsis_boot -ID:\Cursos\STM32\Cocox\InterrupcionSerial1\stm_lib\inc">
+      <target file="syscalls.o" lastModified="18875a0707c">
+         <source file="..\..\..\syscalls\syscalls.c" lastModified="18832bfd94f"/>
+      </target>
+      <target file="stm32f10x_exti.o" lastModified="18875a06fb6">
+         <source file="..\..\..\stm_lib\src\stm32f10x_exti.c" lastModified="1886fc92b4f"/>
+      </target>
+      <target file="system_stm32f10x.o" lastModified="18875a06d6d">
+         <source file="..\..\..\cmsis_boot\system_stm32f10x.c" lastModified="18832bfc8c7"/>
+      </target>
+      <target file="usart1.o" lastModified="18875a070dd">
+         <source file="..\..\..\usart1.c" lastModified="1887597f148"/>
+      </target>
+      <target file="main.o" lastModified="18875a06ed5">
+         <source file="..\..\..\main.c" lastModified="1887052be25"/>
+      </target>
+      <target file="stm32f10x_gpio.o" lastModified="18875a06e0b">
+         <source file="..\..\..\stm_lib\src\stm32f10x_gpio.c" lastModified="18832bfc8a1"/>
+      </target>
+      <target file="stm32f10x_usart.o" lastModified="18875a07028">
+         <source file="..\..\..\stm_lib\src\stm32f10x_usart.c" lastModified="18832c0041e"/>
+      </target>
+      <target file="stm32f10x_rcc.o" lastModified="18875a06f54">
+         <source file="..\..\..\stm_lib\src\stm32f10x_rcc.c" lastModified="18832bfc904"/>
+      </target>
+      <target file="startup_stm32f10x_md.o" lastModified="18875a06da3">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f10x_md.c" lastModified="18832bfc8ad"/>
+      </target>
+      <target file="misc.o" lastModified="18875a07133">
+         <source file="..\..\..\stm_lib\src\misc.c" lastModified="1886fca83dc"/>
+      </target>
+   </processor>
+</history>
