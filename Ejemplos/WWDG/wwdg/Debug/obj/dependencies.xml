@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dependencies>
+   <includePath signature="/ID:\Cursos\STM32\Cocox\GIT\Ejemplos\WWDG\cmsis /ID:\Cursos\STM32\Cocox\GIT\Ejemplos\WWDG\cmsis_boot /ID:\Cursos\STM32\Cocox\GIT\Ejemplos\WWDG\stm_lib\inc /ID:\Cursos\STM32\Cocox\GIT\Ejemplos\WWDG /ID:\Cursos\STM32\Cocox\GIT\Ejemplos\WWDG\stm_lib /ID:\Cursos\STM32\Cocox\GIT\Ejemplos">
+      <source file="..\..\..\cmsis_boot\stm32f10x.h" lastModified="189b44770ae">
+         <include file="..\..\..\cmsis\core_cm3.h"/>
+         <include file="..\..\..\cmsis_boot\system_stm32f10x.h"/>
+         <include file="..\..\..\cmsis_boot\stm32f10x_conf.h"/>
+      </source>
+      <source file="..\..\..\cmsis\core_cmInstr.h" lastModified="189b447751e">
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f10x_wwdg.h" lastModified="189bf01fd1c">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\stm32f10x_conf.h" lastModified="189b4476cdc">
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f10x_gpio.c" lastModified="189b44796ec">
+         <include file="..\..\..\stm_lib\inc\stm32f10x_gpio.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f10x_gpio.h" lastModified="189b44796df">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f10x_rcc.h" lastModified="189b4476c49">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\cmsis\core_cm3.h" lastModified="189b44770fd">
+         <include file="..\..\..\cmsis\core_cmInstr.h"/>
+         <include file="..\..\..\cmsis\core_cmFunc.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f10x_pwr.h" lastModified="189beef9ba8">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\src\misc.c" lastModified="189bee32061">
+         <include file="..\..\..\stm_lib\inc\misc.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f10x_wwdg.c" lastModified="189bf01fd1d">
+         <include file="..\..\..\stm_lib\inc\stm32f10x_wwdg.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
+      </source>
+      <source file="..\..\..\syscalls\syscalls.c" lastModified="189b447069b">
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f10x_rcc.c" lastModified="189b4476c79">
+         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f10x_pwr.c" lastModified="189beef9baf">
+         <include file="..\..\..\stm_lib\inc\stm32f10x_pwr.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis\core_cmFunc.h" lastModified="189b4477501">
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f10x.h" lastModified="189b4476d04">
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f10x.c" lastModified="189b4476ce9">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\misc.h" lastModified="189bee31d2a">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\startup\startup_stm32f10x_md.c" lastModified="189b4476c9c">
+      </source>
+   </includePath>
+   <includePath signature="/ID:\Cursos\STM32\Cocox\GIT\Ejemplos\WWDG\cmsis /ID:\Cursos\STM32\Cocox\GIT\Ejemplos\WWDG\CoX\CoX_Peripheral\inc /ID:\Cursos\STM32\Cocox\GIT\Ejemplos\WWDG\cmsis_boot /ID:\Cursos\STM32\Cocox\GIT\Ejemplos\WWDG\CoX /ID:\Cursos\STM32\Cocox\GIT\Ejemplos\WWDG\stm_lib\inc /ID:\Cursos\STM32\Cocox\GIT\Ejemplos\WWDG /ID:\Cursos\STM32\Cocox\GIT\Ejemplos\WWDG\stm_lib /ID:\Cursos\STM32\Cocox\GIT\Ejemplos /ID:\Cursos\STM32\Cocox\GIT\Ejemplos\WWDG\CoX\CoX_Peripheral">
+      <source file="..\..\..\cmsis_boot\stm32f10x_conf.h" lastModified="189b4476cdc">
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f10x_gpio.c" lastModified="189b44796ec">
+         <include file="..\..\..\stm_lib\inc\stm32f10x_gpio.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f10x_gpio.h" lastModified="189b44796df">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f10x_rcc.h" lastModified="189b4476c49">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f10x_pwr.h" lastModified="189beef9ba8">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\src\misc.c" lastModified="189bee32061">
+         <include file="..\..\..\stm_lib\inc\misc.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f10x_rcc.c" lastModified="189b4476c79">
+         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f10x_pwr.c" lastModified="189beef9baf">
+         <include file="..\..\..\stm_lib\inc\stm32f10x_pwr.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f10x.h" lastModified="189b4476d04">
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f10x.c" lastModified="189b4476ce9">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\misc.h" lastModified="189bee31d2a">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\startup\startup_stm32f10x_md.c" lastModified="189b4476c9c">
+      </source>
+   </includePath>
+</dependencies>

@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m3 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F103C8 -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\WWDG\cmsis -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\WWDG\CoX\CoX_Peripheral\inc -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\WWDG\cmsis_boot -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\WWDG\CoX -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\WWDG\stm_lib\inc -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\WWDG -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\WWDG\stm_lib -ID:\Cursos\STM32\Cocox\GIT\Ejemplos -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\WWDG\CoX\CoX_Peripheral">
+      <target file="xcore.o" lastModified="189befb91da">
+         <source file="..\..\..\CoX\CoX_Peripheral\src\xcore.c" lastModified="189bef10bda"/>
+      </target>
+      <target file="xdebug.o" lastModified="189befb917c">
+         <source file="..\..\..\CoX\CoX_Peripheral\src\xdebug.c" lastModified="189bef10bc6"/>
+      </target>
+      <target file="startup_coide.o" lastModified="189befb9142">
+         <source file="..\..\..\startup_coide.c" lastModified="189bef10b48"/>
+      </target>
+      <target file="xsysctl.o" lastModified="189befb957f">
+         <source file="..\..\..\CoX\CoX_Peripheral\src\xsysctl.c" lastModified="189bef10b3b"/>
+      </target>
+      <target file="xgpio.o" lastModified="189befb9250">
+         <source file="..\..\..\CoX\CoX_Peripheral\src\xgpio.c" lastModified="189bef10b26"/>
+      </target>
+   </processor>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m3 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F103C8 -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\WWDG\cmsis -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\WWDG\cmsis_boot -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\WWDG\stm_lib\inc -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\WWDG -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\WWDG\stm_lib -ID:\Cursos\STM32\Cocox\GIT\Ejemplos">
+      <target file="stm32f10x_pwr.o" lastModified="189bf00afaf">
+         <source file="..\..\..\stm_lib\src\stm32f10x_pwr.c" lastModified="189beef9baf"/>
+      </target>
+      <target file="syscalls.o" lastModified="189bf00b1e9">
+         <source file="..\..\..\syscalls\syscalls.c" lastModified="189b446f6fb"/>
+      </target>
+      <target file="system_stm32f10x.o" lastModified="189bf00af03">
+         <source file="..\..\..\cmsis_boot\system_stm32f10x.c" lastModified="189b4476ce9"/>
+      </target>
+      <target file="stm32f10x_wwdg.o" lastModified="189bf020cfa">
+         <source file="..\..\..\stm_lib\src\stm32f10x_wwdg.c" lastModified="189bf01fd1d"/>
+      </target>
+      <target file="main.o" lastModified="189d23a1e37">
+         <source file="..\..\..\main.c" lastModified="189d23a1c67"/>
+      </target>
+      <target file="stm32f10x_gpio.o" lastModified="189bf00b017">
+         <source file="..\..\..\stm_lib\src\stm32f10x_gpio.c" lastModified="189b44796ec"/>
+      </target>
+      <target file="stm32f10x_rcc.o" lastModified="189bf00b0e7">
+         <source file="..\..\..\stm_lib\src\stm32f10x_rcc.c" lastModified="189b4476c79"/>
+      </target>
+      <target file="startup_stm32f10x_md.o" lastModified="189bf00af43">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f10x_md.c" lastModified="189b4476c9c"/>
+      </target>
+      <target file="misc.o" lastModified="189bf00b247">
+         <source file="..\..\..\stm_lib\src\misc.c" lastModified="189bee32061"/>
+      </target>
+   </processor>
+</history>

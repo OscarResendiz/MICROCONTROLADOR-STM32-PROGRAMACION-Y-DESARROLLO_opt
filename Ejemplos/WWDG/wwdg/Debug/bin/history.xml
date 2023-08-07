@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -g -nostartfiles -Map=wwdg.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\wwdg -TC:\CooCox\CoIDE\configuration\ProgramData\wwdg/link.ld -g">
+      <target file="wwdg.elf" lastModified="189d23a204a">
+         <source file="..\obj\system_stm32f10x.o" lastModified="189bf00af03"/>
+         <source file="..\obj\startup_stm32f10x_md.o" lastModified="189bf00af43"/>
+         <source file="..\obj\stm32f10x_pwr.o" lastModified="189bf00afaf"/>
+         <source file="..\obj\stm32f10x_gpio.o" lastModified="189bf00b017"/>
+         <source file="..\obj\main.o" lastModified="189d23a1e37"/>
+         <source file="..\obj\stm32f10x_rcc.o" lastModified="189bf00b0e7"/>
+         <source file="..\obj\syscalls.o" lastModified="189bf00b1e9"/>
+         <source file="..\obj\misc.o" lastModified="189bf00b247"/>
+         <source file="..\obj\stm32f10x_wwdg.o" lastModified="189bf020cfa"/>
+      </target>
+   </processor>
+</history>
