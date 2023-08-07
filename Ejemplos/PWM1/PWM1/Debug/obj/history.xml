@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m3 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F103C8 -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\PWM1\cmsis_boot -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\PWM1\stm_lib\inc -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\PWM1 -ID:\Cursos\STM32\Cocox\GIT\Ejemplos -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\PWM1\stm_lib -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\PWM1\cmsis">
+      <target file="syscalls.o" lastModified="189d265bc56">
+         <source file="..\..\..\syscalls\syscalls.c" lastModified="189d264ad0a"/>
+      </target>
+      <target file="stm32f10x_wwdg.o" lastModified="189d265bd1d">
+         <source file="..\..\..\stm_lib\src\stm32f10x_wwdg.c" lastModified="189d265762d"/>
+      </target>
+      <target file="misc.o" lastModified="189d265bcb5">
+         <source file="..\..\..\stm_lib\src\misc.c" lastModified="189d265b26a"/>
+      </target>
+   </processor>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m3 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F103C8 -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\PWM1\stm_lib\inc -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\PWM1\cmsis_boot -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\PWM1 -ID:\Cursos\STM32\Cocox\GIT\Ejemplos -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\PWM1\stm_lib -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\PWM1\cmsis">
+      <target file="stm32f10x_tim.o" lastModified="189d268e326">
+         <source file="..\..\..\stm_lib\src\stm32f10x_tim.c" lastModified="189d268dabd"/>
+      </target>
+      <target file="system_stm32f10x.o" lastModified="189d268bb7b">
+         <source file="..\..\..\cmsis_boot\system_stm32f10x.c" lastModified="189d268ab3c"/>
+      </target>
+      <target file="main.o" lastModified="189d26be047">
+         <source file="..\..\..\main.c" lastModified="189d26bde6e"/>
+      </target>
+      <target file="stm32f10x_gpio.o" lastModified="189d268bc30">
+         <source file="..\..\..\stm_lib\src\stm32f10x_gpio.c" lastModified="189d268ab30"/>
+      </target>
+      <target file="stm32f10x_rcc.o" lastModified="189d268bced">
+         <source file="..\..\..\stm_lib\src\stm32f10x_rcc.c" lastModified="189d268ab47"/>
+      </target>
+      <target file="startup_stm32f10x_md.o" lastModified="189d268bbbf">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f10x_md.c" lastModified="189d268ab38"/>
+      </target>
+   </processor>
+</history>
