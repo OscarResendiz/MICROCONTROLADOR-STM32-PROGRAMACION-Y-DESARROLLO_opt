@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -g -nostartfiles -Map=Sumbado.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\Sumbado -TC:\CooCox\CoIDE\configuration\ProgramData\Sumbado/link.ld -g">
+      <target file="Sumbado.elf" lastModified="18a693616e8">
+         <source file="..\obj\stm32f10x_tim.o" lastModified="18a6921dd45"/>
+         <source file="..\obj\system_stm32f10x.o" lastModified="18a6921dd99"/>
+         <source file="..\obj\startup_stm32f10x_md.o" lastModified="18a6921ddcb"/>
+         <source file="..\obj\stm32f10x_gpio.o" lastModified="18a6921de2b"/>
+         <source file="..\obj\main.o" lastModified="18a69361500"/>
+         <source file="..\obj\stm32f10x_rcc.o" lastModified="18a6921df1c"/>
+      </target>
+   </processor>
+</history>

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -g -nostartfiles -Map=PWM2.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\PWM2 -TC:\CooCox\CoIDE\configuration\ProgramData\PWM2/link.ld -g">
+      <target file="PWM2.elf" lastModified="18a689701df">
+         <source file="..\obj\stm32f10x_tim.o" lastModified="18a2af764cf"/>
+         <source file="..\obj\system_stm32f10x.o" lastModified="18a2af7652d"/>
+         <source file="..\obj\startup_stm32f10x_md.o" lastModified="18a2af76568"/>
+         <source file="..\obj\stm32f10x_gpio.o" lastModified="18a2af765cd"/>
+         <source file="..\obj\main.o" lastModified="18a2afd41a2"/>
+         <source file="..\obj\stm32f10x_rcc.o" lastModified="18a2af766d2"/>
+         <source file="..\obj\syscalls.o" lastModified="18a2af76759"/>
+      </target>
+   </processor>
+</history>

@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc 13.1.0 x86_64-w64-mingw32 -mcpu=cortex-m3 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F103C8 -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\Sumbador\cmsis -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\Sumbador\cmsis_boot -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\Sumbador\stm_lib -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\Sumbador\stm_lib\inc -ID:\Cursos\STM32\Cocox\GIT\Ejemplos -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\Sumbador">
+      <target file="stm32f10x_rcc.o" lastModified="18a6921df1c">
+         <source file="..\..\..\stm_lib\src\stm32f10x_rcc.c" lastModified="18a68e375dc"/>
+      </target>
+      <target file="startup_stm32f10x_md.o" lastModified="18a6921ddcb">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f10x_md.c" lastModified="18a68e375eb"/>
+      </target>
+      <target file="system_stm32f10x.o" lastModified="18a6921dd99">
+         <source file="..\..\..\cmsis_boot\system_stm32f10x.c" lastModified="18a68e37606"/>
+      </target>
+      <target file="main.o" lastModified="18a69361500">
+         <source file="..\..\..\main.c" lastModified="18a69361314"/>
+      </target>
+      <target file="stm32f10x_tim.o" lastModified="18a6921dd45">
+         <source file="..\..\..\stm_lib\src\stm32f10x_tim.c" lastModified="18a68e393ce"/>
+      </target>
+      <target file="stm32f10x_gpio.o" lastModified="18a6921de2b">
+         <source file="..\..\..\stm_lib\src\stm32f10x_gpio.c" lastModified="18a68e38526"/>
+      </target>
+   </processor>
+</history>

@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc 13.1.0 x86_64-w64-mingw32 -mcpu=cortex-m3 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F103C8 -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\BrilloTricolor\stm_lib\inc -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\BrilloTricolor\stm_lib -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\BrilloTricolor\cmsis -ID:\Cursos\STM32\Cocox\GIT\Ejemplos -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\BrilloTricolor\cmsis_boot -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\BrilloTricolor">
+      <target file="stm32f10x_rcc.o" lastModified="18a44bef1cd">
+         <source file="..\..\..\stm_lib\src\stm32f10x_rcc.c" lastModified="18a44afe773"/>
+      </target>
+      <target file="startup_stm32f10x_md.o" lastModified="18a44beeeb9">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f10x_md.c" lastModified="18a44afe79a"/>
+      </target>
+      <target file="system_stm32f10x.o" lastModified="18a44beee2c">
+         <source file="..\..\..\cmsis_boot\system_stm32f10x.c" lastModified="18a44afe7ef"/>
+      </target>
+      <target file="main.o" lastModified="18a44cd56d2">
+         <source file="..\..\..\main.c" lastModified="18a44cd50ad"/>
+      </target>
+      <target file="stm32f10x_gpio.o" lastModified="18a44beefbd">
+         <source file="..\..\..\stm_lib\src\stm32f10x_gpio.c" lastModified="18a44affa26"/>
+      </target>
+      <target file="stm32f10x_tim.o" lastModified="18a44beed31">
+         <source file="..\..\..\stm_lib\src\stm32f10x_tim.c" lastModified="18a44b00c7e"/>
+      </target>
+   </processor>
+</history>
