@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc 13.1.0 x86_64-w64-mingw32 -mcpu=cortex-m3 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F103C8 -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\ADC1\cmsis -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\ADC1\cmsis_boot -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\ADC1\stm_lib\inc -ID:\Cursos\STM32\Cocox\GIT -ID:\Cursos\STM32\Cocox\GIT\Ejemplos -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\ADC1\stm_lib -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\ADC1">
+      <target file="stm32f10x_adc.o" lastModified="18a8cfe378d">
+         <source file="..\..\..\stm_lib\src\stm32f10x_adc.c" lastModified="18a8cf5741a"/>
+      </target>
+      <target file="syscalls.o" lastModified="18a8cfe38b9">
+         <source file="..\..\..\syscalls\syscalls.c" lastModified="18a8cf586c3"/>
+      </target>
+      <target file="system_stm32f10x.o" lastModified="18a8cfe34e7">
+         <source file="..\..\..\cmsis_boot\system_stm32f10x.c" lastModified="18a8cf53372"/>
+      </target>
+      <target file="main.o" lastModified="18ab0a5b9a8">
+         <source file="..\..\..\main.c" lastModified="18ab095eb59"/>
+      </target>
+      <target file="usart1.o" lastModified="18a8cfe3935">
+         <source file="..\..\..\usart1.c" lastModified="18832caeac9"/>
+      </target>
+      <target file="stm32f10x_gpio.o" lastModified="18a8cfe3583">
+         <source file="..\..\..\stm_lib\src\stm32f10x_gpio.c" lastModified="18a8cf544cd"/>
+      </target>
+      <target file="stm32f10x_usart.o" lastModified="18a8cfe37f4">
+         <source file="..\..\..\stm_lib\src\stm32f10x_usart.c" lastModified="18a8cf7e0b7"/>
+      </target>
+      <target file="stm32f10x_rcc.o" lastModified="18a8cfe3723">
+         <source file="..\..\..\stm_lib\src\stm32f10x_rcc.c" lastModified="18a8cf53350"/>
+      </target>
+      <target file="startup_stm32f10x_md.o" lastModified="18a8cfe3520">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f10x_md.c" lastModified="18a8cf5335e"/>
+      </target>
+   </processor>
+</history>

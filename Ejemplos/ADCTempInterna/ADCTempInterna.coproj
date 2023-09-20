@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<Project version="2G - 1.7.8" name="Sumbado">
-  <Target name="Sumbado" isCurrent="1">
+<Project version="2G - 1.7.8" name="ADCTempInterna">
+  <Target name="ADCTempInterna" isCurrent="1">
     <Device manufacturerId="9" manufacturerName="ST" chipId="305" chipName="STM32F103C8" boardId="" boardName=""/>
     <BuildOption>
       <Compile>
@@ -32,12 +32,12 @@
           <Memory name="IROM2" type="ReadOnly" size="" startValue=""/>
           <Memory name="IRAM2" type="ReadWrite" size="" startValue=""/>
         </MemoryAreas>
-        <LocateLinkFile path="c:/coocox/coide/configuration/programdata/sumbado/link.ld" type="0"/>
+        <LocateLinkFile path="c:/coocox/coide/configuration/programdata/adctempinterna/link.ld" type="0"/>
       </Link>
       <Output>
         <Option name="OutputFileType" value="0"/>
         <Option name="Path" value="./"/>
-        <Option name="Name" value="Sumbado"/>
+        <Option name="Name" value="ADCTempInterna"/>
         <Option name="HEX" value="1"/>
         <Option name="BIN" value="1"/>
       </Output>
@@ -68,33 +68,41 @@
     <ExcludeFile/>
   </Target>
   <Components path="./">
+    <Component id="30" name="C Library" path="" type="2"/>
     <Component id="50" name="CMSIS core" path="" type="2"/>
     <Component id="439" name="CMSIS_Boot" path="" type="2"/>
     <Component id="440" name="RCC" path="" type="2"/>
     <Component id="444" name="GPIO" path="" type="2"/>
-    <Component id="456" name="TIM" path="" type="2"/>
+    <Component id="457" name="ADC" path="" type="2"/>
+    <Component id="458" name="USART" path="" type="2"/>
   </Components>
   <Files>
-    <File name="cmsis" path="" type="2"/>
-    <File name="stm_lib" path="" type="2"/>
     <File name="cmsis_boot/system_stm32f10x.c" path="cmsis_boot/system_stm32f10x.c" type="1"/>
     <File name="cmsis/core_cmInstr.h" path="cmsis/core_cmInstr.h" type="1"/>
-    <File name="cmsis_boot/system_stm32f10x.h" path="cmsis_boot/system_stm32f10x.h" type="1"/>
     <File name="cmsis/core_cm3.h" path="cmsis/core_cm3.h" type="1"/>
-    <File name="stm_lib/inc/stm32f10x_tim.h" path="stm_lib/inc/stm32f10x_tim.h" type="1"/>
-    <File name="stm_lib/inc/stm32f10x_rcc.h" path="stm_lib/inc/stm32f10x_rcc.h" type="1"/>
     <File name="cmsis_boot" path="" type="2"/>
     <File name="stm_lib/src/stm32f10x_rcc.c" path="stm_lib/src/stm32f10x_rcc.c" type="1"/>
-    <File name="stm_lib/src/stm32f10x_tim.c" path="stm_lib/src/stm32f10x_tim.c" type="1"/>
+    <File name="usart1.h" path="usart1.h" type="1"/>
     <File name="cmsis_boot/startup" path="" type="2"/>
     <File name="cmsis/core_cmFunc.h" path="cmsis/core_cmFunc.h" type="1"/>
+    <File name="cmsis_boot/stm32f10x.h" path="cmsis_boot/stm32f10x.h" type="1"/>
+    <File name="cmsis_boot/stm32f10x_conf.h" path="cmsis_boot/stm32f10x_conf.h" type="1"/>
+    <File name="stm_lib/src" path="" type="2"/>
+    <File name="cmsis" path="" type="2"/>
+    <File name="stm_lib" path="" type="2"/>
+    <File name="syscalls/syscalls.c" path="syscalls/syscalls.c" type="1"/>
+    <File name="stm_lib/src/stm32f10x_adc.c" path="stm_lib/src/stm32f10x_adc.c" type="1"/>
+    <File name="stm_lib/inc/stm32f10x_adc.h" path="stm_lib/inc/stm32f10x_adc.h" type="1"/>
+    <File name="cmsis_boot/system_stm32f10x.h" path="cmsis_boot/system_stm32f10x.h" type="1"/>
+    <File name="stm_lib/inc/stm32f10x_rcc.h" path="stm_lib/inc/stm32f10x_rcc.h" type="1"/>
+    <File name="syscalls" path="" type="2"/>
+    <File name="stm_lib/src/stm32f10x_usart.c" path="stm_lib/src/stm32f10x_usart.c" type="1"/>
     <File name="cmsis_boot/startup/startup_stm32f10x_md.c" path="cmsis_boot/startup/startup_stm32f10x_md.c" type="1"/>
     <File name="stm_lib/src/stm32f10x_gpio.c" path="stm_lib/src/stm32f10x_gpio.c" type="1"/>
     <File name="stm_lib/inc" path="" type="2"/>
     <File name="stm_lib/inc/stm32f10x_gpio.h" path="stm_lib/inc/stm32f10x_gpio.h" type="1"/>
-    <File name="cmsis_boot/stm32f10x.h" path="cmsis_boot/stm32f10x.h" type="1"/>
-    <File name="cmsis_boot/stm32f10x_conf.h" path="cmsis_boot/stm32f10x_conf.h" type="1"/>
     <File name="main.c" path="main.c" type="1"/>
-    <File name="stm_lib/src" path="" type="2"/>
+    <File name="usart1.c" path="usart1.c" type="1"/>
+    <File name="stm_lib/inc/stm32f10x_usart.h" path="stm_lib/inc/stm32f10x_usart.h" type="1"/>
   </Files>
 </Project>
