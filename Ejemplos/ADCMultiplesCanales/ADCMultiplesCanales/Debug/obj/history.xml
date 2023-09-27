@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc 13.1.0 x86_64-w64-mingw32 -mcpu=cortex-m3 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F103C8 -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\ADCMultiplesCanales -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\ADCMultiplesCanales\cmsis -ID:\Cursos\STM32\Cocox\GIT -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\ADCMultiplesCanales\stm_lib\inc -ID:\Cursos\STM32\Cocox\GIT\Ejemplos -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\ADCMultiplesCanales\cmsis_boot -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\ADCTempInterna -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\ADCMultiplesCanales\stm_lib">
+      <target file="stm32f10x_adc.o" lastModified="18ad4df69be">
+         <source file="..\..\..\stm_lib\src\stm32f10x_adc.c" lastModified="18ad4dc353f"/>
+      </target>
+      <target file="syscalls.o" lastModified="18ad4df6d10">
+         <source file="..\..\..\syscalls\syscalls.c" lastModified="18ad4dbcd87"/>
+      </target>
+      <target file="stm32f10x_tim.o" lastModified="18ad4df62c0">
+         <source file="..\..\..\stm_lib\src\stm32f10x_tim.c" lastModified="18ad4de4c23"/>
+      </target>
+      <target file="system_stm32f10x.o" lastModified="18ad4df63bb">
+         <source file="..\..\..\cmsis_boot\system_stm32f10x.c" lastModified="18ad4dbecc5"/>
+      </target>
+      <target file="main.o" lastModified="18ad54f1517">
+         <source file="..\..\..\main.c" lastModified="18ad54f0e04"/>
+      </target>
+      <target file="usart1.o" lastModified="18ad4df6ef4">
+         <source file="..\..\..\..\ADCTempInterna\usart1.c" lastModified="18832caeac9"/>
+      </target>
+      <target file="stm32f10x_gpio.o" lastModified="18ad4df6546">
+         <source file="..\..\..\stm_lib\src\stm32f10x_gpio.c" lastModified="18ad4dbec8d"/>
+      </target>
+      <target file="stm32f10x_usart.o" lastModified="18ad4df6ad6">
+         <source file="..\..\..\stm_lib\src\stm32f10x_usart.c" lastModified="18ad4dc194c"/>
+      </target>
+      <target file="stm32f10x_rcc.o" lastModified="18ad4df6890">
+         <source file="..\..\..\stm_lib\src\stm32f10x_rcc.c" lastModified="18ad4dbed30"/>
+      </target>
+      <target file="startup_stm32f10x_md.o" lastModified="18ad4df644b">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f10x_md.c" lastModified="18ad4dbec9f"/>
+      </target>
+      <target file="stm32f10x_dma.o" lastModified="18ad4df702e">
+         <source file="..\..\..\stm_lib\src\stm32f10x_dma.c" lastModified="18ad4dca710"/>
+      </target>
+      <target file="misc.o" lastModified="18ad51f798b">
+         <source file="..\..\..\stm_lib\src\misc.c" lastModified="18ad518b846"/>
+      </target>
+   </processor>
+</history>

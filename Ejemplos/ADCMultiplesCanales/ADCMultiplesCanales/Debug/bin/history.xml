@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -g -nostartfiles -Map=ADCMultiplesCanales.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\ADCMultiplesCanales -TC:\CooCox\CoIDE\configuration\ProgramData\ADCMultiplesCanales/link.ld -g">
+      <target file="ADCMultiplesCanales.elf" lastModified="18ad54f1843">
+         <source file="..\obj\stm32f10x_tim.o" lastModified="18ad4df62c0"/>
+         <source file="..\obj\system_stm32f10x.o" lastModified="18ad4df63bb"/>
+         <source file="..\obj\startup_stm32f10x_md.o" lastModified="18ad4df644b"/>
+         <source file="..\obj\stm32f10x_gpio.o" lastModified="18ad4df6546"/>
+         <source file="..\obj\main.o" lastModified="18ad54f1517"/>
+         <source file="..\obj\stm32f10x_rcc.o" lastModified="18ad4df6890"/>
+         <source file="..\obj\stm32f10x_adc.o" lastModified="18ad4df69be"/>
+         <source file="..\obj\stm32f10x_usart.o" lastModified="18ad4df6ad6"/>
+         <source file="..\obj\syscalls.o" lastModified="18ad4df6d10"/>
+         <source file="..\obj\usart1.o" lastModified="18ad4df6ef4"/>
+         <source file="..\obj\stm32f10x_dma.o" lastModified="18ad4df702e"/>
+         <source file="..\obj\misc.o" lastModified="18ad51f798b"/>
+      </target>
+   </processor>
+</history>
