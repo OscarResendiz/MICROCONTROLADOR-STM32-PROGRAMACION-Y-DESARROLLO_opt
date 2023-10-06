@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -g -nostartfiles -Map=ADCsInyectados.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\ADCsInyectados -TC:\CooCox\CoIDE\configuration\ProgramData\ADCsInyectados/link.ld -g">
+      <target file="ADCsInyectados.elf" lastModified="18b0346e5dc">
+         <source file="..\obj\stm32f10x_tim.o" lastModified="18b03228000"/>
+         <source file="..\obj\system_stm32f10x.o" lastModified="18b03223397"/>
+         <source file="..\obj\startup_stm32f10x_md.o" lastModified="18b032233e9"/>
+         <source file="..\obj\stm32f10x_gpio.o" lastModified="18b0322346d"/>
+         <source file="..\obj\main.o" lastModified="18b0346e3c5"/>
+         <source file="..\obj\stm32f10x_rcc.o" lastModified="18b03223717"/>
+         <source file="..\obj\stm32f10x_adc.o" lastModified="18b032237bf"/>
+         <source file="..\obj\stm32f10x_usart.o" lastModified="18b03223856"/>
+         <source file="..\obj\syscalls.o" lastModified="18b032238ea"/>
+         <source file="..\obj\usart1.o" lastModified="18b032239cb"/>
+         <source file="..\obj\misc.o" lastModified="18b03223a50"/>
+      </target>
+   </processor>
+</history>
