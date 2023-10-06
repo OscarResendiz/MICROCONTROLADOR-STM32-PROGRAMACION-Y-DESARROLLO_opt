@@ -1,0 +1,913 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.24.1
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Personal Personal, Personal, LIC=MPP56-DAU0Q-Z7RRU-STLXS-VUYXJ-2R46X
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.24.1
+Toolchain Path:  C:\Keil\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 5 (build 528)
+Assembler:       Armasm.exe V5.06 update 5 (build 528)
+Linker/Locator:  ArmLink.exe V5.06 update 5 (build 528)
+Library Manager: ArmAr.exe V5.06 update 5 (build 528)
+Hex Converter:   FromElf.exe V5.06 update 5 (build 528)
+CPU DLL:         SARMCM3.DLL V5.24.1
+Dialog DLL:      DARMSTM.DLL V1.68.0.0
+Target DLL:      UL2CM3.DLL V1.160.3.0
+Dialog DLL:      TARMSTM.DLL V1.66.0.0
+ 
+<h2>Project:</h2>
+C:\Codigos_ejemplos\Ejemplos_KEIL_MDK\20-1_Ejemplo_40-USB_puerto_com\USB_com_port.uvprojx
+Project File Date:  03/20/2018
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'C:\Keil\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'Target 1'
+compiling main.c...
+main.c(57): warning:  #223-D: function "CDC_Receive_DATA" declared implicitly
+        CDC_Receive_DATA();
+main.c(74): warning:  #223-D: function "CDC_Send_DATA" declared implicitly
+            CDC_Send_DATA ((uint8_t*)Receive_Buffer, Receive_length);
+main.c: 2 warnings, 0 errors
+compiling stm32_it.c...
+.\STM32_USB-FS-Device_Lib\usb_regs.h(614): error:  #20: identifier "uint16_t" is undefined
+  extern volatile uint16_t wIstr;  /* ISTR register last read value */
+.\STM32_USB-FS-Device_Lib\usb_regs.h(617): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetCNTR(uint16_t /*wRegValue*/);
+.\STM32_USB-FS-Device_Lib\usb_regs.h(618): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetISTR(uint16_t /*wRegValue*/);
+.\STM32_USB-FS-Device_Lib\usb_regs.h(619): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetDADDR(uint16_t /*wRegValue*/);
+.\STM32_USB-FS-Device_Lib\usb_regs.h(620): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetBTABLE(uint16_t /*wRegValue*/);
+.\STM32_USB-FS-Device_Lib\usb_regs.h(621): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetBTABLE(uint16_t /*wRegValue*/);
+.\STM32_USB-FS-Device_Lib\usb_regs.h(622): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetCNTR(void);
+.\STM32_USB-FS-Device_Lib\usb_regs.h(623): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetISTR(void);
+.\STM32_USB-FS-Device_Lib\usb_regs.h(624): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetFNR(void);
+.\STM32_USB-FS-Device_Lib\usb_regs.h(625): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetDADDR(void);
+.\STM32_USB-FS-Device_Lib\usb_regs.h(626): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetBTABLE(void);
+.\STM32_USB-FS-Device_Lib\usb_regs.h(627): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetENDPOINT(uint8_t /*bEpNum*/, uint16_t /*wRegValue*/);
+.\STM32_USB-FS-Device_Lib\usb_regs.h(628): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetENDPOINT(uint8_t /*bEpNum*/);
+.\STM32_USB-FS-Device_Lib\usb_regs.h(628): error:  #92: identifier-list parameters may only be used in a function definition
+  uint16_t GetENDPOINT(uint8_t /*bEpNum*/);
+.\STM32_USB-FS-Device_Lib\usb_regs.h(629): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetEPType(uint8_t /*bEpNum*/, uint16_t /*wType*/);
+.\STM32_USB-FS-Device_Lib\usb_regs.h(630): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetEPType(uint8_t /*bEpNum*/);
+.\STM32_USB-FS-Device_Lib\usb_regs.h(630): error:  #92: identifier-list parameters may only be used in a function definition
+  uint16_t GetEPType(uint8_t /*bEpNum*/);
+.\STM32_USB-FS-Device_Lib\usb_regs.h(631): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetEPTxStatus(uint8_t /*bEpNum*/, uint16_t /*wState*/);
+.\STM32_USB-FS-Device_Lib\usb_regs.h(632): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetEPRxStatus(uint8_t /*bEpNum*/, uint16_t /*wState*/);
+.\STM32_USB-FS-Device_Lib\usb_regs.h(633): error:  #100: duplicate parameter name
+  void SetDouBleBuffEPStall(uint8_t /*bEpNum*/, uint8_t bDir);
+.\STM32_USB-FS-Device_Lib\usb_regs.h(633): error:  #18: expected a ")"
+  void SetDouBleBuffEPStall(uint8_t /*bEpNum*/, uint8_t bDir);
+.\STM32_USB-FS-Device_Lib\usb_regs.h(633): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetDouBleBuffEPStall(uint8_t /*bEpNum*/, uint8_t bDir);
+.\STM32_USB-FS-Device_Lib\usb_regs.h(634): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetEPTxStatus(uint8_t /*bEpNum*/);
+.\STM32_USB-FS-Device_Lib\usb_regs.h(634): error:  #92: identifier-list parameters may only be used in a function definition
+  uint16_t GetEPTxStatus(uint8_t /*bEpNum*/);
+.\STM32_USB-FS-Device_Lib\usb_regs.h(635): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetEPRxStatus(uint8_t /*bEpNum*/);
+.\STM32_USB-FS-Device_Lib\usb_regs.h(635): error:  #92: identifier-list parameters may only be used in a function definition
+  uint16_t GetEPRxStatus(uint8_t /*bEpNum*/);
+.\STM32_USB-FS-Device_Lib\usb_regs.h(636): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetEPTxValid(uint8_t /*bEpNum*/);
+.\STM32_USB-FS-Device_Lib\usb_regs.h(637): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetEPRxValid(uint8_t /*bEpNum*/);
+.\STM32_USB-FS-Device_Lib\usb_regs.h(638): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetTxStallStatus(uint8_t /*bEpNum*/);
+.\STM32_USB-FS-Device_Lib\usb_regs.h(638): error:  #92: identifier-list parameters may only be used in a function definition
+  uint16_t GetTxStallStatus(uint8_t /*bEpNum*/);
+stm32_it.c: 0 warnings, 30 errors
+compiling hw_config.c...
+.\STM32_USB-FS-Device_Lib\usb_regs.h(614): error:  #20: identifier "uint16_t" is undefined
+  extern volatile uint16_t wIstr;  /* ISTR register last read value */
+.\STM32_USB-FS-Device_Lib\usb_regs.h(617): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetCNTR(uint16_t /*wRegValue*/);
+.\STM32_USB-FS-Device_Lib\usb_regs.h(618): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetISTR(uint16_t /*wRegValue*/);
+.\STM32_USB-FS-Device_Lib\usb_regs.h(619): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetDADDR(uint16_t /*wRegValue*/);
+.\STM32_USB-FS-Device_Lib\usb_regs.h(620): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetBTABLE(uint16_t /*wRegValue*/);
+.\STM32_USB-FS-Device_Lib\usb_regs.h(621): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetBTABLE(uint16_t /*wRegValue*/);
+.\STM32_USB-FS-Device_Lib\usb_regs.h(622): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetCNTR(void);
+.\STM32_USB-FS-Device_Lib\usb_regs.h(623): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetISTR(void);
+.\STM32_USB-FS-Device_Lib\usb_regs.h(624): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetFNR(void);
+.\STM32_USB-FS-Device_Lib\usb_regs.h(625): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetDADDR(void);
+.\STM32_USB-FS-Device_Lib\usb_regs.h(626): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetBTABLE(void);
+.\STM32_USB-FS-Device_Lib\usb_regs.h(627): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetENDPOINT(uint8_t /*bEpNum*/, uint16_t /*wRegValue*/);
+.\STM32_USB-FS-Device_Lib\usb_regs.h(628): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetENDPOINT(uint8_t /*bEpNum*/);
+.\STM32_USB-FS-Device_Lib\usb_regs.h(628): error:  #92: identifier-list parameters may only be used in a function definition
+  uint16_t GetENDPOINT(uint8_t /*bEpNum*/);
+.\STM32_USB-FS-Device_Lib\usb_regs.h(629): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetEPType(uint8_t /*bEpNum*/, uint16_t /*wType*/);
+.\STM32_USB-FS-Device_Lib\usb_regs.h(630): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetEPType(uint8_t /*bEpNum*/);
+.\STM32_USB-FS-Device_Lib\usb_regs.h(630): error:  #92: identifier-list parameters may only be used in a function definition
+  uint16_t GetEPType(uint8_t /*bEpNum*/);
+.\STM32_USB-FS-Device_Lib\usb_regs.h(631): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetEPTxStatus(uint8_t /*bEpNum*/, uint16_t /*wState*/);
+.\STM32_USB-FS-Device_Lib\usb_regs.h(632): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetEPRxStatus(uint8_t /*bEpNum*/, uint16_t /*wState*/);
+.\STM32_USB-FS-Device_Lib\usb_regs.h(633): error:  #100: duplicate parameter name
+  void SetDouBleBuffEPStall(uint8_t /*bEpNum*/, uint8_t bDir);
+.\STM32_USB-FS-Device_Lib\usb_regs.h(633): error:  #18: expected a ")"
+  void SetDouBleBuffEPStall(uint8_t /*bEpNum*/, uint8_t bDir);
+.\STM32_USB-FS-Device_Lib\usb_regs.h(633): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetDouBleBuffEPStall(uint8_t /*bEpNum*/, uint8_t bDir);
+.\STM32_USB-FS-Device_Lib\usb_regs.h(634): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetEPTxStatus(uint8_t /*bEpNum*/);
+.\STM32_USB-FS-Device_Lib\usb_regs.h(634): error:  #92: identifier-list parameters may only be used in a function definition
+  uint16_t GetEPTxStatus(uint8_t /*bEpNum*/);
+.\STM32_USB-FS-Device_Lib\usb_regs.h(635): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetEPRxStatus(uint8_t /*bEpNum*/);
+.\STM32_USB-FS-Device_Lib\usb_regs.h(635): error:  #92: identifier-list parameters may only be used in a function definition
+  uint16_t GetEPRxStatus(uint8_t /*bEpNum*/);
+.\STM32_USB-FS-Device_Lib\usb_regs.h(636): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetEPTxValid(uint8_t /*bEpNum*/);
+.\STM32_USB-FS-Device_Lib\usb_regs.h(637): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetEPRxValid(uint8_t /*bEpNum*/);
+.\STM32_USB-FS-Device_Lib\usb_regs.h(638): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetTxStallStatus(uint8_t /*bEpNum*/);
+.\STM32_USB-FS-Device_Lib\usb_regs.h(638): error:  #92: identifier-list parameters may only be used in a function definition
+  uint16_t GetTxStallStatus(uint8_t /*bEpNum*/);
+hw_config.c: 0 warnings, 30 errors
+compiling usb_core.c...
+STM32_USB-FS-Device_Lib\usb_desc.h(57): error:  #20: identifier "uint8_t" is undefined
+  extern const uint8_t Virtual_Com_Port_DeviceDescriptor[VIRTUAL_COM_PORT_SIZ_DEVICE_DESC];
+STM32_USB-FS-Device_Lib\usb_desc.h(58): error:  #20: identifier "uint8_t" is undefined
+  extern const uint8_t Virtual_Com_Port_ConfigDescriptor[VIRTUAL_COM_PORT_SIZ_CONFIG_DESC];
+STM32_USB-FS-Device_Lib\usb_desc.h(60): error:  #20: identifier "uint8_t" is undefined
+  extern const uint8_t Virtual_Com_Port_StringLangID[VIRTUAL_COM_PORT_SIZ_STRING_LANGID];
+STM32_USB-FS-Device_Lib\usb_desc.h(61): error:  #20: identifier "uint8_t" is undefined
+  extern const uint8_t Virtual_Com_Port_StringVendor[VIRTUAL_COM_PORT_SIZ_STRING_VENDOR];
+STM32_USB-FS-Device_Lib\usb_desc.h(62): error:  #20: identifier "uint8_t" is undefined
+  extern const uint8_t Virtual_Com_Port_StringProduct[VIRTUAL_COM_PORT_SIZ_STRING_PRODUCT];
+STM32_USB-FS-Device_Lib\usb_desc.h(63): error:  #20: identifier "uint8_t" is undefined
+  extern uint8_t Virtual_Com_Port_StringSerial[VIRTUAL_COM_PORT_SIZ_STRING_SERIAL];
+STM32_USB-FS-Device_Lib\usb_pwr.h(63): error:  #20: identifier "RESULT" is undefined
+  RESULT PowerOn(void);
+STM32_USB-FS-Device_Lib\usb_pwr.h(64): error:  #20: identifier "RESULT" is undefined
+  RESULT PowerOff(void);
+STM32_USB-FS-Device_Lib\usb_pwr.h(67): error:  #20: identifier "uint32_t" is undefined
+  extern  volatile uint32_t USBDevc_Status; /* USB device status */
+STM32_USB-FS-Device_Lib\hw_config.h(67): error:  #20: identifier "FunctionalState" is undefined
+  void USB_Cable_Config (FunctionalState NewState);
+STM32_USB-FS-Device_Lib\hw_config.h(68): error:  #20: identifier "uint8_t" is undefined
+  void Joystick_Send(uint8_t Keys);
+STM32_USB-FS-Device_Lib\hw_config.h(69): error:  #20: identifier "uint8_t" is undefined
+  uint8_t JoyState(void);
+STM32_USB-FS-Device_Lib\usb_regs.h(614): error:  #20: identifier "uint16_t" is undefined
+  extern volatile uint16_t wIstr;  /* ISTR register last read value */
+STM32_USB-FS-Device_Lib\usb_regs.h(617): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetCNTR(uint16_t /*wRegValue*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(618): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetISTR(uint16_t /*wRegValue*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(619): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetDADDR(uint16_t /*wRegValue*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(620): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetBTABLE(uint16_t /*wRegValue*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(621): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetBTABLE(uint16_t /*wRegValue*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(622): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetCNTR(void);
+STM32_USB-FS-Device_Lib\usb_regs.h(623): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetISTR(void);
+STM32_USB-FS-Device_Lib\usb_regs.h(624): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetFNR(void);
+STM32_USB-FS-Device_Lib\usb_regs.h(625): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetDADDR(void);
+STM32_USB-FS-Device_Lib\usb_regs.h(626): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetBTABLE(void);
+STM32_USB-FS-Device_Lib\usb_regs.h(627): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetENDPOINT(uint8_t /*bEpNum*/, uint16_t /*wRegValue*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(628): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetENDPOINT(uint8_t /*bEpNum*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(628): error:  #92: identifier-list parameters may only be used in a function definition
+  uint16_t GetENDPOINT(uint8_t /*bEpNum*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(629): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetEPType(uint8_t /*bEpNum*/, uint16_t /*wType*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(630): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetEPType(uint8_t /*bEpNum*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(630): error:  #92: identifier-list parameters may only be used in a function definition
+  uint16_t GetEPType(uint8_t /*bEpNum*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(631): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetEPTxStatus(uint8_t /*bEpNum*/, uint16_t /*wState*/);
+STM32_USB-FS-Device_Lib\usb_core.c: 0 warnings, 30 errors
+compiling usb_desc.c...
+STM32_USB-FS-Device_Lib\usb_desc.h(57): error:  #20: identifier "uint8_t" is undefined
+  extern const uint8_t Virtual_Com_Port_DeviceDescriptor[VIRTUAL_COM_PORT_SIZ_DEVICE_DESC];
+STM32_USB-FS-Device_Lib\usb_desc.h(58): error:  #20: identifier "uint8_t" is undefined
+  extern const uint8_t Virtual_Com_Port_ConfigDescriptor[VIRTUAL_COM_PORT_SIZ_CONFIG_DESC];
+STM32_USB-FS-Device_Lib\usb_desc.h(60): error:  #20: identifier "uint8_t" is undefined
+  extern const uint8_t Virtual_Com_Port_StringLangID[VIRTUAL_COM_PORT_SIZ_STRING_LANGID];
+STM32_USB-FS-Device_Lib\usb_desc.h(61): error:  #20: identifier "uint8_t" is undefined
+  extern const uint8_t Virtual_Com_Port_StringVendor[VIRTUAL_COM_PORT_SIZ_STRING_VENDOR];
+STM32_USB-FS-Device_Lib\usb_desc.h(62): error:  #20: identifier "uint8_t" is undefined
+  extern const uint8_t Virtual_Com_Port_StringProduct[VIRTUAL_COM_PORT_SIZ_STRING_PRODUCT];
+STM32_USB-FS-Device_Lib\usb_desc.h(63): error:  #20: identifier "uint8_t" is undefined
+  extern uint8_t Virtual_Com_Port_StringSerial[VIRTUAL_COM_PORT_SIZ_STRING_SERIAL];
+STM32_USB-FS-Device_Lib\usb_pwr.h(63): error:  #20: identifier "RESULT" is undefined
+  RESULT PowerOn(void);
+STM32_USB-FS-Device_Lib\usb_pwr.h(64): error:  #20: identifier "RESULT" is undefined
+  RESULT PowerOff(void);
+STM32_USB-FS-Device_Lib\usb_pwr.h(67): error:  #20: identifier "uint32_t" is undefined
+  extern  volatile uint32_t USBDevc_Status; /* USB device status */
+STM32_USB-FS-Device_Lib\hw_config.h(67): error:  #20: identifier "FunctionalState" is undefined
+  void USB_Cable_Config (FunctionalState NewState);
+STM32_USB-FS-Device_Lib\hw_config.h(68): error:  #20: identifier "uint8_t" is undefined
+  void Joystick_Send(uint8_t Keys);
+STM32_USB-FS-Device_Lib\hw_config.h(69): error:  #20: identifier "uint8_t" is undefined
+  uint8_t JoyState(void);
+STM32_USB-FS-Device_Lib\usb_regs.h(614): error:  #20: identifier "uint16_t" is undefined
+  extern volatile uint16_t wIstr;  /* ISTR register last read value */
+STM32_USB-FS-Device_Lib\usb_regs.h(617): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetCNTR(uint16_t /*wRegValue*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(618): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetISTR(uint16_t /*wRegValue*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(619): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetDADDR(uint16_t /*wRegValue*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(620): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetBTABLE(uint16_t /*wRegValue*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(621): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetBTABLE(uint16_t /*wRegValue*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(622): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetCNTR(void);
+STM32_USB-FS-Device_Lib\usb_regs.h(623): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetISTR(void);
+STM32_USB-FS-Device_Lib\usb_regs.h(624): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetFNR(void);
+STM32_USB-FS-Device_Lib\usb_regs.h(625): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetDADDR(void);
+STM32_USB-FS-Device_Lib\usb_regs.h(626): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetBTABLE(void);
+STM32_USB-FS-Device_Lib\usb_regs.h(627): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetENDPOINT(uint8_t /*bEpNum*/, uint16_t /*wRegValue*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(628): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetENDPOINT(uint8_t /*bEpNum*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(628): error:  #92: identifier-list parameters may only be used in a function definition
+  uint16_t GetENDPOINT(uint8_t /*bEpNum*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(629): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetEPType(uint8_t /*bEpNum*/, uint16_t /*wType*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(630): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetEPType(uint8_t /*bEpNum*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(630): error:  #92: identifier-list parameters may only be used in a function definition
+  uint16_t GetEPType(uint8_t /*bEpNum*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(631): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetEPTxStatus(uint8_t /*bEpNum*/, uint16_t /*wState*/);
+STM32_USB-FS-Device_Lib\usb_desc.c: 0 warnings, 30 errors
+compiling usb_endp.c...
+STM32_USB-FS-Device_Lib\usb_desc.h(57): error:  #20: identifier "uint8_t" is undefined
+  extern const uint8_t Virtual_Com_Port_DeviceDescriptor[VIRTUAL_COM_PORT_SIZ_DEVICE_DESC];
+STM32_USB-FS-Device_Lib\usb_desc.h(58): error:  #20: identifier "uint8_t" is undefined
+  extern const uint8_t Virtual_Com_Port_ConfigDescriptor[VIRTUAL_COM_PORT_SIZ_CONFIG_DESC];
+STM32_USB-FS-Device_Lib\usb_desc.h(60): error:  #20: identifier "uint8_t" is undefined
+  extern const uint8_t Virtual_Com_Port_StringLangID[VIRTUAL_COM_PORT_SIZ_STRING_LANGID];
+STM32_USB-FS-Device_Lib\usb_desc.h(61): error:  #20: identifier "uint8_t" is undefined
+  extern const uint8_t Virtual_Com_Port_StringVendor[VIRTUAL_COM_PORT_SIZ_STRING_VENDOR];
+STM32_USB-FS-Device_Lib\usb_desc.h(62): error:  #20: identifier "uint8_t" is undefined
+  extern const uint8_t Virtual_Com_Port_StringProduct[VIRTUAL_COM_PORT_SIZ_STRING_PRODUCT];
+STM32_USB-FS-Device_Lib\usb_desc.h(63): error:  #20: identifier "uint8_t" is undefined
+  extern uint8_t Virtual_Com_Port_StringSerial[VIRTUAL_COM_PORT_SIZ_STRING_SERIAL];
+STM32_USB-FS-Device_Lib\usb_pwr.h(63): error:  #20: identifier "RESULT" is undefined
+  RESULT PowerOn(void);
+STM32_USB-FS-Device_Lib\usb_pwr.h(64): error:  #20: identifier "RESULT" is undefined
+  RESULT PowerOff(void);
+STM32_USB-FS-Device_Lib\usb_pwr.h(67): error:  #20: identifier "uint32_t" is undefined
+  extern  volatile uint32_t USBDevc_Status; /* USB device status */
+STM32_USB-FS-Device_Lib\hw_config.h(67): error:  #20: identifier "FunctionalState" is undefined
+  void USB_Cable_Config (FunctionalState NewState);
+STM32_USB-FS-Device_Lib\hw_config.h(68): error:  #20: identifier "uint8_t" is undefined
+  void Joystick_Send(uint8_t Keys);
+STM32_USB-FS-Device_Lib\hw_config.h(69): error:  #20: identifier "uint8_t" is undefined
+  uint8_t JoyState(void);
+STM32_USB-FS-Device_Lib\usb_regs.h(614): error:  #20: identifier "uint16_t" is undefined
+  extern volatile uint16_t wIstr;  /* ISTR register last read value */
+STM32_USB-FS-Device_Lib\usb_regs.h(617): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetCNTR(uint16_t /*wRegValue*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(618): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetISTR(uint16_t /*wRegValue*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(619): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetDADDR(uint16_t /*wRegValue*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(620): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetBTABLE(uint16_t /*wRegValue*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(621): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetBTABLE(uint16_t /*wRegValue*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(622): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetCNTR(void);
+STM32_USB-FS-Device_Lib\usb_regs.h(623): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetISTR(void);
+STM32_USB-FS-Device_Lib\usb_regs.h(624): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetFNR(void);
+STM32_USB-FS-Device_Lib\usb_regs.h(625): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetDADDR(void);
+STM32_USB-FS-Device_Lib\usb_regs.h(626): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetBTABLE(void);
+STM32_USB-FS-Device_Lib\usb_regs.h(627): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetENDPOINT(uint8_t /*bEpNum*/, uint16_t /*wRegValue*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(628): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetENDPOINT(uint8_t /*bEpNum*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(628): error:  #92: identifier-list parameters may only be used in a function definition
+  uint16_t GetENDPOINT(uint8_t /*bEpNum*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(629): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetEPType(uint8_t /*bEpNum*/, uint16_t /*wType*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(630): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetEPType(uint8_t /*bEpNum*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(630): error:  #92: identifier-list parameters may only be used in a function definition
+  uint16_t GetEPType(uint8_t /*bEpNum*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(631): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetEPTxStatus(uint8_t /*bEpNum*/, uint16_t /*wState*/);
+STM32_USB-FS-Device_Lib\usb_endp.c: 0 warnings, 30 errors
+compiling usb_init.c...
+STM32_USB-FS-Device_Lib\usb_desc.h(57): error:  #20: identifier "uint8_t" is undefined
+  extern const uint8_t Virtual_Com_Port_DeviceDescriptor[VIRTUAL_COM_PORT_SIZ_DEVICE_DESC];
+STM32_USB-FS-Device_Lib\usb_desc.h(58): error:  #20: identifier "uint8_t" is undefined
+  extern const uint8_t Virtual_Com_Port_ConfigDescriptor[VIRTUAL_COM_PORT_SIZ_CONFIG_DESC];
+STM32_USB-FS-Device_Lib\usb_desc.h(60): error:  #20: identifier "uint8_t" is undefined
+  extern const uint8_t Virtual_Com_Port_StringLangID[VIRTUAL_COM_PORT_SIZ_STRING_LANGID];
+STM32_USB-FS-Device_Lib\usb_desc.h(61): error:  #20: identifier "uint8_t" is undefined
+  extern const uint8_t Virtual_Com_Port_StringVendor[VIRTUAL_COM_PORT_SIZ_STRING_VENDOR];
+STM32_USB-FS-Device_Lib\usb_desc.h(62): error:  #20: identifier "uint8_t" is undefined
+  extern const uint8_t Virtual_Com_Port_StringProduct[VIRTUAL_COM_PORT_SIZ_STRING_PRODUCT];
+STM32_USB-FS-Device_Lib\usb_desc.h(63): error:  #20: identifier "uint8_t" is undefined
+  extern uint8_t Virtual_Com_Port_StringSerial[VIRTUAL_COM_PORT_SIZ_STRING_SERIAL];
+STM32_USB-FS-Device_Lib\usb_pwr.h(63): error:  #20: identifier "RESULT" is undefined
+  RESULT PowerOn(void);
+STM32_USB-FS-Device_Lib\usb_pwr.h(64): error:  #20: identifier "RESULT" is undefined
+  RESULT PowerOff(void);
+STM32_USB-FS-Device_Lib\usb_pwr.h(67): error:  #20: identifier "uint32_t" is undefined
+  extern  volatile uint32_t USBDevc_Status; /* USB device status */
+STM32_USB-FS-Device_Lib\hw_config.h(67): error:  #20: identifier "FunctionalState" is undefined
+  void USB_Cable_Config (FunctionalState NewState);
+STM32_USB-FS-Device_Lib\hw_config.h(68): error:  #20: identifier "uint8_t" is undefined
+  void Joystick_Send(uint8_t Keys);
+STM32_USB-FS-Device_Lib\hw_config.h(69): error:  #20: identifier "uint8_t" is undefined
+  uint8_t JoyState(void);
+STM32_USB-FS-Device_Lib\usb_regs.h(614): error:  #20: identifier "uint16_t" is undefined
+  extern volatile uint16_t wIstr;  /* ISTR register last read value */
+STM32_USB-FS-Device_Lib\usb_regs.h(617): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetCNTR(uint16_t /*wRegValue*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(618): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetISTR(uint16_t /*wRegValue*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(619): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetDADDR(uint16_t /*wRegValue*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(620): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetBTABLE(uint16_t /*wRegValue*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(621): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetBTABLE(uint16_t /*wRegValue*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(622): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetCNTR(void);
+STM32_USB-FS-Device_Lib\usb_regs.h(623): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetISTR(void);
+STM32_USB-FS-Device_Lib\usb_regs.h(624): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetFNR(void);
+STM32_USB-FS-Device_Lib\usb_regs.h(625): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetDADDR(void);
+STM32_USB-FS-Device_Lib\usb_regs.h(626): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetBTABLE(void);
+STM32_USB-FS-Device_Lib\usb_regs.h(627): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetENDPOINT(uint8_t /*bEpNum*/, uint16_t /*wRegValue*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(628): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetENDPOINT(uint8_t /*bEpNum*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(628): error:  #92: identifier-list parameters may only be used in a function definition
+  uint16_t GetENDPOINT(uint8_t /*bEpNum*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(629): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetEPType(uint8_t /*bEpNum*/, uint16_t /*wType*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(630): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetEPType(uint8_t /*bEpNum*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(630): error:  #92: identifier-list parameters may only be used in a function definition
+  uint16_t GetEPType(uint8_t /*bEpNum*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(631): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetEPTxStatus(uint8_t /*bEpNum*/, uint16_t /*wState*/);
+STM32_USB-FS-Device_Lib\usb_init.c: 0 warnings, 30 errors
+compiling usb_int.c...
+STM32_USB-FS-Device_Lib\usb_desc.h(57): error:  #20: identifier "uint8_t" is undefined
+  extern const uint8_t Virtual_Com_Port_DeviceDescriptor[VIRTUAL_COM_PORT_SIZ_DEVICE_DESC];
+STM32_USB-FS-Device_Lib\usb_desc.h(58): error:  #20: identifier "uint8_t" is undefined
+  extern const uint8_t Virtual_Com_Port_ConfigDescriptor[VIRTUAL_COM_PORT_SIZ_CONFIG_DESC];
+STM32_USB-FS-Device_Lib\usb_desc.h(60): error:  #20: identifier "uint8_t" is undefined
+  extern const uint8_t Virtual_Com_Port_StringLangID[VIRTUAL_COM_PORT_SIZ_STRING_LANGID];
+STM32_USB-FS-Device_Lib\usb_desc.h(61): error:  #20: identifier "uint8_t" is undefined
+  extern const uint8_t Virtual_Com_Port_StringVendor[VIRTUAL_COM_PORT_SIZ_STRING_VENDOR];
+STM32_USB-FS-Device_Lib\usb_desc.h(62): error:  #20: identifier "uint8_t" is undefined
+  extern const uint8_t Virtual_Com_Port_StringProduct[VIRTUAL_COM_PORT_SIZ_STRING_PRODUCT];
+STM32_USB-FS-Device_Lib\usb_desc.h(63): error:  #20: identifier "uint8_t" is undefined
+  extern uint8_t Virtual_Com_Port_StringSerial[VIRTUAL_COM_PORT_SIZ_STRING_SERIAL];
+STM32_USB-FS-Device_Lib\usb_pwr.h(63): error:  #20: identifier "RESULT" is undefined
+  RESULT PowerOn(void);
+STM32_USB-FS-Device_Lib\usb_pwr.h(64): error:  #20: identifier "RESULT" is undefined
+  RESULT PowerOff(void);
+STM32_USB-FS-Device_Lib\usb_pwr.h(67): error:  #20: identifier "uint32_t" is undefined
+  extern  volatile uint32_t USBDevc_Status; /* USB device status */
+STM32_USB-FS-Device_Lib\hw_config.h(67): error:  #20: identifier "FunctionalState" is undefined
+  void USB_Cable_Config (FunctionalState NewState);
+STM32_USB-FS-Device_Lib\hw_config.h(68): error:  #20: identifier "uint8_t" is undefined
+  void Joystick_Send(uint8_t Keys);
+STM32_USB-FS-Device_Lib\hw_config.h(69): error:  #20: identifier "uint8_t" is undefined
+  uint8_t JoyState(void);
+STM32_USB-FS-Device_Lib\usb_regs.h(614): error:  #20: identifier "uint16_t" is undefined
+  extern volatile uint16_t wIstr;  /* ISTR register last read value */
+STM32_USB-FS-Device_Lib\usb_regs.h(617): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetCNTR(uint16_t /*wRegValue*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(618): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetISTR(uint16_t /*wRegValue*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(619): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetDADDR(uint16_t /*wRegValue*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(620): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetBTABLE(uint16_t /*wRegValue*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(621): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetBTABLE(uint16_t /*wRegValue*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(622): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetCNTR(void);
+STM32_USB-FS-Device_Lib\usb_regs.h(623): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetISTR(void);
+STM32_USB-FS-Device_Lib\usb_regs.h(624): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetFNR(void);
+STM32_USB-FS-Device_Lib\usb_regs.h(625): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetDADDR(void);
+STM32_USB-FS-Device_Lib\usb_regs.h(626): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetBTABLE(void);
+STM32_USB-FS-Device_Lib\usb_regs.h(627): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetENDPOINT(uint8_t /*bEpNum*/, uint16_t /*wRegValue*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(628): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetENDPOINT(uint8_t /*bEpNum*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(628): error:  #92: identifier-list parameters may only be used in a function definition
+  uint16_t GetENDPOINT(uint8_t /*bEpNum*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(629): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetEPType(uint8_t /*bEpNum*/, uint16_t /*wType*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(630): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetEPType(uint8_t /*bEpNum*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(630): error:  #92: identifier-list parameters may only be used in a function definition
+  uint16_t GetEPType(uint8_t /*bEpNum*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(631): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetEPTxStatus(uint8_t /*bEpNum*/, uint16_t /*wState*/);
+STM32_USB-FS-Device_Lib\usb_int.c: 0 warnings, 30 errors
+compiling usb_istr.c...
+STM32_USB-FS-Device_Lib\usb_desc.h(57): error:  #20: identifier "uint8_t" is undefined
+  extern const uint8_t Virtual_Com_Port_DeviceDescriptor[VIRTUAL_COM_PORT_SIZ_DEVICE_DESC];
+STM32_USB-FS-Device_Lib\usb_desc.h(58): error:  #20: identifier "uint8_t" is undefined
+  extern const uint8_t Virtual_Com_Port_ConfigDescriptor[VIRTUAL_COM_PORT_SIZ_CONFIG_DESC];
+STM32_USB-FS-Device_Lib\usb_desc.h(60): error:  #20: identifier "uint8_t" is undefined
+  extern const uint8_t Virtual_Com_Port_StringLangID[VIRTUAL_COM_PORT_SIZ_STRING_LANGID];
+STM32_USB-FS-Device_Lib\usb_desc.h(61): error:  #20: identifier "uint8_t" is undefined
+  extern const uint8_t Virtual_Com_Port_StringVendor[VIRTUAL_COM_PORT_SIZ_STRING_VENDOR];
+STM32_USB-FS-Device_Lib\usb_desc.h(62): error:  #20: identifier "uint8_t" is undefined
+  extern const uint8_t Virtual_Com_Port_StringProduct[VIRTUAL_COM_PORT_SIZ_STRING_PRODUCT];
+STM32_USB-FS-Device_Lib\usb_desc.h(63): error:  #20: identifier "uint8_t" is undefined
+  extern uint8_t Virtual_Com_Port_StringSerial[VIRTUAL_COM_PORT_SIZ_STRING_SERIAL];
+STM32_USB-FS-Device_Lib\usb_pwr.h(63): error:  #20: identifier "RESULT" is undefined
+  RESULT PowerOn(void);
+STM32_USB-FS-Device_Lib\usb_pwr.h(64): error:  #20: identifier "RESULT" is undefined
+  RESULT PowerOff(void);
+STM32_USB-FS-Device_Lib\usb_pwr.h(67): error:  #20: identifier "uint32_t" is undefined
+  extern  volatile uint32_t USBDevc_Status; /* USB device status */
+STM32_USB-FS-Device_Lib\hw_config.h(67): error:  #20: identifier "FunctionalState" is undefined
+  void USB_Cable_Config (FunctionalState NewState);
+STM32_USB-FS-Device_Lib\hw_config.h(68): error:  #20: identifier "uint8_t" is undefined
+  void Joystick_Send(uint8_t Keys);
+STM32_USB-FS-Device_Lib\hw_config.h(69): error:  #20: identifier "uint8_t" is undefined
+  uint8_t JoyState(void);
+STM32_USB-FS-Device_Lib\usb_regs.h(614): error:  #20: identifier "uint16_t" is undefined
+  extern volatile uint16_t wIstr;  /* ISTR register last read value */
+STM32_USB-FS-Device_Lib\usb_regs.h(617): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetCNTR(uint16_t /*wRegValue*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(618): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetISTR(uint16_t /*wRegValue*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(619): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetDADDR(uint16_t /*wRegValue*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(620): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetBTABLE(uint16_t /*wRegValue*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(621): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetBTABLE(uint16_t /*wRegValue*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(622): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetCNTR(void);
+STM32_USB-FS-Device_Lib\usb_regs.h(623): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetISTR(void);
+STM32_USB-FS-Device_Lib\usb_regs.h(624): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetFNR(void);
+STM32_USB-FS-Device_Lib\usb_regs.h(625): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetDADDR(void);
+STM32_USB-FS-Device_Lib\usb_regs.h(626): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetBTABLE(void);
+STM32_USB-FS-Device_Lib\usb_regs.h(627): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetENDPOINT(uint8_t /*bEpNum*/, uint16_t /*wRegValue*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(628): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetENDPOINT(uint8_t /*bEpNum*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(628): error:  #92: identifier-list parameters may only be used in a function definition
+  uint16_t GetENDPOINT(uint8_t /*bEpNum*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(629): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetEPType(uint8_t /*bEpNum*/, uint16_t /*wType*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(630): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetEPType(uint8_t /*bEpNum*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(630): error:  #92: identifier-list parameters may only be used in a function definition
+  uint16_t GetEPType(uint8_t /*bEpNum*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(631): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetEPTxStatus(uint8_t /*bEpNum*/, uint16_t /*wState*/);
+STM32_USB-FS-Device_Lib\usb_istr.c: 0 warnings, 30 errors
+compiling usb_mem.c...
+STM32_USB-FS-Device_Lib\usb_desc.h(57): error:  #20: identifier "uint8_t" is undefined
+  extern const uint8_t Virtual_Com_Port_DeviceDescriptor[VIRTUAL_COM_PORT_SIZ_DEVICE_DESC];
+STM32_USB-FS-Device_Lib\usb_desc.h(58): error:  #20: identifier "uint8_t" is undefined
+  extern const uint8_t Virtual_Com_Port_ConfigDescriptor[VIRTUAL_COM_PORT_SIZ_CONFIG_DESC];
+STM32_USB-FS-Device_Lib\usb_desc.h(60): error:  #20: identifier "uint8_t" is undefined
+  extern const uint8_t Virtual_Com_Port_StringLangID[VIRTUAL_COM_PORT_SIZ_STRING_LANGID];
+STM32_USB-FS-Device_Lib\usb_desc.h(61): error:  #20: identifier "uint8_t" is undefined
+  extern const uint8_t Virtual_Com_Port_StringVendor[VIRTUAL_COM_PORT_SIZ_STRING_VENDOR];
+STM32_USB-FS-Device_Lib\usb_desc.h(62): error:  #20: identifier "uint8_t" is undefined
+  extern const uint8_t Virtual_Com_Port_StringProduct[VIRTUAL_COM_PORT_SIZ_STRING_PRODUCT];
+STM32_USB-FS-Device_Lib\usb_desc.h(63): error:  #20: identifier "uint8_t" is undefined
+  extern uint8_t Virtual_Com_Port_StringSerial[VIRTUAL_COM_PORT_SIZ_STRING_SERIAL];
+STM32_USB-FS-Device_Lib\usb_pwr.h(63): error:  #20: identifier "RESULT" is undefined
+  RESULT PowerOn(void);
+STM32_USB-FS-Device_Lib\usb_pwr.h(64): error:  #20: identifier "RESULT" is undefined
+  RESULT PowerOff(void);
+STM32_USB-FS-Device_Lib\usb_pwr.h(67): error:  #20: identifier "uint32_t" is undefined
+  extern  volatile uint32_t USBDevc_Status; /* USB device status */
+STM32_USB-FS-Device_Lib\hw_config.h(67): error:  #20: identifier "FunctionalState" is undefined
+  void USB_Cable_Config (FunctionalState NewState);
+STM32_USB-FS-Device_Lib\hw_config.h(68): error:  #20: identifier "uint8_t" is undefined
+  void Joystick_Send(uint8_t Keys);
+STM32_USB-FS-Device_Lib\hw_config.h(69): error:  #20: identifier "uint8_t" is undefined
+  uint8_t JoyState(void);
+STM32_USB-FS-Device_Lib\usb_regs.h(614): error:  #20: identifier "uint16_t" is undefined
+  extern volatile uint16_t wIstr;  /* ISTR register last read value */
+STM32_USB-FS-Device_Lib\usb_regs.h(617): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetCNTR(uint16_t /*wRegValue*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(618): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetISTR(uint16_t /*wRegValue*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(619): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetDADDR(uint16_t /*wRegValue*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(620): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetBTABLE(uint16_t /*wRegValue*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(621): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetBTABLE(uint16_t /*wRegValue*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(622): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetCNTR(void);
+STM32_USB-FS-Device_Lib\usb_regs.h(623): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetISTR(void);
+STM32_USB-FS-Device_Lib\usb_regs.h(624): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetFNR(void);
+STM32_USB-FS-Device_Lib\usb_regs.h(625): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetDADDR(void);
+STM32_USB-FS-Device_Lib\usb_regs.h(626): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetBTABLE(void);
+STM32_USB-FS-Device_Lib\usb_regs.h(627): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetENDPOINT(uint8_t /*bEpNum*/, uint16_t /*wRegValue*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(628): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetENDPOINT(uint8_t /*bEpNum*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(628): error:  #92: identifier-list parameters may only be used in a function definition
+  uint16_t GetENDPOINT(uint8_t /*bEpNum*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(629): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetEPType(uint8_t /*bEpNum*/, uint16_t /*wType*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(630): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetEPType(uint8_t /*bEpNum*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(630): error:  #92: identifier-list parameters may only be used in a function definition
+  uint16_t GetEPType(uint8_t /*bEpNum*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(631): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetEPTxStatus(uint8_t /*bEpNum*/, uint16_t /*wState*/);
+STM32_USB-FS-Device_Lib\usb_mem.c: 0 warnings, 30 errors
+compiling usb_prop.c...
+STM32_USB-FS-Device_Lib\usb_desc.h(57): error:  #20: identifier "uint8_t" is undefined
+  extern const uint8_t Virtual_Com_Port_DeviceDescriptor[VIRTUAL_COM_PORT_SIZ_DEVICE_DESC];
+STM32_USB-FS-Device_Lib\usb_desc.h(58): error:  #20: identifier "uint8_t" is undefined
+  extern const uint8_t Virtual_Com_Port_ConfigDescriptor[VIRTUAL_COM_PORT_SIZ_CONFIG_DESC];
+STM32_USB-FS-Device_Lib\usb_desc.h(60): error:  #20: identifier "uint8_t" is undefined
+  extern const uint8_t Virtual_Com_Port_StringLangID[VIRTUAL_COM_PORT_SIZ_STRING_LANGID];
+STM32_USB-FS-Device_Lib\usb_desc.h(61): error:  #20: identifier "uint8_t" is undefined
+  extern const uint8_t Virtual_Com_Port_StringVendor[VIRTUAL_COM_PORT_SIZ_STRING_VENDOR];
+STM32_USB-FS-Device_Lib\usb_desc.h(62): error:  #20: identifier "uint8_t" is undefined
+  extern const uint8_t Virtual_Com_Port_StringProduct[VIRTUAL_COM_PORT_SIZ_STRING_PRODUCT];
+STM32_USB-FS-Device_Lib\usb_desc.h(63): error:  #20: identifier "uint8_t" is undefined
+  extern uint8_t Virtual_Com_Port_StringSerial[VIRTUAL_COM_PORT_SIZ_STRING_SERIAL];
+STM32_USB-FS-Device_Lib\usb_pwr.h(63): error:  #20: identifier "RESULT" is undefined
+  RESULT PowerOn(void);
+STM32_USB-FS-Device_Lib\usb_pwr.h(64): error:  #20: identifier "RESULT" is undefined
+  RESULT PowerOff(void);
+STM32_USB-FS-Device_Lib\usb_pwr.h(67): error:  #20: identifier "uint32_t" is undefined
+  extern  volatile uint32_t USBDevc_Status; /* USB device status */
+STM32_USB-FS-Device_Lib\hw_config.h(67): error:  #20: identifier "FunctionalState" is undefined
+  void USB_Cable_Config (FunctionalState NewState);
+STM32_USB-FS-Device_Lib\hw_config.h(68): error:  #20: identifier "uint8_t" is undefined
+  void Joystick_Send(uint8_t Keys);
+STM32_USB-FS-Device_Lib\hw_config.h(69): error:  #20: identifier "uint8_t" is undefined
+  uint8_t JoyState(void);
+STM32_USB-FS-Device_Lib\usb_regs.h(614): error:  #20: identifier "uint16_t" is undefined
+  extern volatile uint16_t wIstr;  /* ISTR register last read value */
+STM32_USB-FS-Device_Lib\usb_regs.h(617): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetCNTR(uint16_t /*wRegValue*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(618): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetISTR(uint16_t /*wRegValue*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(619): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetDADDR(uint16_t /*wRegValue*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(620): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetBTABLE(uint16_t /*wRegValue*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(621): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetBTABLE(uint16_t /*wRegValue*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(622): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetCNTR(void);
+STM32_USB-FS-Device_Lib\usb_regs.h(623): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetISTR(void);
+STM32_USB-FS-Device_Lib\usb_regs.h(624): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetFNR(void);
+STM32_USB-FS-Device_Lib\usb_regs.h(625): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetDADDR(void);
+STM32_USB-FS-Device_Lib\usb_regs.h(626): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetBTABLE(void);
+STM32_USB-FS-Device_Lib\usb_regs.h(627): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetENDPOINT(uint8_t /*bEpNum*/, uint16_t /*wRegValue*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(628): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetENDPOINT(uint8_t /*bEpNum*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(628): error:  #92: identifier-list parameters may only be used in a function definition
+  uint16_t GetENDPOINT(uint8_t /*bEpNum*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(629): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetEPType(uint8_t /*bEpNum*/, uint16_t /*wType*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(630): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetEPType(uint8_t /*bEpNum*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(630): error:  #92: identifier-list parameters may only be used in a function definition
+  uint16_t GetEPType(uint8_t /*bEpNum*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(631): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetEPTxStatus(uint8_t /*bEpNum*/, uint16_t /*wState*/);
+STM32_USB-FS-Device_Lib\usb_prop.c: 0 warnings, 30 errors
+compiling usb_pwr.c...
+STM32_USB-FS-Device_Lib\usb_desc.h(57): error:  #20: identifier "uint8_t" is undefined
+  extern const uint8_t Virtual_Com_Port_DeviceDescriptor[VIRTUAL_COM_PORT_SIZ_DEVICE_DESC];
+STM32_USB-FS-Device_Lib\usb_desc.h(58): error:  #20: identifier "uint8_t" is undefined
+  extern const uint8_t Virtual_Com_Port_ConfigDescriptor[VIRTUAL_COM_PORT_SIZ_CONFIG_DESC];
+STM32_USB-FS-Device_Lib\usb_desc.h(60): error:  #20: identifier "uint8_t" is undefined
+  extern const uint8_t Virtual_Com_Port_StringLangID[VIRTUAL_COM_PORT_SIZ_STRING_LANGID];
+STM32_USB-FS-Device_Lib\usb_desc.h(61): error:  #20: identifier "uint8_t" is undefined
+  extern const uint8_t Virtual_Com_Port_StringVendor[VIRTUAL_COM_PORT_SIZ_STRING_VENDOR];
+STM32_USB-FS-Device_Lib\usb_desc.h(62): error:  #20: identifier "uint8_t" is undefined
+  extern const uint8_t Virtual_Com_Port_StringProduct[VIRTUAL_COM_PORT_SIZ_STRING_PRODUCT];
+STM32_USB-FS-Device_Lib\usb_desc.h(63): error:  #20: identifier "uint8_t" is undefined
+  extern uint8_t Virtual_Com_Port_StringSerial[VIRTUAL_COM_PORT_SIZ_STRING_SERIAL];
+STM32_USB-FS-Device_Lib\usb_pwr.h(63): error:  #20: identifier "RESULT" is undefined
+  RESULT PowerOn(void);
+STM32_USB-FS-Device_Lib\usb_pwr.h(64): error:  #20: identifier "RESULT" is undefined
+  RESULT PowerOff(void);
+STM32_USB-FS-Device_Lib\usb_pwr.h(67): error:  #20: identifier "uint32_t" is undefined
+  extern  volatile uint32_t USBDevc_Status; /* USB device status */
+STM32_USB-FS-Device_Lib\hw_config.h(67): error:  #20: identifier "FunctionalState" is undefined
+  void USB_Cable_Config (FunctionalState NewState);
+STM32_USB-FS-Device_Lib\hw_config.h(68): error:  #20: identifier "uint8_t" is undefined
+  void Joystick_Send(uint8_t Keys);
+STM32_USB-FS-Device_Lib\hw_config.h(69): error:  #20: identifier "uint8_t" is undefined
+  uint8_t JoyState(void);
+STM32_USB-FS-Device_Lib\usb_regs.h(614): error:  #20: identifier "uint16_t" is undefined
+  extern volatile uint16_t wIstr;  /* ISTR register last read value */
+STM32_USB-FS-Device_Lib\usb_regs.h(617): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetCNTR(uint16_t /*wRegValue*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(618): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetISTR(uint16_t /*wRegValue*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(619): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetDADDR(uint16_t /*wRegValue*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(620): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetBTABLE(uint16_t /*wRegValue*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(621): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetBTABLE(uint16_t /*wRegValue*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(622): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetCNTR(void);
+STM32_USB-FS-Device_Lib\usb_regs.h(623): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetISTR(void);
+STM32_USB-FS-Device_Lib\usb_regs.h(624): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetFNR(void);
+STM32_USB-FS-Device_Lib\usb_regs.h(625): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetDADDR(void);
+STM32_USB-FS-Device_Lib\usb_regs.h(626): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetBTABLE(void);
+STM32_USB-FS-Device_Lib\usb_regs.h(627): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetENDPOINT(uint8_t /*bEpNum*/, uint16_t /*wRegValue*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(628): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetENDPOINT(uint8_t /*bEpNum*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(628): error:  #92: identifier-list parameters may only be used in a function definition
+  uint16_t GetENDPOINT(uint8_t /*bEpNum*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(629): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetEPType(uint8_t /*bEpNum*/, uint16_t /*wType*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(630): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetEPType(uint8_t /*bEpNum*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(630): error:  #92: identifier-list parameters may only be used in a function definition
+  uint16_t GetEPType(uint8_t /*bEpNum*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(631): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetEPTxStatus(uint8_t /*bEpNum*/, uint16_t /*wState*/);
+STM32_USB-FS-Device_Lib\usb_pwr.c: 0 warnings, 30 errors
+compiling usb_regs.c...
+STM32_USB-FS-Device_Lib\usb_desc.h(57): error:  #20: identifier "uint8_t" is undefined
+  extern const uint8_t Virtual_Com_Port_DeviceDescriptor[VIRTUAL_COM_PORT_SIZ_DEVICE_DESC];
+STM32_USB-FS-Device_Lib\usb_desc.h(58): error:  #20: identifier "uint8_t" is undefined
+  extern const uint8_t Virtual_Com_Port_ConfigDescriptor[VIRTUAL_COM_PORT_SIZ_CONFIG_DESC];
+STM32_USB-FS-Device_Lib\usb_desc.h(60): error:  #20: identifier "uint8_t" is undefined
+  extern const uint8_t Virtual_Com_Port_StringLangID[VIRTUAL_COM_PORT_SIZ_STRING_LANGID];
+STM32_USB-FS-Device_Lib\usb_desc.h(61): error:  #20: identifier "uint8_t" is undefined
+  extern const uint8_t Virtual_Com_Port_StringVendor[VIRTUAL_COM_PORT_SIZ_STRING_VENDOR];
+STM32_USB-FS-Device_Lib\usb_desc.h(62): error:  #20: identifier "uint8_t" is undefined
+  extern const uint8_t Virtual_Com_Port_StringProduct[VIRTUAL_COM_PORT_SIZ_STRING_PRODUCT];
+STM32_USB-FS-Device_Lib\usb_desc.h(63): error:  #20: identifier "uint8_t" is undefined
+  extern uint8_t Virtual_Com_Port_StringSerial[VIRTUAL_COM_PORT_SIZ_STRING_SERIAL];
+STM32_USB-FS-Device_Lib\usb_pwr.h(63): error:  #20: identifier "RESULT" is undefined
+  RESULT PowerOn(void);
+STM32_USB-FS-Device_Lib\usb_pwr.h(64): error:  #20: identifier "RESULT" is undefined
+  RESULT PowerOff(void);
+STM32_USB-FS-Device_Lib\usb_pwr.h(67): error:  #20: identifier "uint32_t" is undefined
+  extern  volatile uint32_t USBDevc_Status; /* USB device status */
+STM32_USB-FS-Device_Lib\hw_config.h(67): error:  #20: identifier "FunctionalState" is undefined
+  void USB_Cable_Config (FunctionalState NewState);
+STM32_USB-FS-Device_Lib\hw_config.h(68): error:  #20: identifier "uint8_t" is undefined
+  void Joystick_Send(uint8_t Keys);
+STM32_USB-FS-Device_Lib\hw_config.h(69): error:  #20: identifier "uint8_t" is undefined
+  uint8_t JoyState(void);
+STM32_USB-FS-Device_Lib\usb_regs.h(614): error:  #20: identifier "uint16_t" is undefined
+  extern volatile uint16_t wIstr;  /* ISTR register last read value */
+STM32_USB-FS-Device_Lib\usb_regs.h(617): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetCNTR(uint16_t /*wRegValue*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(618): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetISTR(uint16_t /*wRegValue*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(619): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetDADDR(uint16_t /*wRegValue*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(620): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetBTABLE(uint16_t /*wRegValue*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(621): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetBTABLE(uint16_t /*wRegValue*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(622): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetCNTR(void);
+STM32_USB-FS-Device_Lib\usb_regs.h(623): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetISTR(void);
+STM32_USB-FS-Device_Lib\usb_regs.h(624): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetFNR(void);
+STM32_USB-FS-Device_Lib\usb_regs.h(625): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetDADDR(void);
+STM32_USB-FS-Device_Lib\usb_regs.h(626): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetBTABLE(void);
+STM32_USB-FS-Device_Lib\usb_regs.h(627): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetENDPOINT(uint8_t /*bEpNum*/, uint16_t /*wRegValue*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(628): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetENDPOINT(uint8_t /*bEpNum*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(628): error:  #92: identifier-list parameters may only be used in a function definition
+  uint16_t GetENDPOINT(uint8_t /*bEpNum*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(629): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetEPType(uint8_t /*bEpNum*/, uint16_t /*wType*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(630): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetEPType(uint8_t /*bEpNum*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(630): error:  #92: identifier-list parameters may only be used in a function definition
+  uint16_t GetEPType(uint8_t /*bEpNum*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(631): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetEPTxStatus(uint8_t /*bEpNum*/, uint16_t /*wState*/);
+STM32_USB-FS-Device_Lib\usb_regs.c: 0 warnings, 30 errors
+compiling usb_sil.c...
+STM32_USB-FS-Device_Lib\usb_desc.h(57): error:  #20: identifier "uint8_t" is undefined
+  extern const uint8_t Virtual_Com_Port_DeviceDescriptor[VIRTUAL_COM_PORT_SIZ_DEVICE_DESC];
+STM32_USB-FS-Device_Lib\usb_desc.h(58): error:  #20: identifier "uint8_t" is undefined
+  extern const uint8_t Virtual_Com_Port_ConfigDescriptor[VIRTUAL_COM_PORT_SIZ_CONFIG_DESC];
+STM32_USB-FS-Device_Lib\usb_desc.h(60): error:  #20: identifier "uint8_t" is undefined
+  extern const uint8_t Virtual_Com_Port_StringLangID[VIRTUAL_COM_PORT_SIZ_STRING_LANGID];
+STM32_USB-FS-Device_Lib\usb_desc.h(61): error:  #20: identifier "uint8_t" is undefined
+  extern const uint8_t Virtual_Com_Port_StringVendor[VIRTUAL_COM_PORT_SIZ_STRING_VENDOR];
+STM32_USB-FS-Device_Lib\usb_desc.h(62): error:  #20: identifier "uint8_t" is undefined
+  extern const uint8_t Virtual_Com_Port_StringProduct[VIRTUAL_COM_PORT_SIZ_STRING_PRODUCT];
+STM32_USB-FS-Device_Lib\usb_desc.h(63): error:  #20: identifier "uint8_t" is undefined
+  extern uint8_t Virtual_Com_Port_StringSerial[VIRTUAL_COM_PORT_SIZ_STRING_SERIAL];
+STM32_USB-FS-Device_Lib\usb_pwr.h(63): error:  #20: identifier "RESULT" is undefined
+  RESULT PowerOn(void);
+STM32_USB-FS-Device_Lib\usb_pwr.h(64): error:  #20: identifier "RESULT" is undefined
+  RESULT PowerOff(void);
+STM32_USB-FS-Device_Lib\usb_pwr.h(67): error:  #20: identifier "uint32_t" is undefined
+  extern  volatile uint32_t USBDevc_Status; /* USB device status */
+STM32_USB-FS-Device_Lib\hw_config.h(67): error:  #20: identifier "FunctionalState" is undefined
+  void USB_Cable_Config (FunctionalState NewState);
+STM32_USB-FS-Device_Lib\hw_config.h(68): error:  #20: identifier "uint8_t" is undefined
+  void Joystick_Send(uint8_t Keys);
+STM32_USB-FS-Device_Lib\hw_config.h(69): error:  #20: identifier "uint8_t" is undefined
+  uint8_t JoyState(void);
+STM32_USB-FS-Device_Lib\usb_regs.h(614): error:  #20: identifier "uint16_t" is undefined
+  extern volatile uint16_t wIstr;  /* ISTR register last read value */
+STM32_USB-FS-Device_Lib\usb_regs.h(617): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetCNTR(uint16_t /*wRegValue*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(618): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetISTR(uint16_t /*wRegValue*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(619): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetDADDR(uint16_t /*wRegValue*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(620): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetBTABLE(uint16_t /*wRegValue*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(621): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetBTABLE(uint16_t /*wRegValue*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(622): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetCNTR(void);
+STM32_USB-FS-Device_Lib\usb_regs.h(623): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetISTR(void);
+STM32_USB-FS-Device_Lib\usb_regs.h(624): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetFNR(void);
+STM32_USB-FS-Device_Lib\usb_regs.h(625): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetDADDR(void);
+STM32_USB-FS-Device_Lib\usb_regs.h(626): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetBTABLE(void);
+STM32_USB-FS-Device_Lib\usb_regs.h(627): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetENDPOINT(uint8_t /*bEpNum*/, uint16_t /*wRegValue*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(628): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetENDPOINT(uint8_t /*bEpNum*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(628): error:  #92: identifier-list parameters may only be used in a function definition
+  uint16_t GetENDPOINT(uint8_t /*bEpNum*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(629): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetEPType(uint8_t /*bEpNum*/, uint16_t /*wType*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(630): error:  #20: identifier "uint16_t" is undefined
+  uint16_t GetEPType(uint8_t /*bEpNum*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(630): error:  #92: identifier-list parameters may only be used in a function definition
+  uint16_t GetEPType(uint8_t /*bEpNum*/);
+STM32_USB-FS-Device_Lib\usb_regs.h(631): error:  #92: identifier-list parameters may only be used in a function definition
+  void SetEPTxStatus(uint8_t /*bEpNum*/, uint16_t /*wState*/);
+STM32_USB-FS-Device_Lib\usb_sil.c: 0 warnings, 30 errors
+compiling misc.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_rcc.c...
+assembling startup_stm32f10x_md.s...
+compiling system_stm32f10x.c...
+".\Objects\projecto.axf" - 390 Error(s), 2 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.1.0.pack
+                ARM.CMSIS.5.1.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.0.2
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.2.0.pack
+                Keil.STM32F1xx_DFP.2.2.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+   * Component: RCC Version: 3.5.0
+   * Component: PWR Version: 3.5.0
+   * Component: GPIO Version: 3.5.0
+   * Component: Framework Version: 3.5.1
+   * Component: EXTI Version: 3.5.0
+   * Component: Startup Version: 1.0.0
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\Device\STM32F103C8
+  .\RTE\_Target_1
+  C:\Keil\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include
+  C:\Keil\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include
+  C:\Keil\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\StdPeriph_Driver\inc
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: Keil::Device:StdPeriph Drivers:RCC:3.5.0
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_rcc.c
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_rcc.h
+
+   * Component: Keil::Device:StdPeriph Drivers:PWR:3.5.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_pwr.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_pwr.c
+
+   * Component: Keil::Device:StdPeriph Drivers:GPIO:3.5.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_gpio.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_gpio.c
+
+   * Component: Keil::Device:StdPeriph Drivers:Framework:3.5.1
+      Source file:   Device\StdPeriph_Driver\src\misc.c
+      Source file:   Device\StdPeriph_Driver\templates\stm32f10x_conf.h
+      Include file:  Device\StdPeriph_Driver\inc\misc.h
+      Include file:  Device\StdPeriph_Driver\templates\stm32f10x_it.h
+      Source file:   Device\StdPeriph_Driver\templates\stm32f10x_it.c
+
+   * Component: Keil::Device:StdPeriph Drivers:EXTI:3.5.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_exti.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_exti.c
+
+   * Component: Keil::Device:Startup:1.0.0
+      Source file:   Device\Source\system_stm32f10x.c
+      Source file:   Device\Source\ARM\startup_stm32f10x_md.s
+      Source file:   Device\Source\ARM\STM32F1xx_OPT.s
+      Include file:  RTE_Driver\Config\RTE_Device.h
+
+   * Component: ARM::CMSIS:CORE:5.0.2
+Target not created.
+Build Time Elapsed:  00:00:06
+</pre>
+</body>
+</html>
