@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -g -nostartfiles -Map=RTC2.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\RTC2 -TC:\CooCox\CoIDE\configuration\ProgramData\RTC2/link.ld -g">
+      <target file="RTC2.elf" lastModified="18b6ee4dce4">
+         <source file="..\obj\stm32f10x_rtc.o" lastModified="18b6e45e2b3"/>
+         <source file="..\obj\system_stm32f10x.o" lastModified="18b6e3bb484"/>
+         <source file="..\obj\stm32f10x_pwr.o" lastModified="18b6e45e301"/>
+         <source file="..\obj\startup_stm32f10x_md.o" lastModified="18b6e3bb4b6"/>
+         <source file="..\obj\stm32f10x_gpio.o" lastModified="18b6e45e35b"/>
+         <source file="..\obj\main.o" lastModified="18b6ee4bd17"/>
+         <source file="..\obj\stm32f10x_rcc.o" lastModified="18b6e3bb545"/>
+         <source file="..\obj\stm32f10x_exti.o" lastModified="18b6e45e427"/>
+         <source file="..\obj\stm32f10x_usart.o" lastModified="18b6e45e48a"/>
+         <source file="..\obj\syscalls.o" lastModified="18b6e3bb5a7"/>
+         <source file="..\obj\usart1.o" lastModified="18b6e45e4f0"/>
+         <source file="..\obj\misc.o" lastModified="18b6e45e556"/>
+         <source file="..\obj\stm32f10x_bkp.o" lastModified="18b6e45e5a9"/>
+      </target>
+   </processor>
+</history>

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -g -nostartfiles -Map=DACDiscobery.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\DACDiscobery -TC:\CooCox\CoIDE\configuration\ProgramData\DACDiscobery/link.ld -g">
+      <target file="DACDiscobery.elf" lastModified="18b649d49d0">
+         <source file="..\obj\stm32f4xx_dac.o" lastModified="18b6314f1a6"/>
+         <source file="..\obj\startup_stm32f4xx.o" lastModified="18b63132fec"/>
+         <source file="..\obj\main.o" lastModified="18b63159f33"/>
+         <source file="..\obj\stm32f4xx_rcc.o" lastModified="18b6314f2a1"/>
+         <source file="..\obj\stm32f4xx_gpio.o" lastModified="18b6314f2f8"/>
+         <source file="..\obj\system_stm32f4xx.o" lastModified="18b6314f3ac"/>
+         <source file="..\obj\syscalls.o" lastModified="18b63133272"/>
+         <source file="..\obj\stm32f4xx_exti.o" lastModified="18b6314f3fe"/>
+      </target>
+   </processor>
+</history>

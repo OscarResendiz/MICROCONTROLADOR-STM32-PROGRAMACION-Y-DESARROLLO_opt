@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc 13.1.0 x86_64-w64-mingw32 -mcpu=cortex-m3 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F103C8 -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\DAC -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\DAC\cmsis -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\DAC\stm_lib -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\DAC\stm_lib\inc -ID:\Cursos\STM32\Cocox\GIT -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\DAC\cmsis_boot -ID:\Cursos\STM32\Cocox\GIT\Ejemplos">
+      <target file="syscalls.o" lastModified="18b603c0cfa">
+         <source file="..\..\..\syscalls\syscalls.c" lastModified="18b50384ed1"/>
+      </target>
+      <target file="stm32f10x_exti.o" lastModified="18b603d2463">
+         <source file="..\..\..\stm_lib\src\stm32f10x_exti.c" lastModified="18b603d12bd"/>
+      </target>
+      <target file="system_stm32f10x.o" lastModified="18b603c0996">
+         <source file="..\..\..\cmsis_boot\system_stm32f10x.c" lastModified="18b5037558f"/>
+      </target>
+      <target file="stm32f10x_dac.o" lastModified="18b603c0a86">
+         <source file="..\..\..\stm32f10x_dac.c" lastModified="18b5061ab0c"/>
+      </target>
+      <target file="main.o" lastModified="18b60556062">
+         <source file="..\..\..\main.c" lastModified="18b60555ea1"/>
+      </target>
+      <target file="stm32f10x_gpio.o" lastModified="18b603c0a2e">
+         <source file="..\..\..\stm_lib\src\stm32f10x_gpio.c" lastModified="18b50375568"/>
+      </target>
+      <target file="stm32f10x_rcc.o" lastModified="18b603c0c8a">
+         <source file="..\..\..\stm_lib\src\stm32f10x_rcc.c" lastModified="18b50617f71"/>
+      </target>
+      <target file="startup_stm32f10x_md.o" lastModified="18b603c09cb">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f10x_md.c" lastModified="18b50375577"/>
+      </target>
+      <target file="stm32f10x_dma.o" lastModified="18b603c0d53">
+         <source file="..\..\..\stm_lib\src\stm32f10x_dma.c" lastModified="18b603bfca8"/>
+      </target>
+   </processor>
+   <processor signature="arm-none-eabi-gcc 13.1.0 x86_64-w64-mingw32 -mcpu=cortex-m3 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F103C8 -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\DAC -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\DAC\cmsis -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\DAC\stm_lib -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\DAC\stm_lib\inc -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\DAC\cmsis_boot -ID:\Cursos\STM32\Cocox\GIT\Ejemplos">
+      <target file="stm32f10x_crc.o" lastModified="18b50394998">
+         <source file="..\..\..\stm_lib\src\stm32f10x_crc.c" lastModified="18b50376cde"/>
+      </target>
+   </processor>
+</history>

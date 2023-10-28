@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -g -nostartfiles -Map=ADCWDG.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\ADCWDG -TC:\CooCox\CoIDE\configuration\ProgramData\ADCWDG/link.ld -g">
+      <target file="ADCWDG.elf" lastModified="18b1d053a35">
+         <source file="..\obj\system_stm32f10x.o" lastModified="18b1cf2c292"/>
+         <source file="..\obj\startup_stm32f10x_md.o" lastModified="18b1cf2c2db"/>
+         <source file="..\obj\stm32f10x_gpio.o" lastModified="18b1cf2c35a"/>
+         <source file="..\obj\main.o" lastModified="18b1d053823"/>
+         <source file="..\obj\stm32f10x_crc.o" lastModified="18b1cf2c4b7"/>
+         <source file="..\obj\stm32f10x_rcc.o" lastModified="18b1cf2c596"/>
+         <source file="..\obj\stm32f10x_adc.o" lastModified="18b1cf2c63e"/>
+         <source file="..\obj\stm32f10x_usart.o" lastModified="18b1cf2c6ba"/>
+         <source file="..\obj\syscalls.o" lastModified="18b1cf2c744"/>
+         <source file="..\obj\usart1.o" lastModified="18b1cf2c8ab"/>
+         <source file="..\obj\misc.o" lastModified="18b1cf2c926"/>
+      </target>
+   </processor>
+</history>

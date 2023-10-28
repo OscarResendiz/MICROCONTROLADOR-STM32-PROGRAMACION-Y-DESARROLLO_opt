@@ -21,9 +21,9 @@
 #include "stm32f10x.h"
 
 // Librerias de los perifericos
-#include "stm32f10x_gpio.h"
+#include "stm32f10x_gpio.h" 
 #include "stm32f10x_rtc.h"
-#include "stm32f10x_rcc.h"
+#include "stm32f10x_rcc.h" 
 #include "stm32f10x_tim.h"        
 #include "stm32f10x_pwr.h"
 #include "stm32f10x_usart.h"
@@ -94,7 +94,7 @@ void Lee_RTC(uint32_t RTC_Contador, RTC_FechaHoraTypeDef* RTC_DateTimeStruct) {
 	t1 = Tiempo/24;
 	Temp_Horas = Tiempo - t1*24;
 
-	// Extraemos el el resto [%] como num de día de la Semana	
+	// Extraemos el el resto [%] como num de dï¿½a de la Semana	
   Temp_DSem = TDiasJulianos%7;
 
 	// Extraemos los dias, meses y anos de los TDias del Calendario Juliano
@@ -141,7 +141,7 @@ uint32_t Convierte_FechaHora(RTC_FechaHoraTypeDef* RTC_DateTimeStruct) {
     TDiasJulianos=RTC_DateTimeStruct->RTC_Dia;
 	TDiasJulianos+= (((153*m+2)/5) + (365*y) + (y/4) - (y/100)	+ (y/400)) - 32045;
 	TDiasJulianos = TDiasJulianos - JULIANO_BASE_DATE;
-  // Pasamos los días a segundos
+  // Pasamos los dï¿½as a segundos
 	TSegDJulianos*= 86400;  // x 86400 Segundos en un dia
   
   // Sumamos al total de Segundos los segundos de la hora
@@ -277,7 +277,7 @@ void RTC_Init(void)
   RCC_LSICmd(ENABLE);  
    printf("    - Habilitando fuente LSI \r\n");
   //	 
-  /* Espere hasta que el LSI esté listo */
+  /* Espere hasta que el LSI estï¿½ listo */
   while(RCC_GetFlagStatus(RCC_FLAG_LSIRDY)==RESET)
   {;}
   //
@@ -292,7 +292,7 @@ void RTC_Init(void)
   RCC_LSEConfig(RCC_LSE_ON);
   printf("    - Habilitando fuente LSE \r\n");
   //  
-  /* Espere hasta que el LSE esté listo */
+  /* Espere hasta que el LSE estï¿½ listo */
   while (RCC_GetFlagStatus(RCC_FLAG_LSERDY) == RESET)
   {;}
    
@@ -309,14 +309,14 @@ void RTC_Init(void)
   RCC_RTCCLKCmd(ENABLE);
   printf("    - Habilitando RTCCLK\r\n");  
   
-  /* Espera hasta que finalice la última operación de escritura en registros RTC */
+  /* Espera hasta que finalice la ï¿½ltima operaciï¿½n de escritura en registros RTC */
   RTC_WaitForLastTask();
   
   /* Espera a que se sincronice los registros RTC  */
   printf("    - Esperando sincronizacion \r\n");
   RTC_WaitForSynchro();
 
-  /* Espera hasta que finalice la última operación de escritura en registros RTC */
+  /* Espera hasta que finalice la ï¿½ltima operaciï¿½n de escritura en registros RTC */
   RTC_WaitForLastTask();
     
   /* Habilitar la Interrupcio RTC por Segundos */
@@ -326,7 +326,7 @@ void RTC_Init(void)
   /* Habilitar la Interrupcion ALARMA del RTC   */
   RTC_ITConfig(RTC_IT_ALR, ENABLE);
   printf("    - Habilitando Interrupcion de Alarma RTC \r\n");
-  /* Espera hasta que finalice la última operación de escritura en registros RTC */
+  /* Espera hasta que finalice la ï¿½ltima operaciï¿½n de escritura en registros RTC */
   RTC_WaitForLastTask();
   
   ////////////////////////////////////////////////////////////////////
@@ -336,19 +336,19 @@ void RTC_Init(void)
   ////////////////////////////////////////////////////////////////////
   #ifdef RTCClockSource_LSI
   ////////////////////////////////////////////////////////////////////
-  /* Establecemos el Preescaler del RTC para un período de 1 segundo */
+  /* Establecemos el Preescaler del RTC para un perï¿½odo de 1 segundo */
   RTC_SetPrescaler(39999); /* Peridodo RTC = RTCCLK/RTC_Prescal = (40 000 Hz)/39999+1) */
   printf("    - Configurado Prescaler LSI (40 kHz) \r\n");
   ////////////////////////////////////////////////////////////////////
   #elif defined  RTCClockSource_LSE
   ////////////////////////////////////////////////////////////////////
-  /* Establecemos el Preescaler del RTC para un período de 1 segundo */
+  /* Establecemos el Preescaler del RTC para un perï¿½odo de 1 segundo */
   RTC_SetPrescaler(32767); /* Periodo RTC = RTCCLK/RTC_Prescal = (32.768KHz)/(32767+1) */
   printf("    - Configurado Prescaler LSE (32,768 kHz) \r\n");
   #endif
   ////////////////////////////////////////////////////////////////////
     
-  /* Espere hasta que finalice la última operación de escritura en registros RTC */
+  /* Espere hasta que finalice la ï¿½ltima operaciï¿½n de escritura en registros RTC */
   RTC_WaitForLastTask();  
 }
 

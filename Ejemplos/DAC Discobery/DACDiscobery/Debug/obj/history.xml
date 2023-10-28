@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc 13.1.0 x86_64-w64-mingw32 -mcpu=cortex-m4 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F407VE -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\DAC Discobery\cmsis -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\DAC Discobery -ID:\Cursos\STM32\Cocox\GIT\Ejemplos -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\DAC Discobery\cmsis_boot -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\DAC Discobery\cmsis_lib\include -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\DAC Discobery\cmsis_lib">
+      <target file="stm32f4xx_dac.o" lastModified="18b6314f1a6">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_dac.c" lastModified="18b62f666eb"/>
+      </target>
+      <target file="stm32f4xx_rcc.o" lastModified="18b6314f2a1">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="18b62f58189"/>
+      </target>
+      <target file="stm32f4xx_exti.o" lastModified="18b6314f3fe">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_exti.c" lastModified="18b6314e437"/>
+      </target>
+      <target file="system_stm32f4xx.o" lastModified="18b6314f3ac">
+         <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="18b62f581ce"/>
+      </target>
+      <target file="stm32f4xx_gpio.o" lastModified="18b6314f2f8">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="18b62f64cb6"/>
+      </target>
+      <target file="main.o" lastModified="18b63159f33">
+         <source file="..\..\..\main.c" lastModified="18b63159d5f"/>
+      </target>
+      <target file="syscalls.o" lastModified="18b63133272">
+         <source file="..\..\..\syscalls\syscalls.c" lastModified="18b62f568d4"/>
+      </target>
+      <target file="startup_stm32f4xx.o" lastModified="18b63132fec">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="18b62f58193"/>
+      </target>
+   </processor>
+</history>

@@ -43,7 +43,7 @@ int main(void)
 	
 	for(;;)
 	{
-	printf("Esto es un texto de prueba por printf\r\n");
+	printf("hola mundo22\r\n");
 	Delay_ms(200);  	
 	}
 }

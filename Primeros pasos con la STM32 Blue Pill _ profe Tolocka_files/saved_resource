@@ -1,0 +1,40 @@
+
+var ftGUID_4228548="569320EF040C9E";
+var ftConfID_4228548="0";
+var ftParams_4228548="ftx=&fty=&ftadz=&ftscw=&ft_custom=&ftOBA=1&ft_agentEnv=0&ft_referrer=https%3A%2F%2Fgoogleads.g.doubleclick.net%2Fpagead%2Fads%3Fgdpr%3D0%26us_privacy%3D1---%26client%3Dca-pub-4208587403525768%26output%3Dhtml%26h%3D250%26adk%3D999934737%26adf%3D1064105938%26pi%3Dt.aa~a.1979558548~rp.4%26w%3D320%26fwrn%3D4%26fwrnh%3D100%26lmt%3D1698343922%26rafmt%3D1%26to%3Dqs%26pwprc%3D1169548447%26format%3D320x250%26url%3Dhttps%253A%252F%252Fwww.profetolocka.com.ar%252F2021%252F04%252F12%252Fprimeros-pasos-con-la-stm32-blue-pill%252F%26host%3Dca-host-pub-2644536267352236%26fwr%3D0%26pra%3D3%26rpe%3D1%26resp_fmts%3D3%26wgl%3D1%26fa%3D40%26uach%3DWyJXaW5kb3dzIiwiMTAuMC4wIiwieDg2IiwiIiwiMTE4LjAuNTk5My44OSIsW10sMCxudWxsLCI2NCIsW1siQ2hyb21pdW0iLCIxMTguMC41OTkzLjg5Il0sWyJHb29nbGUgQ2hyb21lIiwiMTE4LjAuNTk5My44OSJdLFsiTm90PUE_QnJhbmQiLCI5OS4wLjAuMCJdXSwwXQ..%26dt%3D1698343914767%26bpp%3D1%26bdt%3D3072%26idt%3D1%26shv%3Dr20231024%26mjsv%3Dm202310230101%26ptt%3D9%26saldr%3Daa%26abxe%3D1%26cookie%3DID%253D505f737114a8c088-22c4fbec46e300d2%253AT%253D1698171842%253ART%253D1698343819&ft_section=__06881575139007705644543542325891477914&cachebuster=483411.2282561187";
+var ftKeyword_4228548="";
+var ftCustom_4228548="";
+var ftSection_4228548="__06881575139007705644543542325891477914";
+var ftSegment_4228548="afr5,w2c";
+var ftSegmentList_4228548=[{s:'afr5'},{s:'w2c'}];
+var ftRuleMatch_4228548="0";
+var ftTimestamp_4228548="1698344057";
+var ftGeoC2_4228548="mx";
+var ftGeoState_4228548="cmx";
+var ftGeoCity_4228548="mexico city";
+var ftISP_4228548="cablevision s.a. de c.v.";
+var ftSpeed_4228548="cable";
+var ftConnType_4228548="wifi";
+var ftDMA_4228548="-1";
+var ftLong_4228548="-99.18";
+var ftLat_4228548="19.48";
+var ftPostal_4228548="02070";
+var ftTimeZone_4228548="-600";
+var ftMobileCarrier_4228548="";
+var ftImp4228548 = {};
+ftImp4228548.privacy = "x";
+ftImp4228548.guidAge = "84";
+ftImp4228548.impID = "EB9A6F29-A1CF-7662-A5F4-4393DD315A5C";
+ftImp4228548.duid = "FT:569320EF040C9E";
+
+ftImp4228548.ft_tpplid = "";
+ftImp4228548.ft_c = {};
+ftImp4228548.gdpr = "";
+ftImp4228548.gdpr_consent = "";
+ftImp4228548.gdpr_pd = "";
+ftImp4228548.oob_consent = "";
+ftImp4228548.gdprStoredConsent = "";
+ftImp4228548.us_privacy = "";
+ftImp4228548.gpc = "";
+
+document.write('<scr'+'ipt src="https://cdn.flashtalking.com/xre/422/4228548/4198869/js/j-4228548-4198869.js" id="ftscript_m4228548" name="ftscript_m4228548"></scr'+'ipt>');
