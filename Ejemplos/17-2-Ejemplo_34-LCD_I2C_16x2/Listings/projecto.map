@@ -1,0 +1,923 @@
+Component: Arm Compiler for Embedded 6.19 Tool: armlink [5e73cb00]
+
+==============================================================================
+
+Section Cross References
+
+    main.o(.text.main) refers to liquidcrystal_i2c.o(.text.LCDI2C_init) for LCDI2C_init
+    main.o(.text.main) refers to liquidcrystal_i2c.o(.text.LCDI2C_backlight) for LCDI2C_backlight
+    main.o(.text.main) refers to liquidcrystal_i2c.o(.text.LCDI2C_clear) for LCDI2C_clear
+    main.o(.text.main) refers to liquidcrystal_i2c.o(.text.LCDI2C_setCursor) for LCDI2C_setCursor
+    main.o(.text.main) refers to liquidcrystal_i2c.o(.text.LCDI2C_write_String) for LCDI2C_write_String
+    main.o(.text.main) refers to delay.o(.text.delay_ms) for delay_ms
+    main.o(.text.main) refers to liquidcrystal_i2c.o(.text.LCDI2C_scrollDisplayLeft) for LCDI2C_scrollDisplayLeft
+    main.o(.text.main) refers to liquidcrystal_i2c.o(.text.LCDI2C_scrollDisplayRight) for LCDI2C_scrollDisplayRight
+    main.o(.text.main) refers to main.o(.data.batt000) for batt000
+    main.o(.text.main) refers to liquidcrystal_i2c.o(.text.LCDI2C_createChar) for LCDI2C_createChar
+    main.o(.text.main) refers to main.o(.data.batt010) for batt010
+    main.o(.text.main) refers to main.o(.data.batt030) for batt030
+    main.o(.text.main) refers to main.o(.data.batt050) for batt050
+    main.o(.text.main) refers to main.o(.data.batt070) for batt070
+    main.o(.text.main) refers to main.o(.data.batt090) for batt090
+    main.o(.text.main) refers to main.o(.data.batt100) for batt100
+    main.o(.text.main) refers to main.o(.data.battcrg) for battcrg
+    main.o(.text.main) refers to main.o(.data.simbol) for simbol
+    main.o(.text.main) refers to liquidcrystal_i2c.o(.text.LCDI2C_write) for LCDI2C_write
+    main.o(.text.main) refers to main.o(.data.note) for note
+    main.o(.text.main) refers to main.o(.data.clock) for clock
+    main.o(.text.main) refers to main.o(.data.face) for face
+    main.o(.text.main) refers to main.o(.data.heart) for heart
+    main.o(.text.main) refers to main.o(.data.duck) for duck
+    main.o(.text.main) refers to main.o(.data.check) for check
+    main.o(.text.main) refers to main.o(.data.cross) for cross
+    main.o(.text.main) refers to main.o(.data.retarrow) for retarrow
+    main.o(.ARM.exidx.text.main) refers to main.o(.text.main) for [Anonymous Symbol]
+    main.o(.data.simbol) refers to main.o(.rodata.str1.1) for [Anonymous Symbol]
+    delay.o(.text.delay_ms) refers to stm32f10x_rcc.o(.text.RCC_GetClocksFreq) for RCC_GetClocksFreq
+    delay.o(.ARM.exidx.text.delay_ms) refers to delay.o(.text.delay_ms) for [Anonymous Symbol]
+    delay.o(.text.delay_Mc) refers to stm32f10x_rcc.o(.text.RCC_GetClocksFreq) for RCC_GetClocksFreq
+    delay.o(.ARM.exidx.text.delay_Mc) refers to delay.o(.text.delay_Mc) for [Anonymous Symbol]
+    i2c.o(.text.I2C1_LCD16x2_Init) refers to stm32f10x_rcc.o(.text.RCC_APB2PeriphClockCmd) for RCC_APB2PeriphClockCmd
+    i2c.o(.text.I2C1_LCD16x2_Init) refers to stm32f10x_rcc.o(.text.RCC_APB1PeriphClockCmd) for RCC_APB1PeriphClockCmd
+    i2c.o(.text.I2C1_LCD16x2_Init) refers to stm32f10x_gpio.o(.text.GPIO_Init) for GPIO_Init
+    i2c.o(.text.I2C1_LCD16x2_Init) refers to stm32f10x_i2c.o(.text.I2C_Init) for I2C_Init
+    i2c.o(.text.I2C1_LCD16x2_Init) refers to stm32f10x_i2c.o(.text.I2C_Cmd) for I2C_Cmd
+    i2c.o(.ARM.exidx.text.I2C1_LCD16x2_Init) refers to i2c.o(.text.I2C1_LCD16x2_Init) for [Anonymous Symbol]
+    i2c.o(.text.I2C_StartTransmission) refers to stm32f10x_i2c.o(.text.I2C_GetFlagStatus) for I2C_GetFlagStatus
+    i2c.o(.text.I2C_StartTransmission) refers to stm32f10x_i2c.o(.text.I2C_GenerateSTART) for I2C_GenerateSTART
+    i2c.o(.text.I2C_StartTransmission) refers to stm32f10x_i2c.o(.text.I2C_CheckEvent) for I2C_CheckEvent
+    i2c.o(.text.I2C_StartTransmission) refers to stm32f10x_i2c.o(.text.I2C_Send7bitAddress) for I2C_Send7bitAddress
+    i2c.o(.ARM.exidx.text.I2C_StartTransmission) refers to i2c.o(.text.I2C_StartTransmission) for [Anonymous Symbol]
+    i2c.o(.text.I2C_WriteData) refers to stm32f10x_i2c.o(.text.I2C_SendData) for I2C_SendData
+    i2c.o(.text.I2C_WriteData) refers to stm32f10x_i2c.o(.text.I2C_CheckEvent) for I2C_CheckEvent
+    i2c.o(.ARM.exidx.text.I2C_WriteData) refers to i2c.o(.text.I2C_WriteData) for [Anonymous Symbol]
+    i2c.o(.text.I2C_ReadData) refers to stm32f10x_i2c.o(.text.I2C_CheckEvent) for I2C_CheckEvent
+    i2c.o(.text.I2C_ReadData) refers to stm32f10x_i2c.o(.text.I2C_ReceiveData) for I2C_ReceiveData
+    i2c.o(.ARM.exidx.text.I2C_ReadData) refers to i2c.o(.text.I2C_ReadData) for [Anonymous Symbol]
+    liquidcrystal_i2c.o(.text.LCDI2C_init) refers to liquidcrystal_i2c.o(.bss.LCD2c_InitStructure) for LCD2c_InitStructure
+    liquidcrystal_i2c.o(.text.LCDI2C_init) refers to i2c.o(.text.I2C1_LCD16x2_Init) for I2C1_LCD16x2_Init
+    liquidcrystal_i2c.o(.text.LCDI2C_init) refers to liquidcrystal_i2c.o(.text.LCDI2C_begin) for LCDI2C_begin
+    liquidcrystal_i2c.o(.ARM.exidx.text.LCDI2C_init) refers to liquidcrystal_i2c.o(.text.LCDI2C_init) for [Anonymous Symbol]
+    liquidcrystal_i2c.o(.text.LCDI2C_begin) refers to liquidcrystal_i2c.o(.bss.LCD2c_InitStructure) for LCD2c_InitStructure
+    liquidcrystal_i2c.o(.text.LCDI2C_begin) refers to delay.o(.text.delay_ms) for delay_ms
+    liquidcrystal_i2c.o(.text.LCDI2C_begin) refers to i2c.o(.text.I2C_StartTransmission) for I2C_StartTransmission
+    liquidcrystal_i2c.o(.text.LCDI2C_begin) refers to i2c.o(.text.I2C_WriteData) for I2C_WriteData
+    liquidcrystal_i2c.o(.text.LCDI2C_begin) refers to stm32f10x_i2c.o(.text.I2C_GenerateSTOP) for I2C_GenerateSTOP
+    liquidcrystal_i2c.o(.text.LCDI2C_begin) refers to liquidcrystal_i2c.o(.text.LCDI2C_write4bits) for LCDI2C_write4bits
+    liquidcrystal_i2c.o(.text.LCDI2C_begin) refers to delay.o(.text.delay_Mc) for delay_Mc
+    liquidcrystal_i2c.o(.ARM.exidx.text.LCDI2C_begin) refers to liquidcrystal_i2c.o(.text.LCDI2C_begin) for [Anonymous Symbol]
+    liquidcrystal_i2c.o(.text.LCDI2C_expanderWrite) refers to liquidcrystal_i2c.o(.bss.LCD2c_InitStructure) for LCD2c_InitStructure
+    liquidcrystal_i2c.o(.text.LCDI2C_expanderWrite) refers to i2c.o(.text.I2C_StartTransmission) for I2C_StartTransmission
+    liquidcrystal_i2c.o(.text.LCDI2C_expanderWrite) refers to i2c.o(.text.I2C_WriteData) for I2C_WriteData
+    liquidcrystal_i2c.o(.text.LCDI2C_expanderWrite) refers to stm32f10x_i2c.o(.text.I2C_GenerateSTOP) for I2C_GenerateSTOP
+    liquidcrystal_i2c.o(.ARM.exidx.text.LCDI2C_expanderWrite) refers to liquidcrystal_i2c.o(.text.LCDI2C_expanderWrite) for [Anonymous Symbol]
+    liquidcrystal_i2c.o(.text.LCDI2C_write4bits) refers to liquidcrystal_i2c.o(.bss.LCD2c_InitStructure) for LCD2c_InitStructure
+    liquidcrystal_i2c.o(.text.LCDI2C_write4bits) refers to i2c.o(.text.I2C_StartTransmission) for I2C_StartTransmission
+    liquidcrystal_i2c.o(.text.LCDI2C_write4bits) refers to i2c.o(.text.I2C_WriteData) for I2C_WriteData
+    liquidcrystal_i2c.o(.text.LCDI2C_write4bits) refers to stm32f10x_i2c.o(.text.I2C_GenerateSTOP) for I2C_GenerateSTOP
+    liquidcrystal_i2c.o(.text.LCDI2C_write4bits) refers to delay.o(.text.delay_Mc) for delay_Mc
+    liquidcrystal_i2c.o(.ARM.exidx.text.LCDI2C_write4bits) refers to liquidcrystal_i2c.o(.text.LCDI2C_write4bits) for [Anonymous Symbol]
+    liquidcrystal_i2c.o(.text.LCDI2C_command) refers to liquidcrystal_i2c.o(.text.LCDI2C_write4bits) for LCDI2C_write4bits
+    liquidcrystal_i2c.o(.ARM.exidx.text.LCDI2C_command) refers to liquidcrystal_i2c.o(.text.LCDI2C_command) for [Anonymous Symbol]
+    liquidcrystal_i2c.o(.text.LCDI2C_display) refers to liquidcrystal_i2c.o(.bss.LCD2c_InitStructure) for LCD2c_InitStructure
+    liquidcrystal_i2c.o(.text.LCDI2C_display) refers to liquidcrystal_i2c.o(.text.LCDI2C_write4bits) for LCDI2C_write4bits
+    liquidcrystal_i2c.o(.ARM.exidx.text.LCDI2C_display) refers to liquidcrystal_i2c.o(.text.LCDI2C_display) for [Anonymous Symbol]
+    liquidcrystal_i2c.o(.text.LCDI2C_clear) refers to liquidcrystal_i2c.o(.text.LCDI2C_write4bits) for LCDI2C_write4bits
+    liquidcrystal_i2c.o(.text.LCDI2C_clear) refers to delay.o(.text.delay_Mc) for delay_Mc
+    liquidcrystal_i2c.o(.ARM.exidx.text.LCDI2C_clear) refers to liquidcrystal_i2c.o(.text.LCDI2C_clear) for [Anonymous Symbol]
+    liquidcrystal_i2c.o(.text.LCDI2C_home) refers to liquidcrystal_i2c.o(.text.LCDI2C_write4bits) for LCDI2C_write4bits
+    liquidcrystal_i2c.o(.text.LCDI2C_home) refers to delay.o(.text.delay_Mc) for delay_Mc
+    liquidcrystal_i2c.o(.ARM.exidx.text.LCDI2C_home) refers to liquidcrystal_i2c.o(.text.LCDI2C_home) for [Anonymous Symbol]
+    liquidcrystal_i2c.o(.text.LCDI2C_write) refers to liquidcrystal_i2c.o(.text.LCDI2C_write4bits) for LCDI2C_write4bits
+    liquidcrystal_i2c.o(.ARM.exidx.text.LCDI2C_write) refers to liquidcrystal_i2c.o(.text.LCDI2C_write) for [Anonymous Symbol]
+    liquidcrystal_i2c.o(.text.LCDI2C_send) refers to liquidcrystal_i2c.o(.text.LCDI2C_write4bits) for LCDI2C_write4bits
+    liquidcrystal_i2c.o(.ARM.exidx.text.LCDI2C_send) refers to liquidcrystal_i2c.o(.text.LCDI2C_send) for [Anonymous Symbol]
+    liquidcrystal_i2c.o(.text.LCDI2C_setCursor) refers to liquidcrystal_i2c.o(.bss.LCD2c_InitStructure) for LCD2c_InitStructure
+    liquidcrystal_i2c.o(.text.LCDI2C_setCursor) refers to liquidcrystal_i2c.o(.text.LCDI2C_write4bits) for LCDI2C_write4bits
+    liquidcrystal_i2c.o(.ARM.exidx.text.LCDI2C_setCursor) refers to liquidcrystal_i2c.o(.text.LCDI2C_setCursor) for [Anonymous Symbol]
+    liquidcrystal_i2c.o(.text.LCDI2C_noDisplay) refers to liquidcrystal_i2c.o(.bss.LCD2c_InitStructure) for LCD2c_InitStructure
+    liquidcrystal_i2c.o(.text.LCDI2C_noDisplay) refers to liquidcrystal_i2c.o(.text.LCDI2C_write4bits) for LCDI2C_write4bits
+    liquidcrystal_i2c.o(.ARM.exidx.text.LCDI2C_noDisplay) refers to liquidcrystal_i2c.o(.text.LCDI2C_noDisplay) for [Anonymous Symbol]
+    liquidcrystal_i2c.o(.text.LCDI2C_noCursor) refers to liquidcrystal_i2c.o(.bss.LCD2c_InitStructure) for LCD2c_InitStructure
+    liquidcrystal_i2c.o(.text.LCDI2C_noCursor) refers to liquidcrystal_i2c.o(.text.LCDI2C_write4bits) for LCDI2C_write4bits
+    liquidcrystal_i2c.o(.ARM.exidx.text.LCDI2C_noCursor) refers to liquidcrystal_i2c.o(.text.LCDI2C_noCursor) for [Anonymous Symbol]
+    liquidcrystal_i2c.o(.text.LCDI2C_cursor) refers to liquidcrystal_i2c.o(.bss.LCD2c_InitStructure) for LCD2c_InitStructure
+    liquidcrystal_i2c.o(.text.LCDI2C_cursor) refers to liquidcrystal_i2c.o(.text.LCDI2C_write4bits) for LCDI2C_write4bits
+    liquidcrystal_i2c.o(.ARM.exidx.text.LCDI2C_cursor) refers to liquidcrystal_i2c.o(.text.LCDI2C_cursor) for [Anonymous Symbol]
+    liquidcrystal_i2c.o(.text.LCDI2C_noBlink) refers to liquidcrystal_i2c.o(.bss.LCD2c_InitStructure) for LCD2c_InitStructure
+    liquidcrystal_i2c.o(.text.LCDI2C_noBlink) refers to liquidcrystal_i2c.o(.text.LCDI2C_write4bits) for LCDI2C_write4bits
+    liquidcrystal_i2c.o(.ARM.exidx.text.LCDI2C_noBlink) refers to liquidcrystal_i2c.o(.text.LCDI2C_noBlink) for [Anonymous Symbol]
+    liquidcrystal_i2c.o(.text.LCDI2C_blink) refers to liquidcrystal_i2c.o(.bss.LCD2c_InitStructure) for LCD2c_InitStructure
+    liquidcrystal_i2c.o(.text.LCDI2C_blink) refers to liquidcrystal_i2c.o(.text.LCDI2C_write4bits) for LCDI2C_write4bits
+    liquidcrystal_i2c.o(.ARM.exidx.text.LCDI2C_blink) refers to liquidcrystal_i2c.o(.text.LCDI2C_blink) for [Anonymous Symbol]
+    liquidcrystal_i2c.o(.text.LCDI2C_scrollDisplayLeft) refers to liquidcrystal_i2c.o(.text.LCDI2C_write4bits) for LCDI2C_write4bits
+    liquidcrystal_i2c.o(.ARM.exidx.text.LCDI2C_scrollDisplayLeft) refers to liquidcrystal_i2c.o(.text.LCDI2C_scrollDisplayLeft) for [Anonymous Symbol]
+    liquidcrystal_i2c.o(.text.LCDI2C_scrollDisplayRight) refers to liquidcrystal_i2c.o(.text.LCDI2C_write4bits) for LCDI2C_write4bits
+    liquidcrystal_i2c.o(.ARM.exidx.text.LCDI2C_scrollDisplayRight) refers to liquidcrystal_i2c.o(.text.LCDI2C_scrollDisplayRight) for [Anonymous Symbol]
+    liquidcrystal_i2c.o(.text.LCDI2C_leftToRight) refers to liquidcrystal_i2c.o(.bss.LCD2c_InitStructure) for LCD2c_InitStructure
+    liquidcrystal_i2c.o(.text.LCDI2C_leftToRight) refers to liquidcrystal_i2c.o(.text.LCDI2C_write4bits) for LCDI2C_write4bits
+    liquidcrystal_i2c.o(.ARM.exidx.text.LCDI2C_leftToRight) refers to liquidcrystal_i2c.o(.text.LCDI2C_leftToRight) for [Anonymous Symbol]
+    liquidcrystal_i2c.o(.text.LCDI2C_rightToLeft) refers to liquidcrystal_i2c.o(.bss.LCD2c_InitStructure) for LCD2c_InitStructure
+    liquidcrystal_i2c.o(.text.LCDI2C_rightToLeft) refers to liquidcrystal_i2c.o(.text.LCDI2C_write4bits) for LCDI2C_write4bits
+    liquidcrystal_i2c.o(.ARM.exidx.text.LCDI2C_rightToLeft) refers to liquidcrystal_i2c.o(.text.LCDI2C_rightToLeft) for [Anonymous Symbol]
+    liquidcrystal_i2c.o(.text.LCDI2C_autoscroll) refers to liquidcrystal_i2c.o(.bss.LCD2c_InitStructure) for LCD2c_InitStructure
+    liquidcrystal_i2c.o(.text.LCDI2C_autoscroll) refers to liquidcrystal_i2c.o(.text.LCDI2C_write4bits) for LCDI2C_write4bits
+    liquidcrystal_i2c.o(.ARM.exidx.text.LCDI2C_autoscroll) refers to liquidcrystal_i2c.o(.text.LCDI2C_autoscroll) for [Anonymous Symbol]
+    liquidcrystal_i2c.o(.text.LCDI2C_noAutoscroll) refers to liquidcrystal_i2c.o(.bss.LCD2c_InitStructure) for LCD2c_InitStructure
+    liquidcrystal_i2c.o(.text.LCDI2C_noAutoscroll) refers to liquidcrystal_i2c.o(.text.LCDI2C_write4bits) for LCDI2C_write4bits
+    liquidcrystal_i2c.o(.ARM.exidx.text.LCDI2C_noAutoscroll) refers to liquidcrystal_i2c.o(.text.LCDI2C_noAutoscroll) for [Anonymous Symbol]
+    liquidcrystal_i2c.o(.text.LCDI2C_createChar) refers to liquidcrystal_i2c.o(.text.LCDI2C_write4bits) for LCDI2C_write4bits
+    liquidcrystal_i2c.o(.ARM.exidx.text.LCDI2C_createChar) refers to liquidcrystal_i2c.o(.text.LCDI2C_createChar) for [Anonymous Symbol]
+    liquidcrystal_i2c.o(.text.LCDI2C_noBacklight) refers to liquidcrystal_i2c.o(.bss.LCD2c_InitStructure) for LCD2c_InitStructure
+    liquidcrystal_i2c.o(.text.LCDI2C_noBacklight) refers to i2c.o(.text.I2C_StartTransmission) for I2C_StartTransmission
+    liquidcrystal_i2c.o(.text.LCDI2C_noBacklight) refers to i2c.o(.text.I2C_WriteData) for I2C_WriteData
+    liquidcrystal_i2c.o(.text.LCDI2C_noBacklight) refers to stm32f10x_i2c.o(.text.I2C_GenerateSTOP) for I2C_GenerateSTOP
+    liquidcrystal_i2c.o(.ARM.exidx.text.LCDI2C_noBacklight) refers to liquidcrystal_i2c.o(.text.LCDI2C_noBacklight) for [Anonymous Symbol]
+    liquidcrystal_i2c.o(.text.LCDI2C_backlight) refers to liquidcrystal_i2c.o(.bss.LCD2c_InitStructure) for LCD2c_InitStructure
+    liquidcrystal_i2c.o(.text.LCDI2C_backlight) refers to i2c.o(.text.I2C_StartTransmission) for I2C_StartTransmission
+    liquidcrystal_i2c.o(.text.LCDI2C_backlight) refers to i2c.o(.text.I2C_WriteData) for I2C_WriteData
+    liquidcrystal_i2c.o(.text.LCDI2C_backlight) refers to stm32f10x_i2c.o(.text.I2C_GenerateSTOP) for I2C_GenerateSTOP
+    liquidcrystal_i2c.o(.ARM.exidx.text.LCDI2C_backlight) refers to liquidcrystal_i2c.o(.text.LCDI2C_backlight) for [Anonymous Symbol]
+    liquidcrystal_i2c.o(.text.LCDI2C_pulseEnable) refers to liquidcrystal_i2c.o(.bss.LCD2c_InitStructure) for LCD2c_InitStructure
+    liquidcrystal_i2c.o(.text.LCDI2C_pulseEnable) refers to i2c.o(.text.I2C_StartTransmission) for I2C_StartTransmission
+    liquidcrystal_i2c.o(.text.LCDI2C_pulseEnable) refers to i2c.o(.text.I2C_WriteData) for I2C_WriteData
+    liquidcrystal_i2c.o(.text.LCDI2C_pulseEnable) refers to stm32f10x_i2c.o(.text.I2C_GenerateSTOP) for I2C_GenerateSTOP
+    liquidcrystal_i2c.o(.text.LCDI2C_pulseEnable) refers to delay.o(.text.delay_Mc) for delay_Mc
+    liquidcrystal_i2c.o(.ARM.exidx.text.LCDI2C_pulseEnable) refers to liquidcrystal_i2c.o(.text.LCDI2C_pulseEnable) for [Anonymous Symbol]
+    liquidcrystal_i2c.o(.text.LCDI2C_cursor_on) refers to liquidcrystal_i2c.o(.bss.LCD2c_InitStructure) for LCD2c_InitStructure
+    liquidcrystal_i2c.o(.text.LCDI2C_cursor_on) refers to liquidcrystal_i2c.o(.text.LCDI2C_write4bits) for LCDI2C_write4bits
+    liquidcrystal_i2c.o(.ARM.exidx.text.LCDI2C_cursor_on) refers to liquidcrystal_i2c.o(.text.LCDI2C_cursor_on) for [Anonymous Symbol]
+    liquidcrystal_i2c.o(.text.LCDI2C_cursor_off) refers to liquidcrystal_i2c.o(.bss.LCD2c_InitStructure) for LCD2c_InitStructure
+    liquidcrystal_i2c.o(.text.LCDI2C_cursor_off) refers to liquidcrystal_i2c.o(.text.LCDI2C_write4bits) for LCDI2C_write4bits
+    liquidcrystal_i2c.o(.ARM.exidx.text.LCDI2C_cursor_off) refers to liquidcrystal_i2c.o(.text.LCDI2C_cursor_off) for [Anonymous Symbol]
+    liquidcrystal_i2c.o(.text.LCDI2C_blink_on) refers to liquidcrystal_i2c.o(.bss.LCD2c_InitStructure) for LCD2c_InitStructure
+    liquidcrystal_i2c.o(.text.LCDI2C_blink_on) refers to liquidcrystal_i2c.o(.text.LCDI2C_write4bits) for LCDI2C_write4bits
+    liquidcrystal_i2c.o(.ARM.exidx.text.LCDI2C_blink_on) refers to liquidcrystal_i2c.o(.text.LCDI2C_blink_on) for [Anonymous Symbol]
+    liquidcrystal_i2c.o(.text.LCDI2C_blink_off) refers to liquidcrystal_i2c.o(.bss.LCD2c_InitStructure) for LCD2c_InitStructure
+    liquidcrystal_i2c.o(.text.LCDI2C_blink_off) refers to liquidcrystal_i2c.o(.text.LCDI2C_write4bits) for LCDI2C_write4bits
+    liquidcrystal_i2c.o(.ARM.exidx.text.LCDI2C_blink_off) refers to liquidcrystal_i2c.o(.text.LCDI2C_blink_off) for [Anonymous Symbol]
+    liquidcrystal_i2c.o(.text.LCDI2C_load_custom_character) refers to liquidcrystal_i2c.o(.text.LCDI2C_write4bits) for LCDI2C_write4bits
+    liquidcrystal_i2c.o(.ARM.exidx.text.LCDI2C_load_custom_character) refers to liquidcrystal_i2c.o(.text.LCDI2C_load_custom_character) for [Anonymous Symbol]
+    liquidcrystal_i2c.o(.text.LCDI2C_write_String) refers to liquidcrystal_i2c.o(.text.LCDI2C_write4bits) for LCDI2C_write4bits
+    liquidcrystal_i2c.o(.ARM.exidx.text.LCDI2C_write_String) refers to liquidcrystal_i2c.o(.text.LCDI2C_write_String) for [Anonymous Symbol]
+    misc.o(.ARM.exidx.text.NVIC_PriorityGroupConfig) refers to misc.o(.text.NVIC_PriorityGroupConfig) for [Anonymous Symbol]
+    misc.o(.ARM.exidx.text.NVIC_Init) refers to misc.o(.text.NVIC_Init) for [Anonymous Symbol]
+    misc.o(.ARM.exidx.text.NVIC_SetVectorTable) refers to misc.o(.text.NVIC_SetVectorTable) for [Anonymous Symbol]
+    misc.o(.ARM.exidx.text.NVIC_SystemLPConfig) refers to misc.o(.text.NVIC_SystemLPConfig) for [Anonymous Symbol]
+    misc.o(.ARM.exidx.text.SysTick_CLKSourceConfig) refers to misc.o(.text.SysTick_CLKSourceConfig) for [Anonymous Symbol]
+    stm32f10x_gpio.o(.text.GPIO_DeInit) refers to stm32f10x_gpio.o(.rodata..Lswitch.table.GPIO_DeInit.1) for .Lswitch.table.GPIO_DeInit.1
+    stm32f10x_gpio.o(.text.GPIO_DeInit) refers to stm32f10x_rcc.o(.text.RCC_APB2PeriphResetCmd) for RCC_APB2PeriphResetCmd
+    stm32f10x_gpio.o(.ARM.exidx.text.GPIO_DeInit) refers to stm32f10x_gpio.o(.text.GPIO_DeInit) for [Anonymous Symbol]
+    stm32f10x_gpio.o(.text.GPIO_AFIODeInit) refers to stm32f10x_rcc.o(.text.RCC_APB2PeriphResetCmd) for RCC_APB2PeriphResetCmd
+    stm32f10x_gpio.o(.ARM.exidx.text.GPIO_AFIODeInit) refers to stm32f10x_gpio.o(.text.GPIO_AFIODeInit) for [Anonymous Symbol]
+    stm32f10x_gpio.o(.ARM.exidx.text.GPIO_Init) refers to stm32f10x_gpio.o(.text.GPIO_Init) for [Anonymous Symbol]
+    stm32f10x_gpio.o(.ARM.exidx.text.GPIO_StructInit) refers to stm32f10x_gpio.o(.text.GPIO_StructInit) for [Anonymous Symbol]
+    stm32f10x_gpio.o(.ARM.exidx.text.GPIO_ReadInputDataBit) refers to stm32f10x_gpio.o(.text.GPIO_ReadInputDataBit) for [Anonymous Symbol]
+    stm32f10x_gpio.o(.ARM.exidx.text.GPIO_ReadInputData) refers to stm32f10x_gpio.o(.text.GPIO_ReadInputData) for [Anonymous Symbol]
+    stm32f10x_gpio.o(.ARM.exidx.text.GPIO_ReadOutputDataBit) refers to stm32f10x_gpio.o(.text.GPIO_ReadOutputDataBit) for [Anonymous Symbol]
+    stm32f10x_gpio.o(.ARM.exidx.text.GPIO_ReadOutputData) refers to stm32f10x_gpio.o(.text.GPIO_ReadOutputData) for [Anonymous Symbol]
+    stm32f10x_gpio.o(.ARM.exidx.text.GPIO_SetBits) refers to stm32f10x_gpio.o(.text.GPIO_SetBits) for [Anonymous Symbol]
+    stm32f10x_gpio.o(.ARM.exidx.text.GPIO_ResetBits) refers to stm32f10x_gpio.o(.text.GPIO_ResetBits) for [Anonymous Symbol]
+    stm32f10x_gpio.o(.ARM.exidx.text.GPIO_WriteBit) refers to stm32f10x_gpio.o(.text.GPIO_WriteBit) for [Anonymous Symbol]
+    stm32f10x_gpio.o(.ARM.exidx.text.GPIO_Write) refers to stm32f10x_gpio.o(.text.GPIO_Write) for [Anonymous Symbol]
+    stm32f10x_gpio.o(.ARM.exidx.text.GPIO_PinLockConfig) refers to stm32f10x_gpio.o(.text.GPIO_PinLockConfig) for [Anonymous Symbol]
+    stm32f10x_gpio.o(.ARM.exidx.text.GPIO_EventOutputConfig) refers to stm32f10x_gpio.o(.text.GPIO_EventOutputConfig) for [Anonymous Symbol]
+    stm32f10x_gpio.o(.ARM.exidx.text.GPIO_EventOutputCmd) refers to stm32f10x_gpio.o(.text.GPIO_EventOutputCmd) for [Anonymous Symbol]
+    stm32f10x_gpio.o(.ARM.exidx.text.GPIO_PinRemapConfig) refers to stm32f10x_gpio.o(.text.GPIO_PinRemapConfig) for [Anonymous Symbol]
+    stm32f10x_gpio.o(.ARM.exidx.text.GPIO_EXTILineConfig) refers to stm32f10x_gpio.o(.text.GPIO_EXTILineConfig) for [Anonymous Symbol]
+    stm32f10x_gpio.o(.ARM.exidx.text.GPIO_ETH_MediaInterfaceConfig) refers to stm32f10x_gpio.o(.text.GPIO_ETH_MediaInterfaceConfig) for [Anonymous Symbol]
+    stm32f10x_i2c.o(.text.I2C_DeInit) refers to stm32f10x_rcc.o(.text.RCC_APB1PeriphResetCmd) for RCC_APB1PeriphResetCmd
+    stm32f10x_i2c.o(.ARM.exidx.text.I2C_DeInit) refers to stm32f10x_i2c.o(.text.I2C_DeInit) for [Anonymous Symbol]
+    stm32f10x_i2c.o(.text.I2C_Init) refers to stm32f10x_rcc.o(.text.RCC_GetClocksFreq) for RCC_GetClocksFreq
+    stm32f10x_i2c.o(.ARM.exidx.text.I2C_Init) refers to stm32f10x_i2c.o(.text.I2C_Init) for [Anonymous Symbol]
+    stm32f10x_i2c.o(.ARM.exidx.text.I2C_StructInit) refers to stm32f10x_i2c.o(.text.I2C_StructInit) for [Anonymous Symbol]
+    stm32f10x_i2c.o(.ARM.exidx.text.I2C_Cmd) refers to stm32f10x_i2c.o(.text.I2C_Cmd) for [Anonymous Symbol]
+    stm32f10x_i2c.o(.ARM.exidx.text.I2C_DMACmd) refers to stm32f10x_i2c.o(.text.I2C_DMACmd) for [Anonymous Symbol]
+    stm32f10x_i2c.o(.ARM.exidx.text.I2C_DMALastTransferCmd) refers to stm32f10x_i2c.o(.text.I2C_DMALastTransferCmd) for [Anonymous Symbol]
+    stm32f10x_i2c.o(.ARM.exidx.text.I2C_GenerateSTART) refers to stm32f10x_i2c.o(.text.I2C_GenerateSTART) for [Anonymous Symbol]
+    stm32f10x_i2c.o(.ARM.exidx.text.I2C_GenerateSTOP) refers to stm32f10x_i2c.o(.text.I2C_GenerateSTOP) for [Anonymous Symbol]
+    stm32f10x_i2c.o(.ARM.exidx.text.I2C_AcknowledgeConfig) refers to stm32f10x_i2c.o(.text.I2C_AcknowledgeConfig) for [Anonymous Symbol]
+    stm32f10x_i2c.o(.ARM.exidx.text.I2C_OwnAddress2Config) refers to stm32f10x_i2c.o(.text.I2C_OwnAddress2Config) for [Anonymous Symbol]
+    stm32f10x_i2c.o(.ARM.exidx.text.I2C_DualAddressCmd) refers to stm32f10x_i2c.o(.text.I2C_DualAddressCmd) for [Anonymous Symbol]
+    stm32f10x_i2c.o(.ARM.exidx.text.I2C_GeneralCallCmd) refers to stm32f10x_i2c.o(.text.I2C_GeneralCallCmd) for [Anonymous Symbol]
+    stm32f10x_i2c.o(.ARM.exidx.text.I2C_ITConfig) refers to stm32f10x_i2c.o(.text.I2C_ITConfig) for [Anonymous Symbol]
+    stm32f10x_i2c.o(.ARM.exidx.text.I2C_SendData) refers to stm32f10x_i2c.o(.text.I2C_SendData) for [Anonymous Symbol]
+    stm32f10x_i2c.o(.ARM.exidx.text.I2C_ReceiveData) refers to stm32f10x_i2c.o(.text.I2C_ReceiveData) for [Anonymous Symbol]
+    stm32f10x_i2c.o(.ARM.exidx.text.I2C_Send7bitAddress) refers to stm32f10x_i2c.o(.text.I2C_Send7bitAddress) for [Anonymous Symbol]
+    stm32f10x_i2c.o(.ARM.exidx.text.I2C_ReadRegister) refers to stm32f10x_i2c.o(.text.I2C_ReadRegister) for [Anonymous Symbol]
+    stm32f10x_i2c.o(.ARM.exidx.text.I2C_SoftwareResetCmd) refers to stm32f10x_i2c.o(.text.I2C_SoftwareResetCmd) for [Anonymous Symbol]
+    stm32f10x_i2c.o(.ARM.exidx.text.I2C_NACKPositionConfig) refers to stm32f10x_i2c.o(.text.I2C_NACKPositionConfig) for [Anonymous Symbol]
+    stm32f10x_i2c.o(.ARM.exidx.text.I2C_SMBusAlertConfig) refers to stm32f10x_i2c.o(.text.I2C_SMBusAlertConfig) for [Anonymous Symbol]
+    stm32f10x_i2c.o(.ARM.exidx.text.I2C_TransmitPEC) refers to stm32f10x_i2c.o(.text.I2C_TransmitPEC) for [Anonymous Symbol]
+    stm32f10x_i2c.o(.ARM.exidx.text.I2C_PECPositionConfig) refers to stm32f10x_i2c.o(.text.I2C_PECPositionConfig) for [Anonymous Symbol]
+    stm32f10x_i2c.o(.ARM.exidx.text.I2C_CalculatePEC) refers to stm32f10x_i2c.o(.text.I2C_CalculatePEC) for [Anonymous Symbol]
+    stm32f10x_i2c.o(.ARM.exidx.text.I2C_GetPEC) refers to stm32f10x_i2c.o(.text.I2C_GetPEC) for [Anonymous Symbol]
+    stm32f10x_i2c.o(.ARM.exidx.text.I2C_ARPCmd) refers to stm32f10x_i2c.o(.text.I2C_ARPCmd) for [Anonymous Symbol]
+    stm32f10x_i2c.o(.ARM.exidx.text.I2C_StretchClockCmd) refers to stm32f10x_i2c.o(.text.I2C_StretchClockCmd) for [Anonymous Symbol]
+    stm32f10x_i2c.o(.ARM.exidx.text.I2C_FastModeDutyCycleConfig) refers to stm32f10x_i2c.o(.text.I2C_FastModeDutyCycleConfig) for [Anonymous Symbol]
+    stm32f10x_i2c.o(.ARM.exidx.text.I2C_CheckEvent) refers to stm32f10x_i2c.o(.text.I2C_CheckEvent) for [Anonymous Symbol]
+    stm32f10x_i2c.o(.ARM.exidx.text.I2C_GetLastEvent) refers to stm32f10x_i2c.o(.text.I2C_GetLastEvent) for [Anonymous Symbol]
+    stm32f10x_i2c.o(.ARM.exidx.text.I2C_GetFlagStatus) refers to stm32f10x_i2c.o(.text.I2C_GetFlagStatus) for [Anonymous Symbol]
+    stm32f10x_i2c.o(.ARM.exidx.text.I2C_ClearFlag) refers to stm32f10x_i2c.o(.text.I2C_ClearFlag) for [Anonymous Symbol]
+    stm32f10x_i2c.o(.ARM.exidx.text.I2C_GetITStatus) refers to stm32f10x_i2c.o(.text.I2C_GetITStatus) for [Anonymous Symbol]
+    stm32f10x_i2c.o(.ARM.exidx.text.I2C_ClearITPendingBit) refers to stm32f10x_i2c.o(.text.I2C_ClearITPendingBit) for [Anonymous Symbol]
+    stm32f10x_rcc.o(.ARM.exidx.text.RCC_DeInit) refers to stm32f10x_rcc.o(.text.RCC_DeInit) for [Anonymous Symbol]
+    stm32f10x_rcc.o(.ARM.exidx.text.RCC_HSEConfig) refers to stm32f10x_rcc.o(.text.RCC_HSEConfig) for [Anonymous Symbol]
+    stm32f10x_rcc.o(.ARM.exidx.text.RCC_WaitForHSEStartUp) refers to stm32f10x_rcc.o(.text.RCC_WaitForHSEStartUp) for [Anonymous Symbol]
+    stm32f10x_rcc.o(.ARM.exidx.text.RCC_GetFlagStatus) refers to stm32f10x_rcc.o(.text.RCC_GetFlagStatus) for [Anonymous Symbol]
+    stm32f10x_rcc.o(.ARM.exidx.text.RCC_AdjustHSICalibrationValue) refers to stm32f10x_rcc.o(.text.RCC_AdjustHSICalibrationValue) for [Anonymous Symbol]
+    stm32f10x_rcc.o(.ARM.exidx.text.RCC_HSICmd) refers to stm32f10x_rcc.o(.text.RCC_HSICmd) for [Anonymous Symbol]
+    stm32f10x_rcc.o(.ARM.exidx.text.RCC_PLLConfig) refers to stm32f10x_rcc.o(.text.RCC_PLLConfig) for [Anonymous Symbol]
+    stm32f10x_rcc.o(.ARM.exidx.text.RCC_PLLCmd) refers to stm32f10x_rcc.o(.text.RCC_PLLCmd) for [Anonymous Symbol]
+    stm32f10x_rcc.o(.ARM.exidx.text.RCC_SYSCLKConfig) refers to stm32f10x_rcc.o(.text.RCC_SYSCLKConfig) for [Anonymous Symbol]
+    stm32f10x_rcc.o(.ARM.exidx.text.RCC_GetSYSCLKSource) refers to stm32f10x_rcc.o(.text.RCC_GetSYSCLKSource) for [Anonymous Symbol]
+    stm32f10x_rcc.o(.ARM.exidx.text.RCC_HCLKConfig) refers to stm32f10x_rcc.o(.text.RCC_HCLKConfig) for [Anonymous Symbol]
+    stm32f10x_rcc.o(.ARM.exidx.text.RCC_PCLK1Config) refers to stm32f10x_rcc.o(.text.RCC_PCLK1Config) for [Anonymous Symbol]
+    stm32f10x_rcc.o(.ARM.exidx.text.RCC_PCLK2Config) refers to stm32f10x_rcc.o(.text.RCC_PCLK2Config) for [Anonymous Symbol]
+    stm32f10x_rcc.o(.ARM.exidx.text.RCC_ITConfig) refers to stm32f10x_rcc.o(.text.RCC_ITConfig) for [Anonymous Symbol]
+    stm32f10x_rcc.o(.ARM.exidx.text.RCC_USBCLKConfig) refers to stm32f10x_rcc.o(.text.RCC_USBCLKConfig) for [Anonymous Symbol]
+    stm32f10x_rcc.o(.ARM.exidx.text.RCC_ADCCLKConfig) refers to stm32f10x_rcc.o(.text.RCC_ADCCLKConfig) for [Anonymous Symbol]
+    stm32f10x_rcc.o(.ARM.exidx.text.RCC_LSEConfig) refers to stm32f10x_rcc.o(.text.RCC_LSEConfig) for [Anonymous Symbol]
+    stm32f10x_rcc.o(.ARM.exidx.text.RCC_LSICmd) refers to stm32f10x_rcc.o(.text.RCC_LSICmd) for [Anonymous Symbol]
+    stm32f10x_rcc.o(.ARM.exidx.text.RCC_RTCCLKConfig) refers to stm32f10x_rcc.o(.text.RCC_RTCCLKConfig) for [Anonymous Symbol]
+    stm32f10x_rcc.o(.ARM.exidx.text.RCC_RTCCLKCmd) refers to stm32f10x_rcc.o(.text.RCC_RTCCLKCmd) for [Anonymous Symbol]
+    stm32f10x_rcc.o(.text.RCC_GetClocksFreq) refers to stm32f10x_rcc.o(.rodata.APBAHBPrescTable) for APBAHBPrescTable
+    stm32f10x_rcc.o(.text.RCC_GetClocksFreq) refers to stm32f10x_rcc.o(.rodata.ADCPrescTable) for ADCPrescTable
+    stm32f10x_rcc.o(.ARM.exidx.text.RCC_GetClocksFreq) refers to stm32f10x_rcc.o(.text.RCC_GetClocksFreq) for [Anonymous Symbol]
+    stm32f10x_rcc.o(.ARM.exidx.text.RCC_AHBPeriphClockCmd) refers to stm32f10x_rcc.o(.text.RCC_AHBPeriphClockCmd) for [Anonymous Symbol]
+    stm32f10x_rcc.o(.ARM.exidx.text.RCC_APB2PeriphClockCmd) refers to stm32f10x_rcc.o(.text.RCC_APB2PeriphClockCmd) for [Anonymous Symbol]
+    stm32f10x_rcc.o(.ARM.exidx.text.RCC_APB1PeriphClockCmd) refers to stm32f10x_rcc.o(.text.RCC_APB1PeriphClockCmd) for [Anonymous Symbol]
+    stm32f10x_rcc.o(.ARM.exidx.text.RCC_APB2PeriphResetCmd) refers to stm32f10x_rcc.o(.text.RCC_APB2PeriphResetCmd) for [Anonymous Symbol]
+    stm32f10x_rcc.o(.ARM.exidx.text.RCC_APB1PeriphResetCmd) refers to stm32f10x_rcc.o(.text.RCC_APB1PeriphResetCmd) for [Anonymous Symbol]
+    stm32f10x_rcc.o(.ARM.exidx.text.RCC_BackupResetCmd) refers to stm32f10x_rcc.o(.text.RCC_BackupResetCmd) for [Anonymous Symbol]
+    stm32f10x_rcc.o(.ARM.exidx.text.RCC_ClockSecuritySystemCmd) refers to stm32f10x_rcc.o(.text.RCC_ClockSecuritySystemCmd) for [Anonymous Symbol]
+    stm32f10x_rcc.o(.ARM.exidx.text.RCC_MCOConfig) refers to stm32f10x_rcc.o(.text.RCC_MCOConfig) for [Anonymous Symbol]
+    stm32f10x_rcc.o(.ARM.exidx.text.RCC_ClearFlag) refers to stm32f10x_rcc.o(.text.RCC_ClearFlag) for [Anonymous Symbol]
+    stm32f10x_rcc.o(.ARM.exidx.text.RCC_GetITStatus) refers to stm32f10x_rcc.o(.text.RCC_GetITStatus) for [Anonymous Symbol]
+    stm32f10x_rcc.o(.ARM.exidx.text.RCC_ClearITPendingBit) refers to stm32f10x_rcc.o(.text.RCC_ClearITPendingBit) for [Anonymous Symbol]
+    startup_stm32f10x_md.o(RESET) refers to startup_stm32f10x_md.o(STACK) for __initial_sp
+    startup_stm32f10x_md.o(RESET) refers to startup_stm32f10x_md.o(.text) for Reset_Handler
+    startup_stm32f10x_md.o(.text) refers to system_stm32f10x.o(.text.SystemInit) for SystemInit
+    startup_stm32f10x_md.o(.text) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    system_stm32f10x.o(.ARM.exidx.text.SystemInit) refers to system_stm32f10x.o(.text.SystemInit) for [Anonymous Symbol]
+    system_stm32f10x.o(.text.SystemCoreClockUpdate) refers to system_stm32f10x.o(.data.SystemCoreClock) for SystemCoreClock
+    system_stm32f10x.o(.text.SystemCoreClockUpdate) refers to system_stm32f10x.o(.rodata.AHBPrescTable) for AHBPrescTable
+    system_stm32f10x.o(.ARM.exidx.text.SystemCoreClockUpdate) refers to system_stm32f10x.o(.text.SystemCoreClockUpdate) for [Anonymous Symbol]
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry10a.o(.ARM.Collect$$$$0000000D) for __rt_final_cpp
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry11a.o(.ARM.Collect$$$$0000000F) for __rt_final_exit
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry7b.o(.ARM.Collect$$$$00000008) for _main_clock
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry8b.o(.ARM.Collect$$$$0000000A) for _main_cpp_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry9a.o(.ARM.Collect$$$$0000000B) for _main_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry5.o(.ARM.Collect$$$$00000004) for _main_scatterload
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry2.o(.ARM.Collect$$$$00000001) for _main_stk
+    entry2.o(.ARM.Collect$$$$00000001) refers to entry2.o(.ARM.Collect$$$$00002712) for __lit__00000000
+    entry2.o(.ARM.Collect$$$$00002712) refers to startup_stm32f10x_md.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to startup_stm32f10x_md.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    entry5.o(.ARM.Collect$$$$00000004) refers to init.o(.text) for __scatterload
+    entry9a.o(.ARM.Collect$$$$0000000B) refers to main.o(.text.main) for main
+    entry9b.o(.ARM.Collect$$$$0000000C) refers to main.o(.text.main) for main
+    init.o(.text) refers to entry5.o(.ARM.Collect$$$$00000004) for __main_after_scatterload
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing main.o(.text), (0 bytes).
+    Removing main.o(.ARM.exidx.text.main), (8 bytes).
+    Removing main.o(.rodata.str1.4), (37 bytes).
+    Removing main.o(.ARM.use_no_argv), (4 bytes).
+    Removing delay.o(.text), (0 bytes).
+    Removing delay.o(.ARM.exidx.text.delay_ms), (8 bytes).
+    Removing delay.o(.ARM.exidx.text.delay_Mc), (8 bytes).
+    Removing i2c.o(.text), (0 bytes).
+    Removing i2c.o(.ARM.exidx.text.I2C1_LCD16x2_Init), (8 bytes).
+    Removing i2c.o(.ARM.exidx.text.I2C_StartTransmission), (8 bytes).
+    Removing i2c.o(.ARM.exidx.text.I2C_WriteData), (8 bytes).
+    Removing i2c.o(.text.I2C_ReadData), (34 bytes).
+    Removing i2c.o(.ARM.exidx.text.I2C_ReadData), (8 bytes).
+    Removing liquidcrystal_i2c.o(.text), (0 bytes).
+    Removing liquidcrystal_i2c.o(.ARM.exidx.text.LCDI2C_init), (8 bytes).
+    Removing liquidcrystal_i2c.o(.ARM.exidx.text.LCDI2C_begin), (8 bytes).
+    Removing liquidcrystal_i2c.o(.text.LCDI2C_expanderWrite), (54 bytes).
+    Removing liquidcrystal_i2c.o(.ARM.exidx.text.LCDI2C_expanderWrite), (8 bytes).
+    Removing liquidcrystal_i2c.o(.ARM.exidx.text.LCDI2C_write4bits), (8 bytes).
+    Removing liquidcrystal_i2c.o(.text.LCDI2C_command), (22 bytes).
+    Removing liquidcrystal_i2c.o(.ARM.exidx.text.LCDI2C_command), (8 bytes).
+    Removing liquidcrystal_i2c.o(.text.LCDI2C_display), (42 bytes).
+    Removing liquidcrystal_i2c.o(.ARM.exidx.text.LCDI2C_display), (8 bytes).
+    Removing liquidcrystal_i2c.o(.ARM.exidx.text.LCDI2C_clear), (8 bytes).
+    Removing liquidcrystal_i2c.o(.text.LCDI2C_home), (26 bytes).
+    Removing liquidcrystal_i2c.o(.ARM.exidx.text.LCDI2C_home), (8 bytes).
+    Removing liquidcrystal_i2c.o(.ARM.exidx.text.LCDI2C_write), (8 bytes).
+    Removing liquidcrystal_i2c.o(.text.LCDI2C_send), (30 bytes).
+    Removing liquidcrystal_i2c.o(.ARM.exidx.text.LCDI2C_send), (8 bytes).
+    Removing liquidcrystal_i2c.o(.ARM.exidx.text.LCDI2C_setCursor), (8 bytes).
+    Removing liquidcrystal_i2c.o(.text.LCDI2C_noDisplay), (44 bytes).
+    Removing liquidcrystal_i2c.o(.ARM.exidx.text.LCDI2C_noDisplay), (8 bytes).
+    Removing liquidcrystal_i2c.o(.text.LCDI2C_noCursor), (44 bytes).
+    Removing liquidcrystal_i2c.o(.ARM.exidx.text.LCDI2C_noCursor), (8 bytes).
+    Removing liquidcrystal_i2c.o(.text.LCDI2C_cursor), (42 bytes).
+    Removing liquidcrystal_i2c.o(.ARM.exidx.text.LCDI2C_cursor), (8 bytes).
+    Removing liquidcrystal_i2c.o(.text.LCDI2C_noBlink), (44 bytes).
+    Removing liquidcrystal_i2c.o(.ARM.exidx.text.LCDI2C_noBlink), (8 bytes).
+    Removing liquidcrystal_i2c.o(.text.LCDI2C_blink), (42 bytes).
+    Removing liquidcrystal_i2c.o(.ARM.exidx.text.LCDI2C_blink), (8 bytes).
+    Removing liquidcrystal_i2c.o(.ARM.exidx.text.LCDI2C_scrollDisplayLeft), (8 bytes).
+    Removing liquidcrystal_i2c.o(.ARM.exidx.text.LCDI2C_scrollDisplayRight), (8 bytes).
+    Removing liquidcrystal_i2c.o(.text.LCDI2C_leftToRight), (42 bytes).
+    Removing liquidcrystal_i2c.o(.ARM.exidx.text.LCDI2C_leftToRight), (8 bytes).
+    Removing liquidcrystal_i2c.o(.text.LCDI2C_rightToLeft), (44 bytes).
+    Removing liquidcrystal_i2c.o(.ARM.exidx.text.LCDI2C_rightToLeft), (8 bytes).
+    Removing liquidcrystal_i2c.o(.text.LCDI2C_autoscroll), (42 bytes).
+    Removing liquidcrystal_i2c.o(.ARM.exidx.text.LCDI2C_autoscroll), (8 bytes).
+    Removing liquidcrystal_i2c.o(.text.LCDI2C_noAutoscroll), (44 bytes).
+    Removing liquidcrystal_i2c.o(.ARM.exidx.text.LCDI2C_noAutoscroll), (8 bytes).
+    Removing liquidcrystal_i2c.o(.ARM.exidx.text.LCDI2C_createChar), (8 bytes).
+    Removing liquidcrystal_i2c.o(.text.LCDI2C_noBacklight), (52 bytes).
+    Removing liquidcrystal_i2c.o(.ARM.exidx.text.LCDI2C_noBacklight), (8 bytes).
+    Removing liquidcrystal_i2c.o(.ARM.exidx.text.LCDI2C_backlight), (8 bytes).
+    Removing liquidcrystal_i2c.o(.text.LCDI2C_pulseEnable), (104 bytes).
+    Removing liquidcrystal_i2c.o(.ARM.exidx.text.LCDI2C_pulseEnable), (8 bytes).
+    Removing liquidcrystal_i2c.o(.text.LCDI2C_cursor_on), (42 bytes).
+    Removing liquidcrystal_i2c.o(.ARM.exidx.text.LCDI2C_cursor_on), (8 bytes).
+    Removing liquidcrystal_i2c.o(.text.LCDI2C_cursor_off), (44 bytes).
+    Removing liquidcrystal_i2c.o(.ARM.exidx.text.LCDI2C_cursor_off), (8 bytes).
+    Removing liquidcrystal_i2c.o(.text.LCDI2C_blink_on), (42 bytes).
+    Removing liquidcrystal_i2c.o(.ARM.exidx.text.LCDI2C_blink_on), (8 bytes).
+    Removing liquidcrystal_i2c.o(.text.LCDI2C_blink_off), (44 bytes).
+    Removing liquidcrystal_i2c.o(.ARM.exidx.text.LCDI2C_blink_off), (8 bytes).
+    Removing liquidcrystal_i2c.o(.text.LCDI2C_load_custom_character), (64 bytes).
+    Removing liquidcrystal_i2c.o(.ARM.exidx.text.LCDI2C_load_custom_character), (8 bytes).
+    Removing liquidcrystal_i2c.o(.ARM.exidx.text.LCDI2C_write_String), (8 bytes).
+    Removing misc.o(.text), (0 bytes).
+    Removing misc.o(.text.NVIC_PriorityGroupConfig), (20 bytes).
+    Removing misc.o(.ARM.exidx.text.NVIC_PriorityGroupConfig), (8 bytes).
+    Removing misc.o(.text.NVIC_Init), (94 bytes).
+    Removing misc.o(.ARM.exidx.text.NVIC_Init), (8 bytes).
+    Removing misc.o(.text.NVIC_SetVectorTable), (24 bytes).
+    Removing misc.o(.ARM.exidx.text.NVIC_SetVectorTable), (8 bytes).
+    Removing misc.o(.text.NVIC_SystemLPConfig), (24 bytes).
+    Removing misc.o(.ARM.exidx.text.NVIC_SystemLPConfig), (8 bytes).
+    Removing misc.o(.text.SysTick_CLKSourceConfig), (24 bytes).
+    Removing misc.o(.ARM.exidx.text.SysTick_CLKSourceConfig), (8 bytes).
+    Removing stm32f10x_gpio.o(.text), (0 bytes).
+    Removing stm32f10x_gpio.o(.text.GPIO_DeInit), (52 bytes).
+    Removing stm32f10x_gpio.o(.ARM.exidx.text.GPIO_DeInit), (8 bytes).
+    Removing stm32f10x_gpio.o(.text.GPIO_AFIODeInit), (22 bytes).
+    Removing stm32f10x_gpio.o(.ARM.exidx.text.GPIO_AFIODeInit), (8 bytes).
+    Removing stm32f10x_gpio.o(.ARM.exidx.text.GPIO_Init), (8 bytes).
+    Removing stm32f10x_gpio.o(.text.GPIO_StructInit), (12 bytes).
+    Removing stm32f10x_gpio.o(.ARM.exidx.text.GPIO_StructInit), (8 bytes).
+    Removing stm32f10x_gpio.o(.text.GPIO_ReadInputDataBit), (10 bytes).
+    Removing stm32f10x_gpio.o(.ARM.exidx.text.GPIO_ReadInputDataBit), (8 bytes).
+    Removing stm32f10x_gpio.o(.text.GPIO_ReadInputData), (6 bytes).
+    Removing stm32f10x_gpio.o(.ARM.exidx.text.GPIO_ReadInputData), (8 bytes).
+    Removing stm32f10x_gpio.o(.text.GPIO_ReadOutputDataBit), (10 bytes).
+    Removing stm32f10x_gpio.o(.ARM.exidx.text.GPIO_ReadOutputDataBit), (8 bytes).
+    Removing stm32f10x_gpio.o(.text.GPIO_ReadOutputData), (6 bytes).
+    Removing stm32f10x_gpio.o(.ARM.exidx.text.GPIO_ReadOutputData), (8 bytes).
+    Removing stm32f10x_gpio.o(.text.GPIO_SetBits), (4 bytes).
+    Removing stm32f10x_gpio.o(.ARM.exidx.text.GPIO_SetBits), (8 bytes).
+    Removing stm32f10x_gpio.o(.text.GPIO_ResetBits), (4 bytes).
+    Removing stm32f10x_gpio.o(.ARM.exidx.text.GPIO_ResetBits), (8 bytes).
+    Removing stm32f10x_gpio.o(.text.GPIO_WriteBit), (12 bytes).
+    Removing stm32f10x_gpio.o(.ARM.exidx.text.GPIO_WriteBit), (8 bytes).
+    Removing stm32f10x_gpio.o(.text.GPIO_Write), (4 bytes).
+    Removing stm32f10x_gpio.o(.ARM.exidx.text.GPIO_Write), (8 bytes).
+    Removing stm32f10x_gpio.o(.text.GPIO_PinLockConfig), (16 bytes).
+    Removing stm32f10x_gpio.o(.ARM.exidx.text.GPIO_PinLockConfig), (8 bytes).
+    Removing stm32f10x_gpio.o(.text.GPIO_EventOutputConfig), (30 bytes).
+    Removing stm32f10x_gpio.o(.ARM.exidx.text.GPIO_EventOutputConfig), (8 bytes).
+    Removing stm32f10x_gpio.o(.text.GPIO_EventOutputCmd), (10 bytes).
+    Removing stm32f10x_gpio.o(.ARM.exidx.text.GPIO_EventOutputCmd), (8 bytes).
+    Removing stm32f10x_gpio.o(.text.GPIO_PinRemapConfig), (122 bytes).
+    Removing stm32f10x_gpio.o(.ARM.exidx.text.GPIO_PinRemapConfig), (8 bytes).
+    Removing stm32f10x_gpio.o(.text.GPIO_EXTILineConfig), (46 bytes).
+    Removing stm32f10x_gpio.o(.ARM.exidx.text.GPIO_EXTILineConfig), (8 bytes).
+    Removing stm32f10x_gpio.o(.text.GPIO_ETH_MediaInterfaceConfig), (10 bytes).
+    Removing stm32f10x_gpio.o(.ARM.exidx.text.GPIO_ETH_MediaInterfaceConfig), (8 bytes).
+    Removing stm32f10x_gpio.o(.rodata..Lswitch.table.GPIO_DeInit.1), (28 bytes).
+    Removing stm32f10x_i2c.o(.text), (0 bytes).
+    Removing stm32f10x_i2c.o(.text.I2C_DeInit), (42 bytes).
+    Removing stm32f10x_i2c.o(.ARM.exidx.text.I2C_DeInit), (8 bytes).
+    Removing stm32f10x_i2c.o(.ARM.exidx.text.I2C_Init), (8 bytes).
+    Removing stm32f10x_i2c.o(.text.I2C_StructInit), (24 bytes).
+    Removing stm32f10x_i2c.o(.ARM.exidx.text.I2C_StructInit), (8 bytes).
+    Removing stm32f10x_i2c.o(.ARM.exidx.text.I2C_Cmd), (8 bytes).
+    Removing stm32f10x_i2c.o(.text.I2C_DMACmd), (20 bytes).
+    Removing stm32f10x_i2c.o(.ARM.exidx.text.I2C_DMACmd), (8 bytes).
+    Removing stm32f10x_i2c.o(.text.I2C_DMALastTransferCmd), (20 bytes).
+    Removing stm32f10x_i2c.o(.ARM.exidx.text.I2C_DMALastTransferCmd), (8 bytes).
+    Removing stm32f10x_i2c.o(.ARM.exidx.text.I2C_GenerateSTART), (8 bytes).
+    Removing stm32f10x_i2c.o(.ARM.exidx.text.I2C_GenerateSTOP), (8 bytes).
+    Removing stm32f10x_i2c.o(.text.I2C_AcknowledgeConfig), (20 bytes).
+    Removing stm32f10x_i2c.o(.ARM.exidx.text.I2C_AcknowledgeConfig), (8 bytes).
+    Removing stm32f10x_i2c.o(.text.I2C_OwnAddress2Config), (12 bytes).
+    Removing stm32f10x_i2c.o(.ARM.exidx.text.I2C_OwnAddress2Config), (8 bytes).
+    Removing stm32f10x_i2c.o(.text.I2C_DualAddressCmd), (18 bytes).
+    Removing stm32f10x_i2c.o(.ARM.exidx.text.I2C_DualAddressCmd), (8 bytes).
+    Removing stm32f10x_i2c.o(.text.I2C_GeneralCallCmd), (20 bytes).
+    Removing stm32f10x_i2c.o(.ARM.exidx.text.I2C_GeneralCallCmd), (8 bytes).
+    Removing stm32f10x_i2c.o(.text.I2C_ITConfig), (16 bytes).
+    Removing stm32f10x_i2c.o(.ARM.exidx.text.I2C_ITConfig), (8 bytes).
+    Removing stm32f10x_i2c.o(.ARM.exidx.text.I2C_SendData), (8 bytes).
+    Removing stm32f10x_i2c.o(.text.I2C_ReceiveData), (6 bytes).
+    Removing stm32f10x_i2c.o(.ARM.exidx.text.I2C_ReceiveData), (8 bytes).
+    Removing stm32f10x_i2c.o(.ARM.exidx.text.I2C_Send7bitAddress), (8 bytes).
+    Removing stm32f10x_i2c.o(.text.I2C_ReadRegister), (22 bytes).
+    Removing stm32f10x_i2c.o(.ARM.exidx.text.I2C_ReadRegister), (8 bytes).
+    Removing stm32f10x_i2c.o(.text.I2C_SoftwareResetCmd), (20 bytes).
+    Removing stm32f10x_i2c.o(.ARM.exidx.text.I2C_SoftwareResetCmd), (8 bytes).
+    Removing stm32f10x_i2c.o(.text.I2C_NACKPositionConfig), (24 bytes).
+    Removing stm32f10x_i2c.o(.ARM.exidx.text.I2C_NACKPositionConfig), (8 bytes).
+    Removing stm32f10x_i2c.o(.text.I2C_SMBusAlertConfig), (24 bytes).
+    Removing stm32f10x_i2c.o(.ARM.exidx.text.I2C_SMBusAlertConfig), (8 bytes).
+    Removing stm32f10x_i2c.o(.text.I2C_TransmitPEC), (20 bytes).
+    Removing stm32f10x_i2c.o(.ARM.exidx.text.I2C_TransmitPEC), (8 bytes).
+    Removing stm32f10x_i2c.o(.text.I2C_PECPositionConfig), (24 bytes).
+    Removing stm32f10x_i2c.o(.ARM.exidx.text.I2C_PECPositionConfig), (8 bytes).
+    Removing stm32f10x_i2c.o(.text.I2C_CalculatePEC), (20 bytes).
+    Removing stm32f10x_i2c.o(.ARM.exidx.text.I2C_CalculatePEC), (8 bytes).
+    Removing stm32f10x_i2c.o(.text.I2C_GetPEC), (6 bytes).
+    Removing stm32f10x_i2c.o(.ARM.exidx.text.I2C_GetPEC), (8 bytes).
+    Removing stm32f10x_i2c.o(.text.I2C_ARPCmd), (20 bytes).
+    Removing stm32f10x_i2c.o(.ARM.exidx.text.I2C_ARPCmd), (8 bytes).
+    Removing stm32f10x_i2c.o(.text.I2C_StretchClockCmd), (20 bytes).
+    Removing stm32f10x_i2c.o(.ARM.exidx.text.I2C_StretchClockCmd), (8 bytes).
+    Removing stm32f10x_i2c.o(.text.I2C_FastModeDutyCycleConfig), (24 bytes).
+    Removing stm32f10x_i2c.o(.ARM.exidx.text.I2C_FastModeDutyCycleConfig), (8 bytes).
+    Removing stm32f10x_i2c.o(.ARM.exidx.text.I2C_CheckEvent), (8 bytes).
+    Removing stm32f10x_i2c.o(.text.I2C_GetLastEvent), (12 bytes).
+    Removing stm32f10x_i2c.o(.ARM.exidx.text.I2C_GetLastEvent), (8 bytes).
+    Removing stm32f10x_i2c.o(.ARM.exidx.text.I2C_GetFlagStatus), (8 bytes).
+    Removing stm32f10x_i2c.o(.text.I2C_ClearFlag), (6 bytes).
+    Removing stm32f10x_i2c.o(.ARM.exidx.text.I2C_ClearFlag), (8 bytes).
+    Removing stm32f10x_i2c.o(.text.I2C_GetITStatus), (28 bytes).
+    Removing stm32f10x_i2c.o(.ARM.exidx.text.I2C_GetITStatus), (8 bytes).
+    Removing stm32f10x_i2c.o(.text.I2C_ClearITPendingBit), (6 bytes).
+    Removing stm32f10x_i2c.o(.ARM.exidx.text.I2C_ClearITPendingBit), (8 bytes).
+    Removing stm32f10x_rcc.o(.text), (0 bytes).
+    Removing stm32f10x_rcc.o(.text.RCC_DeInit), (66 bytes).
+    Removing stm32f10x_rcc.o(.ARM.exidx.text.RCC_DeInit), (8 bytes).
+    Removing stm32f10x_rcc.o(.text.RCC_HSEConfig), (50 bytes).
+    Removing stm32f10x_rcc.o(.ARM.exidx.text.RCC_HSEConfig), (8 bytes).
+    Removing stm32f10x_rcc.o(.text.RCC_WaitForHSEStartUp), (48 bytes).
+    Removing stm32f10x_rcc.o(.ARM.exidx.text.RCC_WaitForHSEStartUp), (8 bytes).
+    Removing stm32f10x_rcc.o(.text.RCC_GetFlagStatus), (38 bytes).
+    Removing stm32f10x_rcc.o(.ARM.exidx.text.RCC_GetFlagStatus), (8 bytes).
+    Removing stm32f10x_rcc.o(.text.RCC_AdjustHSICalibrationValue), (22 bytes).
+    Removing stm32f10x_rcc.o(.ARM.exidx.text.RCC_AdjustHSICalibrationValue), (8 bytes).
+    Removing stm32f10x_rcc.o(.text.RCC_HSICmd), (10 bytes).
+    Removing stm32f10x_rcc.o(.ARM.exidx.text.RCC_HSICmd), (8 bytes).
+    Removing stm32f10x_rcc.o(.text.RCC_PLLConfig), (22 bytes).
+    Removing stm32f10x_rcc.o(.ARM.exidx.text.RCC_PLLConfig), (8 bytes).
+    Removing stm32f10x_rcc.o(.text.RCC_PLLCmd), (10 bytes).
+    Removing stm32f10x_rcc.o(.ARM.exidx.text.RCC_PLLCmd), (8 bytes).
+    Removing stm32f10x_rcc.o(.text.RCC_SYSCLKConfig), (20 bytes).
+    Removing stm32f10x_rcc.o(.ARM.exidx.text.RCC_SYSCLKConfig), (8 bytes).
+    Removing stm32f10x_rcc.o(.text.RCC_GetSYSCLKSource), (16 bytes).
+    Removing stm32f10x_rcc.o(.ARM.exidx.text.RCC_GetSYSCLKSource), (8 bytes).
+    Removing stm32f10x_rcc.o(.text.RCC_HCLKConfig), (20 bytes).
+    Removing stm32f10x_rcc.o(.ARM.exidx.text.RCC_HCLKConfig), (8 bytes).
+    Removing stm32f10x_rcc.o(.text.RCC_PCLK1Config), (20 bytes).
+    Removing stm32f10x_rcc.o(.ARM.exidx.text.RCC_PCLK1Config), (8 bytes).
+    Removing stm32f10x_rcc.o(.text.RCC_PCLK2Config), (22 bytes).
+    Removing stm32f10x_rcc.o(.ARM.exidx.text.RCC_PCLK2Config), (8 bytes).
+    Removing stm32f10x_rcc.o(.text.RCC_ITConfig), (24 bytes).
+    Removing stm32f10x_rcc.o(.ARM.exidx.text.RCC_ITConfig), (8 bytes).
+    Removing stm32f10x_rcc.o(.text.RCC_USBCLKConfig), (10 bytes).
+    Removing stm32f10x_rcc.o(.ARM.exidx.text.RCC_USBCLKConfig), (8 bytes).
+    Removing stm32f10x_rcc.o(.text.RCC_ADCCLKConfig), (20 bytes).
+    Removing stm32f10x_rcc.o(.ARM.exidx.text.RCC_ADCCLKConfig), (8 bytes).
+    Removing stm32f10x_rcc.o(.text.RCC_LSEConfig), (30 bytes).
+    Removing stm32f10x_rcc.o(.ARM.exidx.text.RCC_LSEConfig), (8 bytes).
+    Removing stm32f10x_rcc.o(.text.RCC_LSICmd), (12 bytes).
+    Removing stm32f10x_rcc.o(.ARM.exidx.text.RCC_LSICmd), (8 bytes).
+    Removing stm32f10x_rcc.o(.text.RCC_RTCCLKConfig), (16 bytes).
+    Removing stm32f10x_rcc.o(.ARM.exidx.text.RCC_RTCCLKConfig), (8 bytes).
+    Removing stm32f10x_rcc.o(.text.RCC_RTCCLKCmd), (12 bytes).
+    Removing stm32f10x_rcc.o(.ARM.exidx.text.RCC_RTCCLKCmd), (8 bytes).
+    Removing stm32f10x_rcc.o(.ARM.exidx.text.RCC_GetClocksFreq), (8 bytes).
+    Removing stm32f10x_rcc.o(.text.RCC_AHBPeriphClockCmd), (24 bytes).
+    Removing stm32f10x_rcc.o(.ARM.exidx.text.RCC_AHBPeriphClockCmd), (8 bytes).
+    Removing stm32f10x_rcc.o(.ARM.exidx.text.RCC_APB2PeriphClockCmd), (8 bytes).
+    Removing stm32f10x_rcc.o(.ARM.exidx.text.RCC_APB1PeriphClockCmd), (8 bytes).
+    Removing stm32f10x_rcc.o(.text.RCC_APB2PeriphResetCmd), (24 bytes).
+    Removing stm32f10x_rcc.o(.ARM.exidx.text.RCC_APB2PeriphResetCmd), (8 bytes).
+    Removing stm32f10x_rcc.o(.text.RCC_APB1PeriphResetCmd), (24 bytes).
+    Removing stm32f10x_rcc.o(.ARM.exidx.text.RCC_APB1PeriphResetCmd), (8 bytes).
+    Removing stm32f10x_rcc.o(.text.RCC_BackupResetCmd), (12 bytes).
+    Removing stm32f10x_rcc.o(.ARM.exidx.text.RCC_BackupResetCmd), (8 bytes).
+    Removing stm32f10x_rcc.o(.text.RCC_ClockSecuritySystemCmd), (10 bytes).
+    Removing stm32f10x_rcc.o(.ARM.exidx.text.RCC_ClockSecuritySystemCmd), (8 bytes).
+    Removing stm32f10x_rcc.o(.text.RCC_MCOConfig), (12 bytes).
+    Removing stm32f10x_rcc.o(.ARM.exidx.text.RCC_MCOConfig), (8 bytes).
+    Removing stm32f10x_rcc.o(.text.RCC_ClearFlag), (18 bytes).
+    Removing stm32f10x_rcc.o(.ARM.exidx.text.RCC_ClearFlag), (8 bytes).
+    Removing stm32f10x_rcc.o(.text.RCC_GetITStatus), (18 bytes).
+    Removing stm32f10x_rcc.o(.ARM.exidx.text.RCC_GetITStatus), (8 bytes).
+    Removing stm32f10x_rcc.o(.text.RCC_ClearITPendingBit), (12 bytes).
+    Removing stm32f10x_rcc.o(.ARM.exidx.text.RCC_ClearITPendingBit), (8 bytes).
+    Removing startup_stm32f10x_md.o(HEAP), (512 bytes).
+    Removing system_stm32f10x.o(.text), (0 bytes).
+    Removing system_stm32f10x.o(.ARM.exidx.text.SystemInit), (8 bytes).
+    Removing system_stm32f10x.o(.text.SystemCoreClockUpdate), (110 bytes).
+    Removing system_stm32f10x.o(.ARM.exidx.text.SystemCoreClockUpdate), (8 bytes).
+    Removing system_stm32f10x.o(.data.SystemCoreClock), (4 bytes).
+    Removing system_stm32f10x.o(.rodata.AHBPrescTable), (16 bytes).
+
+243 unused section(s) (total 4409 bytes) removed from the image.
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
+    I2C.c                                    0x00000000   Number         0  i2c.o ABSOLUTE
+    LiquidCrystal_I2C.c                      0x00000000   Number         0  liquidcrystal_i2c.o ABSOLUTE
+    RTE/Device/STM32F103C8/startup_stm32f10x_md.s 0x00000000   Number         0  startup_stm32f10x_md.o ABSOLUTE
+    dc.s                                     0x00000000   Number         0  dc.o ABSOLUTE
+    delay.c                                  0x00000000   Number         0  delay.o ABSOLUTE
+    handlers.s                               0x00000000   Number         0  handlers.o ABSOLUTE
+    init.s                                   0x00000000   Number         0  init.o ABSOLUTE
+    main.c                                   0x00000000   Number         0  main.o ABSOLUTE
+    misc.c                                   0x00000000   Number         0  misc.o ABSOLUTE
+    stm32f10x_gpio.c                         0x00000000   Number         0  stm32f10x_gpio.o ABSOLUTE
+    stm32f10x_i2c.c                          0x00000000   Number         0  stm32f10x_i2c.o ABSOLUTE
+    stm32f10x_rcc.c                          0x00000000   Number         0  stm32f10x_rcc.o ABSOLUTE
+    system_stm32f10x.c                       0x00000000   Number         0  system_stm32f10x.o ABSOLUTE
+    RESET                                    0x08000000   Section      236  startup_stm32f10x_md.o(RESET)
+    .ARM.Collect$$$$00000000                 0x080000ec   Section        0  entry.o(.ARM.Collect$$$$00000000)
+    .ARM.Collect$$$$00000001                 0x080000ec   Section        4  entry2.o(.ARM.Collect$$$$00000001)
+    .ARM.Collect$$$$00000004                 0x080000f0   Section        4  entry5.o(.ARM.Collect$$$$00000004)
+    .ARM.Collect$$$$00000008                 0x080000f4   Section        0  entry7b.o(.ARM.Collect$$$$00000008)
+    .ARM.Collect$$$$0000000A                 0x080000f4   Section        0  entry8b.o(.ARM.Collect$$$$0000000A)
+    .ARM.Collect$$$$0000000B                 0x080000f4   Section        8  entry9a.o(.ARM.Collect$$$$0000000B)
+    __lit__00000000                          0x080000fc   Data           4  entry2.o(.ARM.Collect$$$$00002712)
+    .ARM.Collect$$$$0000000D                 0x080000fc   Section        0  entry10a.o(.ARM.Collect$$$$0000000D)
+    .ARM.Collect$$$$0000000F                 0x080000fc   Section        0  entry11a.o(.ARM.Collect$$$$0000000F)
+    .ARM.Collect$$$$00002712                 0x080000fc   Section        4  entry2.o(.ARM.Collect$$$$00002712)
+    .text                                    0x08000100   Section       36  startup_stm32f10x_md.o(.text)
+    .text                                    0x08000124   Section       36  init.o(.text)
+    [Anonymous Symbol]                       0x08000148   Section        0  stm32f10x_gpio.o(.text.GPIO_Init)
+    [Anonymous Symbol]                       0x08000208   Section        0  i2c.o(.text.I2C1_LCD16x2_Init)
+    [Anonymous Symbol]                       0x08000278   Section        0  stm32f10x_i2c.o(.text.I2C_CheckEvent)
+    [Anonymous Symbol]                       0x08000290   Section        0  stm32f10x_i2c.o(.text.I2C_Cmd)
+    [Anonymous Symbol]                       0x080002a4   Section        0  stm32f10x_i2c.o(.text.I2C_GenerateSTART)
+    [Anonymous Symbol]                       0x080002b8   Section        0  stm32f10x_i2c.o(.text.I2C_GenerateSTOP)
+    [Anonymous Symbol]                       0x080002cc   Section        0  stm32f10x_i2c.o(.text.I2C_GetFlagStatus)
+    [Anonymous Symbol]                       0x080002fc   Section        0  stm32f10x_i2c.o(.text.I2C_Init)
+    [Anonymous Symbol]                       0x080003c8   Section        0  stm32f10x_i2c.o(.text.I2C_Send7bitAddress)
+    [Anonymous Symbol]                       0x080003d8   Section        0  stm32f10x_i2c.o(.text.I2C_SendData)
+    [Anonymous Symbol]                       0x080003dc   Section        0  i2c.o(.text.I2C_StartTransmission)
+    [Anonymous Symbol]                       0x0800044c   Section        0  i2c.o(.text.I2C_WriteData)
+    [Anonymous Symbol]                       0x0800046c   Section        0  liquidcrystal_i2c.o(.text.LCDI2C_backlight)
+    [Anonymous Symbol]                       0x080004a0   Section        0  liquidcrystal_i2c.o(.text.LCDI2C_begin)
+    [Anonymous Symbol]                       0x08000580   Section        0  liquidcrystal_i2c.o(.text.LCDI2C_clear)
+    [Anonymous Symbol]                       0x0800059c   Section        0  liquidcrystal_i2c.o(.text.LCDI2C_createChar)
+    [Anonymous Symbol]                       0x080005dc   Section        0  liquidcrystal_i2c.o(.text.LCDI2C_init)
+    [Anonymous Symbol]                       0x08000604   Section        0  liquidcrystal_i2c.o(.text.LCDI2C_scrollDisplayLeft)
+    [Anonymous Symbol]                       0x08000618   Section        0  liquidcrystal_i2c.o(.text.LCDI2C_scrollDisplayRight)
+    [Anonymous Symbol]                       0x0800062c   Section        0  liquidcrystal_i2c.o(.text.LCDI2C_setCursor)
+    [Anonymous Symbol]                       0x08000670   Section        0  liquidcrystal_i2c.o(.text.LCDI2C_write)
+    [Anonymous Symbol]                       0x0800068c   Section        0  liquidcrystal_i2c.o(.text.LCDI2C_write4bits)
+    [Anonymous Symbol]                       0x08000714   Section        0  liquidcrystal_i2c.o(.text.LCDI2C_write_String)
+    [Anonymous Symbol]                       0x08000748   Section        0  stm32f10x_rcc.o(.text.RCC_APB1PeriphClockCmd)
+    [Anonymous Symbol]                       0x08000760   Section        0  stm32f10x_rcc.o(.text.RCC_APB2PeriphClockCmd)
+    [Anonymous Symbol]                       0x08000778   Section        0  stm32f10x_rcc.o(.text.RCC_GetClocksFreq)
+    [Anonymous Symbol]                       0x08000818   Section        0  system_stm32f10x.o(.text.SystemInit)
+    [Anonymous Symbol]                       0x08000928   Section        0  delay.o(.text.delay_Mc)
+    [Anonymous Symbol]                       0x0800095c   Section        0  delay.o(.text.delay_ms)
+    [Anonymous Symbol]                       0x08000990   Section        0  main.o(.text.main)
+    i.__scatterload_copy                     0x08000c48   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_null                     0x08000c56   Section        2  handlers.o(i.__scatterload_null)
+    i.__scatterload_zeroinit                 0x08000c58   Section       14  handlers.o(i.__scatterload_zeroinit)
+    ADCPrescTable                            0x08000c66   Data           4  stm32f10x_rcc.o(.rodata.ADCPrescTable)
+    [Anonymous Symbol]                       0x08000c66   Section        0  stm32f10x_rcc.o(.rodata.ADCPrescTable)
+    APBAHBPrescTable                         0x08000c6a   Data          16  stm32f10x_rcc.o(.rodata.APBAHBPrescTable)
+    [Anonymous Symbol]                       0x08000c6a   Section        0  stm32f10x_rcc.o(.rodata.APBAHBPrescTable)
+    [Anonymous Symbol]                       0x08000c7a   Section        0  main.o(.rodata.str1.1)
+    STACK                                    0x200000b0   Section     1024  startup_stm32f10x_md.o(STACK)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv4$P$D$K$B$S$PE$A:L22UL41UL21$X:L11$S22US41US21$IEEE1$IW$~IW$USESV6$~STKCKD$USESV7$~SHL$OTIME$EBA8$MICROLIB$REQ8$PRES8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    __cpp_initialize__aeabi_                  - Undefined Weak Reference
+    __cxa_finalize                            - Undefined Weak Reference
+    __decompress                              - Undefined Weak Reference
+    _clock_init                               - Undefined Weak Reference
+    _microlib_exit                            - Undefined Weak Reference
+    __Vectors_Size                           0x000000ec   Number         0  startup_stm32f10x_md.o ABSOLUTE
+    __Vectors                                0x08000000   Data           4  startup_stm32f10x_md.o(RESET)
+    __Vectors_End                            0x080000ec   Data           0  startup_stm32f10x_md.o(RESET)
+    __main                                   0x080000ed   Thumb Code     0  entry.o(.ARM.Collect$$$$00000000)
+    _main_stk                                0x080000ed   Thumb Code     0  entry2.o(.ARM.Collect$$$$00000001)
+    _main_scatterload                        0x080000f1   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    __main_after_scatterload                 0x080000f5   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    _main_clock                              0x080000f5   Thumb Code     0  entry7b.o(.ARM.Collect$$$$00000008)
+    _main_cpp_init                           0x080000f5   Thumb Code     0  entry8b.o(.ARM.Collect$$$$0000000A)
+    _main_init                               0x080000f5   Thumb Code     0  entry9a.o(.ARM.Collect$$$$0000000B)
+    __rt_final_cpp                           0x080000fd   Thumb Code     0  entry10a.o(.ARM.Collect$$$$0000000D)
+    __rt_final_exit                          0x080000fd   Thumb Code     0  entry11a.o(.ARM.Collect$$$$0000000F)
+    Reset_Handler                            0x08000101   Thumb Code     8  startup_stm32f10x_md.o(.text)
+    NMI_Handler                              0x08000109   Thumb Code     2  startup_stm32f10x_md.o(.text)
+    HardFault_Handler                        0x0800010b   Thumb Code     2  startup_stm32f10x_md.o(.text)
+    MemManage_Handler                        0x0800010d   Thumb Code     2  startup_stm32f10x_md.o(.text)
+    BusFault_Handler                         0x0800010f   Thumb Code     2  startup_stm32f10x_md.o(.text)
+    UsageFault_Handler                       0x08000111   Thumb Code     2  startup_stm32f10x_md.o(.text)
+    SVC_Handler                              0x08000113   Thumb Code     2  startup_stm32f10x_md.o(.text)
+    DebugMon_Handler                         0x08000115   Thumb Code     2  startup_stm32f10x_md.o(.text)
+    PendSV_Handler                           0x08000117   Thumb Code     2  startup_stm32f10x_md.o(.text)
+    SysTick_Handler                          0x08000119   Thumb Code     2  startup_stm32f10x_md.o(.text)
+    ADC1_2_IRQHandler                        0x0800011b   Thumb Code     0  startup_stm32f10x_md.o(.text)
+    CAN1_RX1_IRQHandler                      0x0800011b   Thumb Code     0  startup_stm32f10x_md.o(.text)
+    CAN1_SCE_IRQHandler                      0x0800011b   Thumb Code     0  startup_stm32f10x_md.o(.text)
+    DMA1_Channel1_IRQHandler                 0x0800011b   Thumb Code     0  startup_stm32f10x_md.o(.text)
+    DMA1_Channel2_IRQHandler                 0x0800011b   Thumb Code     0  startup_stm32f10x_md.o(.text)
+    DMA1_Channel3_IRQHandler                 0x0800011b   Thumb Code     0  startup_stm32f10x_md.o(.text)
+    DMA1_Channel4_IRQHandler                 0x0800011b   Thumb Code     0  startup_stm32f10x_md.o(.text)
+    DMA1_Channel5_IRQHandler                 0x0800011b   Thumb Code     0  startup_stm32f10x_md.o(.text)
+    DMA1_Channel6_IRQHandler                 0x0800011b   Thumb Code     0  startup_stm32f10x_md.o(.text)
+    DMA1_Channel7_IRQHandler                 0x0800011b   Thumb Code     0  startup_stm32f10x_md.o(.text)
+    EXTI0_IRQHandler                         0x0800011b   Thumb Code     0  startup_stm32f10x_md.o(.text)
+    EXTI15_10_IRQHandler                     0x0800011b   Thumb Code     0  startup_stm32f10x_md.o(.text)
+    EXTI1_IRQHandler                         0x0800011b   Thumb Code     0  startup_stm32f10x_md.o(.text)
+    EXTI2_IRQHandler                         0x0800011b   Thumb Code     0  startup_stm32f10x_md.o(.text)
+    EXTI3_IRQHandler                         0x0800011b   Thumb Code     0  startup_stm32f10x_md.o(.text)
+    EXTI4_IRQHandler                         0x0800011b   Thumb Code     0  startup_stm32f10x_md.o(.text)
+    EXTI9_5_IRQHandler                       0x0800011b   Thumb Code     0  startup_stm32f10x_md.o(.text)
+    FLASH_IRQHandler                         0x0800011b   Thumb Code     0  startup_stm32f10x_md.o(.text)
+    I2C1_ER_IRQHandler                       0x0800011b   Thumb Code     0  startup_stm32f10x_md.o(.text)
+    I2C1_EV_IRQHandler                       0x0800011b   Thumb Code     0  startup_stm32f10x_md.o(.text)
+    I2C2_ER_IRQHandler                       0x0800011b   Thumb Code     0  startup_stm32f10x_md.o(.text)
+    I2C2_EV_IRQHandler                       0x0800011b   Thumb Code     0  startup_stm32f10x_md.o(.text)
+    PVD_IRQHandler                           0x0800011b   Thumb Code     0  startup_stm32f10x_md.o(.text)
+    RCC_IRQHandler                           0x0800011b   Thumb Code     0  startup_stm32f10x_md.o(.text)
+    RTCAlarm_IRQHandler                      0x0800011b   Thumb Code     0  startup_stm32f10x_md.o(.text)
+    RTC_IRQHandler                           0x0800011b   Thumb Code     0  startup_stm32f10x_md.o(.text)
+    SPI1_IRQHandler                          0x0800011b   Thumb Code     0  startup_stm32f10x_md.o(.text)
+    SPI2_IRQHandler                          0x0800011b   Thumb Code     0  startup_stm32f10x_md.o(.text)
+    TAMPER_IRQHandler                        0x0800011b   Thumb Code     0  startup_stm32f10x_md.o(.text)
+    TIM1_BRK_IRQHandler                      0x0800011b   Thumb Code     0  startup_stm32f10x_md.o(.text)
+    TIM1_CC_IRQHandler                       0x0800011b   Thumb Code     0  startup_stm32f10x_md.o(.text)
+    TIM1_TRG_COM_IRQHandler                  0x0800011b   Thumb Code     0  startup_stm32f10x_md.o(.text)
+    TIM1_UP_IRQHandler                       0x0800011b   Thumb Code     0  startup_stm32f10x_md.o(.text)
+    TIM2_IRQHandler                          0x0800011b   Thumb Code     0  startup_stm32f10x_md.o(.text)
+    TIM3_IRQHandler                          0x0800011b   Thumb Code     0  startup_stm32f10x_md.o(.text)
+    TIM4_IRQHandler                          0x0800011b   Thumb Code     0  startup_stm32f10x_md.o(.text)
+    USART1_IRQHandler                        0x0800011b   Thumb Code     0  startup_stm32f10x_md.o(.text)
+    USART2_IRQHandler                        0x0800011b   Thumb Code     0  startup_stm32f10x_md.o(.text)
+    USART3_IRQHandler                        0x0800011b   Thumb Code     0  startup_stm32f10x_md.o(.text)
+    USBWakeUp_IRQHandler                     0x0800011b   Thumb Code     0  startup_stm32f10x_md.o(.text)
+    USB_HP_CAN1_TX_IRQHandler                0x0800011b   Thumb Code     0  startup_stm32f10x_md.o(.text)
+    USB_LP_CAN1_RX0_IRQHandler               0x0800011b   Thumb Code     0  startup_stm32f10x_md.o(.text)
+    WWDG_IRQHandler                          0x0800011b   Thumb Code     0  startup_stm32f10x_md.o(.text)
+    __scatterload                            0x08000125   Thumb Code    28  init.o(.text)
+    __scatterload_rt2                        0x08000125   Thumb Code     0  init.o(.text)
+    GPIO_Init                                0x08000149   Thumb Code   192  stm32f10x_gpio.o(.text.GPIO_Init)
+    I2C1_LCD16x2_Init                        0x08000209   Thumb Code   110  i2c.o(.text.I2C1_LCD16x2_Init)
+    I2C_CheckEvent                           0x08000279   Thumb Code    22  stm32f10x_i2c.o(.text.I2C_CheckEvent)
+    I2C_Cmd                                  0x08000291   Thumb Code    18  stm32f10x_i2c.o(.text.I2C_Cmd)
+    I2C_GenerateSTART                        0x080002a5   Thumb Code    20  stm32f10x_i2c.o(.text.I2C_GenerateSTART)
+    I2C_GenerateSTOP                         0x080002b9   Thumb Code    20  stm32f10x_i2c.o(.text.I2C_GenerateSTOP)
+    I2C_GetFlagStatus                        0x080002cd   Thumb Code    48  stm32f10x_i2c.o(.text.I2C_GetFlagStatus)
+    I2C_Init                                 0x080002fd   Thumb Code   204  stm32f10x_i2c.o(.text.I2C_Init)
+    I2C_Send7bitAddress                      0x080003c9   Thumb Code    16  stm32f10x_i2c.o(.text.I2C_Send7bitAddress)
+    I2C_SendData                             0x080003d9   Thumb Code     4  stm32f10x_i2c.o(.text.I2C_SendData)
+    I2C_StartTransmission                    0x080003dd   Thumb Code   112  i2c.o(.text.I2C_StartTransmission)
+    I2C_WriteData                            0x0800044d   Thumb Code    30  i2c.o(.text.I2C_WriteData)
+    LCDI2C_backlight                         0x0800046d   Thumb Code    52  liquidcrystal_i2c.o(.text.LCDI2C_backlight)
+    LCDI2C_begin                             0x080004a1   Thumb Code   222  liquidcrystal_i2c.o(.text.LCDI2C_begin)
+    LCDI2C_clear                             0x08000581   Thumb Code    26  liquidcrystal_i2c.o(.text.LCDI2C_clear)
+    LCDI2C_createChar                        0x0800059d   Thumb Code    64  liquidcrystal_i2c.o(.text.LCDI2C_createChar)
+    LCDI2C_init                              0x080005dd   Thumb Code    40  liquidcrystal_i2c.o(.text.LCDI2C_init)
+    LCDI2C_scrollDisplayLeft                 0x08000605   Thumb Code    18  liquidcrystal_i2c.o(.text.LCDI2C_scrollDisplayLeft)
+    LCDI2C_scrollDisplayRight                0x08000619   Thumb Code    18  liquidcrystal_i2c.o(.text.LCDI2C_scrollDisplayRight)
+    LCDI2C_setCursor                         0x0800062d   Thumb Code    52  liquidcrystal_i2c.o(.text.LCDI2C_setCursor)
+    LCDI2C_write                             0x08000671   Thumb Code    26  liquidcrystal_i2c.o(.text.LCDI2C_write)
+    LCDI2C_write4bits                        0x0800068d   Thumb Code   134  liquidcrystal_i2c.o(.text.LCDI2C_write4bits)
+    LCDI2C_write_String                      0x08000715   Thumb Code    50  liquidcrystal_i2c.o(.text.LCDI2C_write_String)
+    RCC_APB1PeriphClockCmd                   0x08000749   Thumb Code    24  stm32f10x_rcc.o(.text.RCC_APB1PeriphClockCmd)
+    RCC_APB2PeriphClockCmd                   0x08000761   Thumb Code    24  stm32f10x_rcc.o(.text.RCC_APB2PeriphClockCmd)
+    RCC_GetClocksFreq                        0x08000779   Thumb Code   160  stm32f10x_rcc.o(.text.RCC_GetClocksFreq)
+    SystemInit                               0x08000819   Thumb Code   272  system_stm32f10x.o(.text.SystemInit)
+    delay_Mc                                 0x08000929   Thumb Code    52  delay.o(.text.delay_Mc)
+    delay_ms                                 0x0800095d   Thumb Code    52  delay.o(.text.delay_ms)
+    main                                     0x08000991   Thumb Code   616  main.o(.text.main)
+    __scatterload_copy                       0x08000c49   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_null                       0x08000c57   Thumb Code     2  handlers.o(i.__scatterload_null)
+    __scatterload_zeroinit                   0x08000c59   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    Region$$Table$$Base                      0x08000ccc   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x08000cec   Number         0  anon$$obj.o(Region$$Table)
+    batt000                                  0x20000000   Data           8  main.o(.data.batt000)
+    batt010                                  0x20000008   Data           8  main.o(.data.batt010)
+    batt030                                  0x20000010   Data           8  main.o(.data.batt030)
+    batt050                                  0x20000018   Data           8  main.o(.data.batt050)
+    batt070                                  0x20000020   Data           8  main.o(.data.batt070)
+    batt090                                  0x20000028   Data           8  main.o(.data.batt090)
+    batt100                                  0x20000030   Data           8  main.o(.data.batt100)
+    battcrg                                  0x20000038   Data           8  main.o(.data.battcrg)
+    check                                    0x20000040   Data           8  main.o(.data.check)
+    clock                                    0x20000048   Data           8  main.o(.data.clock)
+    cross                                    0x20000050   Data           8  main.o(.data.cross)
+    duck                                     0x20000058   Data           8  main.o(.data.duck)
+    face                                     0x20000060   Data           8  main.o(.data.face)
+    heart                                    0x20000068   Data           8  main.o(.data.heart)
+    note                                     0x20000070   Data           8  main.o(.data.note)
+    retarrow                                 0x20000078   Data           8  main.o(.data.retarrow)
+    simbol                                   0x20000080   Data          36  main.o(.data.simbol)
+    LCD2c_InitStructure                      0x200000a8   Data           8  liquidcrystal_i2c.o(.bss.LCD2c_InitStructure)
+    __initial_sp                             0x200004b0   Data           0  startup_stm32f10x_md.o(STACK)
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x080000ed
+
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00000d98, Max: 0x00010000, ABSOLUTE)
+
+    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00000cec, Max: 0x00010000, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x08000000   0x08000000   0x000000ec   Data   RO          344    RESET               startup_stm32f10x_md.o
+    0x080000ec   0x080000ec   0x00000000   Code   RO          365  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
+    0x080000ec   0x080000ec   0x00000004   Code   RO          368    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
+    0x080000f0   0x080000f0   0x00000004   Code   RO          371    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
+    0x080000f4   0x080000f4   0x00000000   Code   RO          373    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
+    0x080000f4   0x080000f4   0x00000000   Code   RO          375    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
+    0x080000f4   0x080000f4   0x00000008   Code   RO          376    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
+    0x080000fc   0x080000fc   0x00000000   Code   RO          378    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
+    0x080000fc   0x080000fc   0x00000000   Code   RO          380    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
+    0x080000fc   0x080000fc   0x00000004   Code   RO          369    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
+    0x08000100   0x08000100   0x00000024   Code   RO          345    .text               startup_stm32f10x_md.o
+    0x08000124   0x08000124   0x00000024   Code   RO          382    .text               mc_w.l(init.o)
+    0x08000148   0x08000148   0x000000c0   Code   RO          154    .text.GPIO_Init     stm32f10x_gpio.o
+    0x08000208   0x08000208   0x0000006e   Code   RO           43    .text.I2C1_LCD16x2_Init  i2c.o
+    0x08000276   0x08000276   0x00000002   PAD
+    0x08000278   0x08000278   0x00000016   Code   RO          249    .text.I2C_CheckEvent  stm32f10x_i2c.o
+    0x0800028e   0x0800028e   0x00000002   PAD
+    0x08000290   0x08000290   0x00000012   Code   RO          201    .text.I2C_Cmd       stm32f10x_i2c.o
+    0x080002a2   0x080002a2   0x00000002   PAD
+    0x080002a4   0x080002a4   0x00000014   Code   RO          207    .text.I2C_GenerateSTART  stm32f10x_i2c.o
+    0x080002b8   0x080002b8   0x00000014   Code   RO          209    .text.I2C_GenerateSTOP  stm32f10x_i2c.o
+    0x080002cc   0x080002cc   0x00000030   Code   RO          253    .text.I2C_GetFlagStatus  stm32f10x_i2c.o
+    0x080002fc   0x080002fc   0x000000cc   Code   RO          197    .text.I2C_Init      stm32f10x_i2c.o
+    0x080003c8   0x080003c8   0x00000010   Code   RO          225    .text.I2C_Send7bitAddress  stm32f10x_i2c.o
+    0x080003d8   0x080003d8   0x00000004   Code   RO          221    .text.I2C_SendData  stm32f10x_i2c.o
+    0x080003dc   0x080003dc   0x00000070   Code   RO           45    .text.I2C_StartTransmission  i2c.o
+    0x0800044c   0x0800044c   0x0000001e   Code   RO           47    .text.I2C_WriteData  i2c.o
+    0x0800046a   0x0800046a   0x00000002   PAD
+    0x0800046c   0x0800046c   0x00000034   Code   RO          107    .text.LCDI2C_backlight  liquidcrystal_i2c.o
+    0x080004a0   0x080004a0   0x000000de   Code   RO           61    .text.LCDI2C_begin  liquidcrystal_i2c.o
+    0x0800057e   0x0800057e   0x00000002   PAD
+    0x08000580   0x08000580   0x0000001a   Code   RO           71    .text.LCDI2C_clear  liquidcrystal_i2c.o
+    0x0800059a   0x0800059a   0x00000002   PAD
+    0x0800059c   0x0800059c   0x00000040   Code   RO          103    .text.LCDI2C_createChar  liquidcrystal_i2c.o
+    0x080005dc   0x080005dc   0x00000028   Code   RO           59    .text.LCDI2C_init   liquidcrystal_i2c.o
+    0x08000604   0x08000604   0x00000012   Code   RO           91    .text.LCDI2C_scrollDisplayLeft  liquidcrystal_i2c.o
+    0x08000616   0x08000616   0x00000002   PAD
+    0x08000618   0x08000618   0x00000012   Code   RO           93    .text.LCDI2C_scrollDisplayRight  liquidcrystal_i2c.o
+    0x0800062a   0x0800062a   0x00000002   PAD
+    0x0800062c   0x0800062c   0x00000044   Code   RO           79    .text.LCDI2C_setCursor  liquidcrystal_i2c.o
+    0x08000670   0x08000670   0x0000001a   Code   RO           75    .text.LCDI2C_write  liquidcrystal_i2c.o
+    0x0800068a   0x0800068a   0x00000002   PAD
+    0x0800068c   0x0800068c   0x00000086   Code   RO           65    .text.LCDI2C_write4bits  liquidcrystal_i2c.o
+    0x08000712   0x08000712   0x00000002   PAD
+    0x08000714   0x08000714   0x00000032   Code   RO          121    .text.LCDI2C_write_String  liquidcrystal_i2c.o
+    0x08000746   0x08000746   0x00000002   PAD
+    0x08000748   0x08000748   0x00000018   Code   RO          315    .text.RCC_APB1PeriphClockCmd  stm32f10x_rcc.o
+    0x08000760   0x08000760   0x00000018   Code   RO          313    .text.RCC_APB2PeriphClockCmd  stm32f10x_rcc.o
+    0x08000778   0x08000778   0x000000a0   Code   RO          309    .text.RCC_GetClocksFreq  stm32f10x_rcc.o
+    0x08000818   0x08000818   0x00000110   Code   RO          352    .text.SystemInit    system_stm32f10x.o
+    0x08000928   0x08000928   0x00000034   Code   RO           33    .text.delay_Mc      delay.o
+    0x0800095c   0x0800095c   0x00000034   Code   RO           31    .text.delay_ms      delay.o
+    0x08000990   0x08000990   0x000002b8   Code   RO            2    .text.main          main.o
+    0x08000c48   0x08000c48   0x0000000e   Code   RO          386    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x08000c56   0x08000c56   0x00000002   Code   RO          387    i.__scatterload_null  mc_w.l(handlers.o)
+    0x08000c58   0x08000c58   0x0000000e   Code   RO          388    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x08000c66   0x08000c66   0x00000004   Data   RO          334    .rodata.ADCPrescTable  stm32f10x_rcc.o
+    0x08000c6a   0x08000c6a   0x00000010   Data   RO          333    .rodata.APBAHBPrescTable  stm32f10x_rcc.o
+    0x08000c7a   0x08000c7a   0x00000051   Data   RO           20    .rodata.str1.1      main.o
+    0x08000ccb   0x08000ccb   0x00000001   PAD
+    0x08000ccc   0x08000ccc   0x00000020   Data   RO          385    Region$$Table       anon$$obj.o
+
+
+    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08000cf0, Size: 0x000004b0, Max: 0x00005000, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000000   0x08000cf0   0x00000008   Data   RW           12    .data.batt000       main.o
+    0x20000008   0x08000cf8   0x00000008   Data   RW           13    .data.batt010       main.o
+    0x20000010   0x08000d00   0x00000008   Data   RW           14    .data.batt030       main.o
+    0x20000018   0x08000d08   0x00000008   Data   RW           15    .data.batt050       main.o
+    0x20000020   0x08000d10   0x00000008   Data   RW           16    .data.batt070       main.o
+    0x20000028   0x08000d18   0x00000008   Data   RW           17    .data.batt090       main.o
+    0x20000030   0x08000d20   0x00000008   Data   RW           18    .data.batt100       main.o
+    0x20000038   0x08000d28   0x00000008   Data   RW           19    .data.battcrg       main.o
+    0x20000040   0x08000d30   0x00000008   Data   RW            9    .data.check         main.o
+    0x20000048   0x08000d38   0x00000008   Data   RW            5    .data.clock         main.o
+    0x20000050   0x08000d40   0x00000008   Data   RW           10    .data.cross         main.o
+    0x20000058   0x08000d48   0x00000008   Data   RW            8    .data.duck          main.o
+    0x20000060   0x08000d50   0x00000008   Data   RW            6    .data.face          main.o
+    0x20000068   0x08000d58   0x00000008   Data   RW            7    .data.heart         main.o
+    0x20000070   0x08000d60   0x00000008   Data   RW            4    .data.note          main.o
+    0x20000078   0x08000d68   0x00000008   Data   RW           11    .data.retarrow      main.o
+    0x20000080   0x08000d70   0x00000024   Data   RW           21    .data.simbol        main.o
+    0x200000a4   0x08000d94   0x00000004   PAD
+    0x200000a8        -       0x00000008   Zero   RW          123    .bss.LCD2c_InitStructure  liquidcrystal_i2c.o
+    0x200000b0        -       0x00000400   Zero   RW          342    STACK               startup_stm32f10x_md.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+       104          0          0          0          0       1177   delay.o
+       252          0          0          0          0       3255   i2c.o
+       718         16          0          0          8      11921   liquidcrystal_i2c.o
+       696         80         81        164          0       1879   main.o
+        36          8        236          0       1024        852   startup_stm32f10x_md.o
+       192          0          0          0          0       6240   stm32f10x_gpio.o
+       352          0          0          0          0       9540   stm32f10x_i2c.o
+       208          0         20          0          0       8584   stm32f10x_rcc.o
+       272          0          0          0          0       2803   system_stm32f10x.o
+
+    ----------------------------------------------------------------------
+      2852        104        370        164       1036      46251   Object Totals
+         0          0         32          0          0          0   (incl. Generated)
+        22          0          1          0          4          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+         0          0          0          0          0          0   entry.o
+         0          0          0          0          0          0   entry10a.o
+         0          0          0          0          0          0   entry11a.o
+         8          4          0          0          0          0   entry2.o
+         4          0          0          0          0          0   entry5.o
+         0          0          0          0          0          0   entry7b.o
+         0          0          0          0          0          0   entry8b.o
+         8          4          0          0          0          0   entry9a.o
+        30          0          0          0          0          0   handlers.o
+        36          8          0          0          0         68   init.o
+
+    ----------------------------------------------------------------------
+        86         16          0          0          0         68   Library Totals
+         0          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
+
+        86         16          0          0          0         68   mc_w.l
+
+    ----------------------------------------------------------------------
+        86         16          0          0          0         68   Library Totals
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+      2938        120        370        164       1036      46331   Grand Totals
+      2938        120        370        164       1036      46331   ELF Image Totals
+      2938        120        370        164          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                 3308 (   3.23kB)
+    Total RW  Size (RW Data + ZI Data)              1200 (   1.17kB)
+    Total ROM Size (Code + RO Data + RW Data)       3472 (   3.39kB)
+
+==============================================================================
+
