@@ -1,0 +1,396 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: oscar resediz, pesonal, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.38.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.19
+Assembler:       Armasm.exe V6.19
+Linker/Locator:  ArmLink.exe V6.19
+Library Manager: ArmAr.exe V6.19
+Hex Converter:   FromElf.exe V6.19
+CPU DLL:         SARMCM3.DLL V5.38.0.0
+Dialog DLL:      DARMSTM.DLL V1.69.1.0
+Target DLL:      UL2CM3.DLL V1.164.8.0
+Dialog DLL:      TARMSTM.DLL V1.67.1.0
+ 
+<h2>Project:</h2>
+D:\Cursos\STM32\Cocox\GIT\Ejemplos\19-1_Ejemplo_38-SPI_Max7912\19-1_Ejemplo_38-SPI_Max7912\SPI_MAX7912.uvprojx
+Project File Date:  01/17/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.19', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'Target 1'
+compiling misc.c...
+main.c(28): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f1xx_hal_rcc.h(27): warning: In file included from...
+./RTE/Device/STM32F103C8/stm32f1xx_hal_def.h(29): warning: In file included from...
+./RTE/Device/STM32F103C8/stm32f1xx.h(140): error: "Please select first the target STM32F1xx device used in your application (in stm32f1xx.h file)"
+ #error "Please select first the target STM32F1xx device used in your application (in stm32f1xx.h file)"
+  ^
+./RTE/Device/STM32F103C8/stm32f1xx.h(152): error: redefinition of enumerator 'RESET'
+  RESET = 0, 
+  ^
+C:/Users/W10/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(527): note: previous definition is here
+typedef enum {RESET = 0, SET = !RESET} FlagStatus, ITStatus;
+              ^
+main.c(28): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f1xx_hal_rcc.h(27): warning: In file included from...
+./RTE/Device/STM32F103C8/stm32f1xx_hal_def.h(29): warning: In file included from...
+./RTE/Device/STM32F103C8/stm32f1xx.h(153): error: redefinition of enumerator 'SET'
+  SET = !RESET
+  ^
+C:/Users/W10/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(527): note: previous definition is here
+typedef enum {RESET = 0, SET = !RESET} FlagStatus, ITStatus;
+                         ^
+main.c(28): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f1xx_hal_rcc.h(27): warning: In file included from...
+./RTE/Device/STM32F103C8/stm32f1xx_hal_def.h(29): warning: In file included from...
+./RTE/Device/STM32F103C8/stm32f1xx.h(154): error: typedef redefinition with different types ('enum FlagStatus' vs 'enum FlagStatus')
+} FlagStatus, ITStatus;
+  ^
+C:/Users/W10/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(527): note: previous definition is here
+typedef enum {RESET = 0, SET = !RESET} FlagStatus, ITStatus;
+                                       ^
+main.c(28): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f1xx_hal_rcc.h(27): warning: In file included from...
+./RTE/Device/STM32F103C8/stm32f1xx_hal_def.h(29): warning: In file included from...
+./RTE/Device/STM32F103C8/stm32f1xx.h(154): error: typedef redefinition with different types ('enum FlagStatus' vs 'enum FlagStatus')
+} FlagStatus, ITStatus;
+              ^
+C:/Users/W10/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(527): note: previous definition is here
+typedef enum {RESET = 0, SET = !RESET} FlagStatus, ITStatus;
+                                                   ^
+main.c(28): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f1xx_hal_rcc.h(27): warning: In file included from...
+./RTE/Device/STM32F103C8/stm32f1xx_hal_def.h(29): warning: In file included from...
+./RTE/Device/STM32F103C8/stm32f1xx.h(158): error: redefinition of enumerator 'DISABLE'
+  DISABLE = 0, 
+  ^
+C:/Users/W10/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(529): note: previous definition is here
+typedef enum {DISABLE = 0, ENABLE = !DISABLE} FunctionalState;
+              ^
+main.c(28): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f1xx_hal_rcc.h(27): warning: In file included from...
+./RTE/Device/STM32F103C8/stm32f1xx_hal_def.h(29): warning: In file included from...
+./RTE/Device/STM32F103C8/stm32f1xx.h(159): error: redefinition of enumerator 'ENABLE'
+  ENABLE = !DISABLE
+  ^
+C:/Users/W10/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(529): note: previous definition is here
+typedef enum {DISABLE = 0, ENABLE = !DISABLE} FunctionalState;
+                           ^
+main.c(28): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f1xx_hal_rcc.h(27): warning: In file included from...
+./RTE/Device/STM32F103C8/stm32f1xx_hal_def.h(29): warning: In file included from...
+./RTE/Device/STM32F103C8/stm32f1xx.h(160): error: typedef redefinition with different types ('enum FunctionalState' vs 'enum FunctionalState')
+} FunctionalState;
+  ^
+C:/Users/W10/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(529): note: previous definition is here
+typedef enum {DISABLE = 0, ENABLE = !DISABLE} FunctionalState;
+                                              ^
+main.c(28): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f1xx_hal_rcc.h(27): warning: In file included from...
+./RTE/Device/STM32F103C8/stm32f1xx_hal_def.h(29): warning: In file included from...
+./RTE/Device/STM32F103C8/stm32f1xx.h(165): error: redefinition of enumerator 'SUCCESS'
+  SUCCESS = 0U,
+  ^
+C:/Users/W10/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(532): note: previous definition is here
+typedef enum {ERROR = 0, SUCCESS = !ERROR} ErrorStatus;
+                         ^
+main.c(28): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f1xx_hal_rcc.h(27): warning: In file included from...
+./RTE/Device/STM32F103C8/stm32f1xx_hal_def.h(29): warning: In file included from...
+./RTE/Device/STM32F103C8/stm32f1xx.h(166): error: redefinition of enumerator 'ERROR'
+  ERROR = !SUCCESS
+  ^
+C:/Users/W10/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(532): note: previous definition is here
+typedef enum {ERROR = 0, SUCCESS = !ERROR} ErrorStatus;
+              ^
+main.c(28): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f1xx_hal_rcc.h(27): warning: In file included from...
+./RTE/Device/STM32F103C8/stm32f1xx_hal_def.h(29): warning: In file included from...
+./RTE/Device/STM32F103C8/stm32f1xx.h(167): error: typedef redefinition with different types ('enum ErrorStatus' vs 'enum ErrorStatus')
+} ErrorStatus;
+  ^
+C:/Users/W10/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(532): note: previous definition is here
+typedef enum {ERROR = 0, SUCCESS = !ERROR} ErrorStatus;
+                                           ^
+main.c(28): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f1xx_hal_rcc.h(27): warning: In file included from...
+./RTE/Device/STM32F103C8/stm32f1xx_hal_def.h(30): warning: In file included from...
+./RTE/Device/STM32F103C8/Legacy/stm32_hal_legacy.h(3602): warning: 'IS_RCC_RTCCLK_SOURCE' macro redefined [-Wmacro-redefined]
+#define IS_RCC_RTCCLK_SOURCE        IS_RCC_RTCCLKSOURCE
+        ^
+C:/Users/W10/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_rcc.h(458): note: previous definition is here
+#define IS_RCC_RTCCLK_SOURCE(SOURCE) (((SOURCE) == RCC_RTCCLKSource_LSE) || \
+        ^
+main.c(28): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f1xx_hal_rcc.h(115): warning: 'RCC_HSE_OFF' macro redefined [-Wmacro-redefined]
+#define RCC_HSE_OFF                      0x00000000U                                /*!< HSE clock deactivation */
+        ^
+C:/Users/W10/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_rcc.h(66): note: previous definition is here
+#define RCC_HSE_OFF                      ((uint32_t)0x00000000)
+        ^
+main.c(28): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f1xx_hal_rcc.h(116): warning: 'RCC_HSE_ON' macro redefined [-Wmacro-redefined]
+#define RCC_HSE_ON                       RCC_CR_HSEON                               /*!< HSE clock activation */
+        ^
+C:/Users/W10/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_rcc.h(67): note: previous definition is here
+#define RCC_HSE_ON                       ((uint32_t)0x00010000)
+        ^
+main.c(28): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f1xx_hal_rcc.h(125): warning: 'RCC_LSE_OFF' macro redefined [-Wmacro-redefined]
+#define RCC_LSE_OFF                      0x00000000U                                    /*!< LSE clock deactivation */
+        ^
+C:/Users/W10/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_rcc.h(442): note: previous definition is here
+#define RCC_LSE_OFF                      ((uint8_t)0x00)
+        ^
+main.c(28): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f1xx_hal_rcc.h(126): warning: 'RCC_LSE_ON' macro redefined [-Wmacro-redefined]
+#define RCC_LSE_ON                       RCC_BDCR_LSEON                                 /*!< LSE clock activation */
+        ^
+C:/Users/W10/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_rcc.h(443): note: previous definition is here
+#define RCC_LSE_ON                       ((uint8_t)0x01)
+        ^
+main.c(28): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f1xx_hal_rcc.h(264): warning: 'RCC_IT_LSIRDY' macro redefined [-Wmacro-redefined]
+#define RCC_IT_LSIRDY                    ((uint8_t)RCC_CIR_LSIRDYF)   /*!< LSI Ready Interrupt flag */
+        ^
+C:/Users/W10/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_rcc.h(340): note: previous definition is here
+#define RCC_IT_LSIRDY                    ((uint8_t)0x01)
+        ^
+main.c(28): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f1xx_hal_rcc.h(265): warning: 'RCC_IT_LSERDY' macro redefined [-Wmacro-redefined]
+#define RCC_IT_LSERDY                    ((uint8_t)RCC_CIR_LSERDYF)   /*!< LSE Ready Interrupt flag */
+        ^
+C:/Users/W10/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_rcc.h(341): note: previous definition is here
+#define RCC_IT_LSERDY                    ((uint8_t)0x02)
+        ^
+main.c(28): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f1xx_hal_rcc.h(266): warning: 'RCC_IT_HSIRDY' macro redefined [-Wmacro-redefined]
+#define RCC_IT_HSIRDY                    ((uint8_t)RCC_CIR_HSIRDYF)   /*!< HSI Ready Interrupt flag */
+        ^
+C:/Users/W10/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_rcc.h(342): note: previous definition is here
+#define RCC_IT_HSIRDY                    ((uint8_t)0x04)
+        ^
+main.c(28): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f1xx_hal_rcc.h(267): warning: 'RCC_IT_HSERDY' macro redefined [-Wmacro-redefined]
+#define RCC_IT_HSERDY                    ((uint8_t)RCC_CIR_HSERDYF)   /*!< HSE Ready Interrupt flag */
+        ^
+C:/Users/W10/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_rcc.h(343): note: previous definition is here
+#define RCC_IT_HSERDY                    ((uint8_t)0x08)
+        ^
+main.c(28): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f1xx_hal_rcc.h(268): warning: 'RCC_IT_PLLRDY' macro redefined [-Wmacro-redefined]
+#define RCC_IT_PLLRDY                    ((uint8_t)RCC_CIR_PLLRDYF)   /*!< PLL Ready Interrupt flag */
+        ^
+C:/Users/W10/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_rcc.h(344): note: previous definition is here
+#define RCC_IT_PLLRDY                    ((uint8_t)0x10)
+        ^
+main.c(28): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f1xx_hal_rcc.h(269): warning: 'RCC_IT_CSS' macro redefined [-Wmacro-redefined]
+#define RCC_IT_CSS                       ((uint8_t)RCC_CIR_CSSF)      /*!< Clock Security System Interrupt flag */
+        ^
+C:/Users/W10/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_rcc.h(345): note: previous definition is here
+#define RCC_IT_CSS                       ((uint8_t)0x80)
+        ^
+main.c(28): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f1xx_hal_rcc.h(284): warning: 'RCC_FLAG_HSIRDY' macro redefined [-Wmacro-redefined]
+#define RCC_FLAG_HSIRDY                  ((uint8_t)((CR_REG_INDEX << 5U) | RCC_CR_HSIRDY_Pos)) /*!< Internal High Speed clock ready flag */
+        ^
+C:/Users/W10/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_rcc.h(594): note: previous definition is here
+#define RCC_FLAG_HSIRDY                  ((uint8_t)0x21)
+        ^
+main.c(28): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f1xx_hal_rcc.h(285): warning: 'RCC_FLAG_HSERDY' macro redefined [-Wmacro-redefined]
+#define RCC_FLAG_HSERDY                  ((uint8_t)((CR_REG_INDEX << 5U) | RCC_CR_HSERDY_Pos)) /*!< External High Speed clock ready flag */
+        ^
+C:/Users/W10/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_rcc.h(595): note: previous definition is here
+#define RCC_FLAG_HSERDY                  ((uint8_t)0x31)
+        ^
+main.c(28): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f1xx_hal_rcc.h(286): warning: 'RCC_FLAG_PLLRDY' macro redefined [-Wmacro-redefined]
+#define RCC_FLAG_PLLRDY                  ((uint8_t)((CR_REG_INDEX << 5U) | RCC_CR_PLLRDY_Pos)) /*!< PLL clock ready flag */
+        ^
+C:/Users/W10/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_rcc.h(596): note: previous definition is here
+#define RCC_FLAG_PLLRDY                  ((uint8_t)0x39)
+        ^
+main.c(28): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f1xx_hal_rcc.h(289): warning: 'RCC_FLAG_LSIRDY' macro redefined [-Wmacro-redefined]
+#define RCC_FLAG_LSIRDY                  ((uint8_t)((CSR_REG_INDEX << 5U) | RCC_CSR_LSIRDY_Pos))   /*!< Internal Low Speed oscillator Ready */
+        ^
+C:/Users/W10/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_rcc.h(598): note: previous definition is here
+#define RCC_FLAG_LSIRDY                  ((uint8_t)0x61)
+        ^
+main.c(28): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f1xx_hal_rcc.h(290): warning: 'RCC_FLAG_PINRST' macro redefined [-Wmacro-redefined]
+#define RCC_FLAG_PINRST                  ((uint8_t)((CSR_REG_INDEX << 5U) | RCC_CSR_PINRSTF_Pos))  /*!< PIN reset flag */
+        ^
+C:/Users/W10/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_rcc.h(599): note: previous definition is here
+#define RCC_FLAG_PINRST                  ((uint8_t)0x7A)
+        ^
+main.c(28): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f1xx_hal_rcc.h(291): warning: 'RCC_FLAG_PORRST' macro redefined [-Wmacro-redefined]
+#define RCC_FLAG_PORRST                  ((uint8_t)((CSR_REG_INDEX << 5U) | RCC_CSR_PORRSTF_Pos))  /*!< POR/PDR reset flag */
+        ^
+C:/Users/W10/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_rcc.h(600): note: previous definition is here
+#define RCC_FLAG_PORRST                  ((uint8_t)0x7B)
+        ^
+main.c(28): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f1xx_hal_rcc.h(292): warning: 'RCC_FLAG_SFTRST' macro redefined [-Wmacro-redefined]
+#define RCC_FLAG_SFTRST                  ((uint8_t)((CSR_REG_INDEX << 5U) | RCC_CSR_SFTRSTF_Pos))  /*!< Software Reset flag */
+        ^
+C:/Users/W10/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_rcc.h(601): note: previous definition is here
+#define RCC_FLAG_SFTRST                  ((uint8_t)0x7C)
+        ^
+main.c(28): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f1xx_hal_rcc.h(293): warning: 'RCC_FLAG_IWDGRST' macro redefined [-Wmacro-redefined]
+#define RCC_FLAG_IWDGRST                 ((uint8_t)((CSR_REG_INDEX << 5U) | RCC_CSR_IWDGRSTF_Pos)) /*!< Independent Watchdog reset flag */
+        ^
+C:/Users/W10/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_rcc.h(602): note: previous definition is here
+#define RCC_FLAG_IWDGRST                 ((uint8_t)0x7D)
+        ^
+main.c(28): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f1xx_hal_rcc.h(294): warning: 'RCC_FLAG_WWDGRST' macro redefined [-Wmacro-redefined]
+#define RCC_FLAG_WWDGRST                 ((uint8_t)((CSR_REG_INDEX << 5U) | RCC_CSR_WWDGRSTF_Pos)) /*!< Window watchdog reset flag */
+        ^
+C:/Users/W10/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_rcc.h(603): note: previous definition is here
+#define RCC_FLAG_WWDGRST                 ((uint8_t)0x7E)
+        ^
+main.c(28): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f1xx_hal_rcc.h(295): warning: 'RCC_FLAG_LPWRRST' macro redefined [-Wmacro-redefined]
+#define RCC_FLAG_LPWRRST                 ((uint8_t)((CSR_REG_INDEX << 5U) | RCC_CSR_LPWRRSTF_Pos)) /*!< Low-Power reset flag */
+        ^
+C:/Users/W10/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_rcc.h(604): note: previous definition is here
+#define RCC_FLAG_LPWRRST                 ((uint8_t)0x7F)
+        ^
+main.c(28): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f1xx_hal_rcc.h(298): warning: 'RCC_FLAG_LSERDY' macro redefined [-Wmacro-redefined]
+#define RCC_FLAG_LSERDY                  ((uint8_t)((BDCR_REG_INDEX << 5U) | RCC_BDCR_LSERDY_Pos)) /*!< External Low Speed oscillator Ready */
+        ^
+C:/Users/W10/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_rcc.h(597): note: previous definition is here
+#define RCC_FLAG_LSERDY                  ((uint8_t)0x41)
+        ^
+main.c(28): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f1xx_hal_rcc.h(1142): warning: In file included from...
+./RTE/Device/STM32F103C8/stm32f1xx_hal_rcc_ex.h(99): warning: 'IS_RCC_PLL_MUL' macro redefined [-Wmacro-redefined]
+#define IS_RCC_PLL_MUL(__MUL__) (((__MUL__) == RCC_PLL_MUL2)  || ((__MUL__) == RCC_PLL_MUL3)  || \
+        ^
+C:/Users/W10/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_rcc.h(117): note: previous definition is here
+ #define IS_RCC_PLL_MUL(MUL) (((MUL) == RCC_PLLMul_2) || ((MUL) == RCC_PLLMul_3)   || \
+         ^
+main.c(28): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f1xx_hal_rcc.h(1322): warning: 'IS_RCC_HSE' macro redefined [-Wmacro-redefined]
+#define IS_RCC_HSE(__HSE__) (((__HSE__) == RCC_HSE_OFF) || ((__HSE__) == RCC_HSE_ON) || \
+        ^
+C:/Users/W10/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_rcc.h(69): note: previous definition is here
+#define IS_RCC_HSE(HSE) (((HSE) == RCC_HSE_OFF) || ((HSE) == RCC_HSE_ON) || \
+        ^
+main.c(28): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f1xx_hal_rcc.h(1324): warning: 'IS_RCC_LSE' macro redefined [-Wmacro-redefined]
+#define IS_RCC_LSE(__LSE__) (((__LSE__) == RCC_LSE_OFF) || ((__LSE__) == RCC_LSE_ON) || \
+        ^
+C:/Users/W10/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_rcc.h(445): note: previous definition is here
+#define IS_RCC_LSE(LSE) (((LSE) == RCC_LSE_OFF) || ((LSE) == RCC_LSE_ON) || \
+        ^
+main.c(28): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f1xx_hal_rcc.h(1327): warning: 'IS_RCC_CALIBRATION_VALUE' macro redefined [-Wmacro-redefined]
+#define IS_RCC_CALIBRATION_VALUE(__VALUE__) ((__VALUE__) <= 0x1FU)
+        ^
+C:/Users/W10/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_rcc.h(625): note: previous definition is here
+#define IS_RCC_CALIBRATION_VALUE(VALUE) ((VALUE) <= 0x1F)
+        ^
+main.c(28): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f1xx_hal_rcc.h(1342): warning: 'IS_RCC_HCLK' macro redefined [-Wmacro-redefined]
+#define IS_RCC_HCLK(__HCLK__) (((__HCLK__) == RCC_SYSCLK_DIV1) || ((__HCLK__) == RCC_SYSCLK_DIV2) || \
+        ^
+C:/Users/W10/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_rcc.h(311): note: previous definition is here
+#define IS_RCC_HCLK(HCLK) (((HCLK) == RCC_SYSCLK_Div1) || ((HCLK) == RCC_SYSCLK_Div2) || \
+        ^
+main.c(28): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f1xx_hal_rcc.h(1347): warning: 'IS_RCC_PCLK' macro redefined [-Wmacro-redefined]
+#define IS_RCC_PCLK(__PCLK__) (((__PCLK__) == RCC_HCLK_DIV1) || ((__PCLK__) == RCC_HCLK_DIV2) || \
+        ^
+C:/Users/W10/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_rcc.h(329): note: previous definition is here
+#define IS_RCC_PCLK(PCLK) (((PCLK) == RCC_HCLK_Div1) || ((PCLK) == RCC_HCLK_Div2) || \
+        ^
+main.c(28): warning: In file included from...
+./RTE/Device/STM32F103C8\stm32f1xx_hal_rcc.h(1350): warning: 'IS_RCC_MCO' macro redefined [-Wmacro-redefined]
+#define IS_RCC_MCO(__MCO__)  ((__MCO__) == RCC_MCO)
+        ^
+C:/Users/W10/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_rcc.h(570): note: previous definition is here
+ #define IS_RCC_MCO(MCO) (((MCO) == RCC_MCO_NoClock) || ((MCO) == RCC_MCO_HSI) || \
+         ^
+29 warnings and 11 errors generated.
+compiling main.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_rcc.c...
+assembling startup_stm32f10x_md.s...
+compiling system_stm32f10x.c...
+compiling stm32f10x_spi.c...
+".\Objects\projecto.axf" - 11 Error(s), 29 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.1.pack
+                Keil.STM32F1xx_DFP.2.4.1
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 1.0.0
+   * Component: Framework Version: 3.6.0
+   * Component: GPIO Version: 3.6.0
+   * Component: RCC Version: 3.6.0
+   * Component: SPI Version: 3.6.0
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/Device/STM32F103C8
+  ./RTE/_Target_1
+  C:/Users/W10/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  C:/Users/W10/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include
+  C:/Users/W10/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+
+   * Component: Keil::Device:Startup:1.0.0
+      Source file:   Device/Source/ARM/startup_stm32f10x_md.s
+      Source file:   Device/Source/ARM/STM32F1xx_OPT.s
+      Source file:   Device/Source/system_stm32f10x.c
+      Include file:  RTE_Driver/Config/RTE_Device.h
+
+   * Component: Keil::Device:StdPeriph Drivers:Framework:3.6.0
+      Include file:  Device/StdPeriph_Driver/templates/stm32f10x_it.h
+      Source file:   Device/StdPeriph_Driver/templates/stm32f10x_conf.h
+      Include file:  Device/StdPeriph_Driver/inc/misc.h
+      Source file:   Device/StdPeriph_Driver/src/misc.c
+      Source file:   Device/StdPeriph_Driver/templates/stm32f10x_it.c
+
+   * Component: Keil::Device:StdPeriph Drivers:GPIO:3.6.0
+      Include file:  Device/StdPeriph_Driver/inc/stm32f10x_gpio.h
+      Source file:   Device/StdPeriph_Driver/src/stm32f10x_gpio.c
+
+   * Component: Keil::Device:StdPeriph Drivers:RCC:3.6.0
+      Include file:  Device/StdPeriph_Driver/inc/stm32f10x_rcc.h
+      Source file:   Device/StdPeriph_Driver/src/stm32f10x_rcc.c
+
+   * Component: Keil::Device:StdPeriph Drivers:SPI:3.6.0
+      Include file:  Device/StdPeriph_Driver/inc/stm32f10x_spi.h
+      Source file:   Device/StdPeriph_Driver/src/stm32f10x_spi.c
+Target not created.
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>

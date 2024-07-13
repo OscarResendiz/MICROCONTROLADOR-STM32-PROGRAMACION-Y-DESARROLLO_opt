@@ -1,0 +1,40 @@
+01:38:50 **** Incremental Build of configuration Debug for project CH06_SPI_01 ****
+make -j4 all 
+arm-none-eabi-size   CH06_SPI_01.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7152	   2580	   1660	  11392	   2c80	CH06_SPI_01.elf
+Finished building: default.size.stdout
+ 
+
+01:38:51 Build Finished. 0 errors, 0 warnings. (took 383ms)
+
+01:38:51 **** Incremental Build of configuration Debug for project CH06_SPI_01 ****
+make -j4 all 
+arm-none-eabi-size   CH06_SPI_01.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7152	   2580	   1660	  11392	   2c80	CH06_SPI_01.elf
+Finished building: default.size.stdout
+ 
+01:40:02 **** Incremental Build of configuration Debug for project CH06_SPI_01 ****
+make -j4 all 
+arm-none-eabi-gcc -o "CH06_SPI_01.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\W10\Downloads\STM32F103_learn_Ch06_SPI_01-master\STM32F103_learn_Ch06_SPI_01-master\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CH06_SPI_01.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CH06_SPI_01.elf
+ 
+arm-none-eabi-size   CH06_SPI_01.elf 
+arm-none-eabi-objdump -h -S  CH06_SPI_01.elf  > "CH06_SPI_01.list"
+arm-none-eabi-objcopy  -O ihex  CH06_SPI_01.elf  "CH06_SPI_01.hex"
+   text	   data	    bss	    dec	    hex	filename
+   7152	   2580	   1660	  11392	   2c80	CH06_SPI_01.elf
+Finished building: default.size.stdout
+ 
+Finished building: CH06_SPI_01.hex
+ 
+Finished building: CH06_SPI_01.list
+ 
+01:54:06 **** Incremental Build of configuration Debug for project CH06_SPI_01 ****
+make -j4 all 
+arm-none-eabi-size   CH06_SPI_01.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7152	   2580	   1660	  11392	   2c80	CH06_SPI_01.elf
+Finished building: default.size.stdout
+ 

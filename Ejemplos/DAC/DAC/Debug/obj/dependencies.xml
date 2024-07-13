@@ -1,5 +1,36 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <dependencies>
+   <includePath signature="/ID:\Cursos\STM32\Cocox\GIT\Ejemplos\DAC /ID:\Cursos\STM32\Cocox\GIT\Ejemplos\DAC\cmsis /ID:\Cursos\STM32\Cocox\GIT\Ejemplos\DAC\stm_lib /ID:\Cursos\STM32\Cocox\GIT /ID:\Cursos\STM32\Cocox\GIT\Ejemplos\DAC\stm_lib\inc /ID:\Cursos\STM32\Cocox\GIT\Ejemplos\DAC\cmsis_boot /ID:\Cursos\STM32\Cocox\GIT\Ejemplos">
+      <source file="..\..\..\stm32f10x_dac.c" lastModified="18b5061ab0c">
+         <include file="..\..\..\stm32f10x_dac.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\stm32f10x_conf.h" lastModified="18b50375588">
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f10x_gpio.c" lastModified="18b50375568">
+         <include file="..\..\..\stm_lib\inc\stm32f10x_gpio.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f10x_gpio.h" lastModified="18b50375560">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f10x_rcc.h" lastModified="18b50617f70">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f10x_rcc.c" lastModified="18b50617f71">
+         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f10x.h" lastModified="18b50375590">
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f10x.c" lastModified="18b5037558f">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\stm32f10x_dac.h" lastModified="18b5061aad6">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\startup\startup_stm32f10x_md.c" lastModified="18b50375577">
+      </source>
+   </includePath>
    <includePath signature="/ID:\Cursos\STM32\Cocox\GIT\Ejemplos\DAC /ID:\Cursos\STM32\Cocox\GIT\Ejemplos\DAC\cmsis /ID:\Cursos\STM32\Cocox\GIT\Ejemplos\DAC\stm_lib /ID:\Cursos\STM32\Cocox\GIT\Ejemplos\DAC\stm_lib\inc /ID:\Cursos\STM32\Cocox\GIT /ID:\Cursos\STM32\Cocox\GIT\Ejemplos\DAC\cmsis_boot /ID:\Cursos\STM32\Cocox\GIT\Ejemplos">
       <source file="..\..\..\stm32f10x_dac.c" lastModified="18b5061ab0c">
          <include file="..\..\..\stm32f10x_dac.h"/>
@@ -47,37 +78,6 @@
          <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
       </source>
       <source file="..\..\..\cmsis\core_cmFunc.h" lastModified="18b50375d71">
-      </source>
-      <source file="..\..\..\cmsis_boot\system_stm32f10x.h" lastModified="18b50375590">
-      </source>
-      <source file="..\..\..\cmsis_boot\system_stm32f10x.c" lastModified="18b5037558f">
-         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
-      </source>
-      <source file="..\..\..\stm32f10x_dac.h" lastModified="18b5061aad6">
-         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
-      </source>
-      <source file="..\..\..\cmsis_boot\startup\startup_stm32f10x_md.c" lastModified="18b50375577">
-      </source>
-   </includePath>
-   <includePath signature="/ID:\Cursos\STM32\Cocox\GIT\Ejemplos\DAC /ID:\Cursos\STM32\Cocox\GIT\Ejemplos\DAC\cmsis /ID:\Cursos\STM32\Cocox\GIT\Ejemplos\DAC\stm_lib /ID:\Cursos\STM32\Cocox\GIT /ID:\Cursos\STM32\Cocox\GIT\Ejemplos\DAC\stm_lib\inc /ID:\Cursos\STM32\Cocox\GIT\Ejemplos\DAC\cmsis_boot /ID:\Cursos\STM32\Cocox\GIT\Ejemplos">
-      <source file="..\..\..\stm32f10x_dac.c" lastModified="18b5061ab0c">
-         <include file="..\..\..\stm32f10x_dac.h"/>
-         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
-      </source>
-      <source file="..\..\..\cmsis_boot\stm32f10x_conf.h" lastModified="18b50375588">
-      </source>
-      <source file="..\..\..\stm_lib\src\stm32f10x_gpio.c" lastModified="18b50375568">
-         <include file="..\..\..\stm_lib\inc\stm32f10x_gpio.h"/>
-         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
-      </source>
-      <source file="..\..\..\stm_lib\inc\stm32f10x_gpio.h" lastModified="18b50375560">
-         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
-      </source>
-      <source file="..\..\..\stm_lib\inc\stm32f10x_rcc.h" lastModified="18b50617f70">
-         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
-      </source>
-      <source file="..\..\..\stm_lib\src\stm32f10x_rcc.c" lastModified="18b50617f71">
-         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
       </source>
       <source file="..\..\..\cmsis_boot\system_stm32f10x.h" lastModified="18b50375590">
       </source>

@@ -1,0 +1,156 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: oscar resediz, pesonal, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.38.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.19
+Assembler:       Armasm.exe V6.19
+Linker/Locator:  ArmLink.exe V6.19
+Library Manager: ArmAr.exe V6.19
+Hex Converter:   FromElf.exe V6.19
+CPU DLL:         SARMCM3.DLL V5.38.0.0
+Dialog DLL:      DARMSTM.DLL V1.69.1.0
+Target DLL:      UL2CM3.DLL V1.164.8.0
+Dialog DLL:      TARMSTM.DLL V1.67.1.0
+ 
+<h2>Project:</h2>
+D:\Cursos\STM32\Cocox\GIT\Ejemplos\20-1_Ejemplo_40-USB_puerto_com\USB_com_port.uvprojx
+Project File Date:  01/31/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.19', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'Target 1'
+Note: source file '.\STM32_USB-FS-Device_Lib\hw_config.c' - object file renamed from '.\Objects\hw_config.o' to '.\Objects\hw_config_1.o'.
+compiling main.c...
+compiling stm32_it.c...
+compiling hw_config.c...
+compiling usb_desc.c...
+STM32_USB-FS-Device_Lib/hw_config.c(116): error: use of undeclared identifier 'RCC_APB2Periph_ALLGPIO'
+  RCC_APB2PeriphClockCmd(RCC_APB2Periph_ALLGPIO, ENABLE);
+                         ^
+STM32_USB-FS-Device_Lib/hw_config.c(196): error: call to undeclared function 'STM_EVAL_PBInit'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  STM_EVAL_PBInit(Button_RIGHT, Mode_GPIO);
+  ^
+STM32_USB-FS-Device_Lib/hw_config.c(196): error: use of undeclared identifier 'Mode_GPIO'
+  STM_EVAL_PBInit(Button_RIGHT, Mode_GPIO);
+                                ^
+STM32_USB-FS-Device_Lib/hw_config.c(197): error: use of undeclared identifier 'Mode_GPIO'
+  STM_EVAL_PBInit(Button_LEFT, Mode_GPIO);
+                               ^
+STM32_USB-FS-Device_Lib/hw_config.c(198): error: use of undeclared identifier 'Mode_GPIO'
+  STM_EVAL_PBInit(Button_UP, Mode_GPIO);
+                             ^
+STM32_USB-FS-Device_Lib/hw_config.c(199): error: use of undeclared identifier 'Mode_GPIO'
+  STM_EVAL_PBInit(Button_DOWN, Mode_GPIO);
+                               ^
+STM32_USB-FS-Device_Lib/hw_config.c(242): error: use of undeclared identifier 'Button_KEY'
+  STM_EVAL_PBInit(Button_KEY, Mode_EXTI);
+                  ^
+STM32_USB-FS-Device_Lib/hw_config.c(242): error: use of undeclared identifier 'Mode_EXTI'
+  STM_EVAL_PBInit(Button_KEY, Mode_EXTI);
+                              ^
+STM32_USB-FS-Device_Lib/hw_config.c(243): error: use of undeclared identifier 'KEY_BUTTON_EXTI_LINE'
+  EXTI_ClearITPendingBit(KEY_BUTTON_EXTI_LINE);
+                         ^
+STM32_USB-FS-Device_Lib/hw_config.c(368): error: use of undeclared identifier 'KEY_BUTTON_EXTI_IRQn'
+  NVIC_InitStructure.NVIC_IRQChannel = KEY_BUTTON_EXTI_IRQn;
+                                       ^
+STM32_USB-FS-Device_Lib/hw_config.c(427): error: call to undeclared function 'STM_EVAL_PBGetState'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   if (!STM_EVAL_PBGetState(Button_RIGHT))
+        ^
+STM32_USB-FS-Device_Lib/hw_config.c(607): warning: passing 'char *' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+    IntToUnicode (Device_Serial0, &Joystick_StringSerial[2] , 8);
+                                  ^~~~~~~~~~~~~~~~~~~~~~~~~
+STM32_USB-FS-Device_Lib/hw_config.c(60): note: passing argument to parameter 'pbuf' here
+static void IntToUnicode (uint32_t value , uint8_t *pbuf , uint8_t len);
+                                                    ^
+STM32_USB-FS-Device_Lib/hw_config.c(608): warning: passing 'char *' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+    IntToUnicode (Device_Serial1, &Joystick_StringSerial[18], 4);
+                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~
+STM32_USB-FS-Device_Lib/hw_config.c(60): note: passing argument to parameter 'pbuf' here
+static void IntToUnicode (uint32_t value , uint8_t *pbuf , uint8_t len);
+                                                    ^
+2 warnings and 11 errors generated.
+compiling hw_config.c...
+compiling usb_endp.c...
+compiling usb_core.c...
+compiling usb_init.c...
+compiling usb_istr.c...
+compiling usb_int.c...
+compiling usb_mem.c...
+compiling usb_prop.c...
+compiling usb_pwr.c...
+compiling usb_sil.c...
+compiling usb_regs.c...
+".\Objects\projecto.axf" - 11 Error(s), 2 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.1.pack
+                Keil.STM32F1xx_DFP.2.4.1
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 1.0.0
+   * Component: EXTI Version: 3.6.0
+   * Component: Framework Version: 3.6.0
+   * Component: GPIO Version: 3.6.0
+   * Component: PWR Version: 3.6.0
+   * Component: RCC Version: 3.6.0
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/Device/STM32F103C8
+  ./RTE/_Target_1
+  C:/Users/W10/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  C:/Users/W10/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include
+  C:/Users/W10/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+
+   * Component: Keil::Device:Startup:1.0.0
+      Include file:  RTE_Driver/Config/RTE_Device.h
+      Source file:   Device/Source/ARM/STM32F1xx_OPT.s
+      Source file:   Device/Source/ARM/startup_stm32f10x_md.s
+      Source file:   Device/Source/system_stm32f10x.c
+
+   * Component: Keil::Device:StdPeriph Drivers:EXTI:3.6.0
+      Include file:  Device/StdPeriph_Driver/inc/stm32f10x_exti.h
+      Source file:   Device/StdPeriph_Driver/src/stm32f10x_exti.c
+
+   * Component: Keil::Device:StdPeriph Drivers:Framework:3.6.0
+      Source file:   Device/StdPeriph_Driver/templates/stm32f10x_conf.h
+      Source file:   Device/StdPeriph_Driver/templates/stm32f10x_it.c
+      Include file:  Device/StdPeriph_Driver/templates/stm32f10x_it.h
+      Source file:   Device/StdPeriph_Driver/src/misc.c
+      Include file:  Device/StdPeriph_Driver/inc/misc.h
+
+   * Component: Keil::Device:StdPeriph Drivers:GPIO:3.6.0
+      Source file:   Device/StdPeriph_Driver/src/stm32f10x_gpio.c
+      Include file:  Device/StdPeriph_Driver/inc/stm32f10x_gpio.h
+
+   * Component: Keil::Device:StdPeriph Drivers:PWR:3.6.0
+      Source file:   Device/StdPeriph_Driver/src/stm32f10x_pwr.c
+      Include file:  Device/StdPeriph_Driver/inc/stm32f10x_pwr.h
+
+   * Component: Keil::Device:StdPeriph Drivers:RCC:3.6.0
+      Source file:   Device/StdPeriph_Driver/src/stm32f10x_rcc.c
+      Include file:  Device/StdPeriph_Driver/inc/stm32f10x_rcc.h
+Target not created.
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>

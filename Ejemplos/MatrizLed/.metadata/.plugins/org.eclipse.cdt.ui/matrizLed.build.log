@@ -1,0 +1,10 @@
+01:23:04 **** Incremental Build of configuration Debug for project matrizLed ****
+make -j4 all 
+arm-none-eabi-size   matrizLed.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6848	     20	   1660	   8528	   2150	matrizLed.elf
+Finished building: default.size.stdout
+ 
+
+01:23:05 Build Finished. 0 errors, 0 warnings. (took 322ms)
+

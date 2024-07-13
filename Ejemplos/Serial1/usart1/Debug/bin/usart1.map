@@ -176,14 +176,15 @@ Discarded input sections
  .text._read    0x0000000000000000       0x18 ..\obj\syscalls.o
  .text._write   0x0000000000000000       0x18 ..\obj\syscalls.o
  .text.abort    0x0000000000000000        0x6 ..\obj\syscalls.o
- .debug_info    0x0000000000000000      0x49e ..\obj\syscalls.o
- .debug_abbrev  0x0000000000000000      0x113 ..\obj\syscalls.o
+ .debug_info    0x0000000000000000      0x47a ..\obj\syscalls.o
+ .debug_abbrev  0x0000000000000000      0x117 ..\obj\syscalls.o
  .debug_aranges
                 0x0000000000000000       0x60 ..\obj\syscalls.o
- .debug_ranges  0x0000000000000000       0x50 ..\obj\syscalls.o
- .debug_line    0x0000000000000000      0x2f1 ..\obj\syscalls.o
- .debug_str     0x0000000000000000      0x318 ..\obj\syscalls.o
- .comment       0x0000000000000000       0x51 ..\obj\syscalls.o
+ .debug_rnglists
+                0x0000000000000000       0x43 ..\obj\syscalls.o
+ .debug_line    0x0000000000000000      0x43c ..\obj\syscalls.o
+ .debug_str     0x0000000000000000      0x328 ..\obj\syscalls.o
+ .comment       0x0000000000000000       0x44 ..\obj\syscalls.o
  .debug_frame   0x0000000000000000      0x168 ..\obj\syscalls.o
  .ARM.attributes
                 0x0000000000000000       0x2d ..\obj\syscalls.o
@@ -417,30 +418,30 @@ LOAD ..\obj\stm32f10x_usart.o
 LOAD ..\obj\syscalls.o
 LOAD ..\obj\usart1.o
 START GROUP
-LOAD c:/st/stm32cubeide_1.10.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a
-LOAD c:/st/stm32cubeide_1.10.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a
-LOAD c:/st/stm32cubeide_1.10.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc.a
+LOAD C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7-m/nofp\libgcc.a
+LOAD C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a
+LOAD C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc.a
 END GROUP
 OUTPUT(usart1.elf elf32-littlearm)
 LOAD linker stubs
 
-.debug_info     0x0000000000000000     0x2ee0
- .debug_info    0x0000000000000000      0x4b6 ..\obj\system_stm32f10x.o
- .debug_info    0x00000000000004b6      0x116 ..\obj\startup_stm32f10x_md.o
- .debug_info    0x00000000000005cc      0x746 ..\obj\stm32f10x_gpio.o
- .debug_info    0x0000000000000d12       0xf0 ..\obj\main.o
- .debug_info    0x0000000000000e02      0x8f3 ..\obj\stm32f10x_rcc.o
- .debug_info    0x00000000000016f5      0xaa4 ..\obj\stm32f10x_usart.o
- .debug_info    0x0000000000002199      0xd47 ..\obj\usart1.o
+.debug_info     0x0000000000000000     0x2aba
+ .debug_info    0x0000000000000000      0x485 ..\obj\system_stm32f10x.o
+ .debug_info    0x0000000000000485      0x105 ..\obj\startup_stm32f10x_md.o
+ .debug_info    0x000000000000058a      0x6d6 ..\obj\stm32f10x_gpio.o
+ .debug_info    0x0000000000000c60       0xed ..\obj\main.o
+ .debug_info    0x0000000000000d4d      0x854 ..\obj\stm32f10x_rcc.o
+ .debug_info    0x00000000000015a1      0x9ed ..\obj\stm32f10x_usart.o
+ .debug_info    0x0000000000001f8e      0xb2c ..\obj\usart1.o
 
-.debug_abbrev   0x0000000000000000      0xb47
- .debug_abbrev  0x0000000000000000      0x17d ..\obj\system_stm32f10x.o
- .debug_abbrev  0x000000000000017d       0xe6 ..\obj\startup_stm32f10x_md.o
- .debug_abbrev  0x0000000000000263      0x205 ..\obj\stm32f10x_gpio.o
- .debug_abbrev  0x0000000000000468       0xbc ..\obj\main.o
- .debug_abbrev  0x0000000000000524      0x1d3 ..\obj\stm32f10x_rcc.o
- .debug_abbrev  0x00000000000006f7      0x1ad ..\obj\stm32f10x_usart.o
- .debug_abbrev  0x00000000000008a4      0x2a3 ..\obj\usart1.o
+.debug_abbrev   0x0000000000000000      0xb64
+ .debug_abbrev  0x0000000000000000      0x17e ..\obj\system_stm32f10x.o
+ .debug_abbrev  0x000000000000017e       0xec ..\obj\startup_stm32f10x_md.o
+ .debug_abbrev  0x000000000000026a      0x215 ..\obj\stm32f10x_gpio.o
+ .debug_abbrev  0x000000000000047f       0xbc ..\obj\main.o
+ .debug_abbrev  0x000000000000053b      0x1e1 ..\obj\stm32f10x_rcc.o
+ .debug_abbrev  0x000000000000071c      0x1bd ..\obj\stm32f10x_usart.o
+ .debug_abbrev  0x00000000000008d9      0x28b ..\obj\usart1.o
 
 .debug_aranges  0x0000000000000000      0x378
  .debug_aranges
@@ -458,49 +459,57 @@ LOAD linker stubs
  .debug_aranges
                 0x0000000000000348       0x30 ..\obj\usart1.o
 
-.debug_ranges   0x0000000000000000      0x308
- .debug_ranges  0x0000000000000000       0x28 ..\obj\system_stm32f10x.o
- .debug_ranges  0x0000000000000028       0x18 ..\obj\startup_stm32f10x_md.o
- .debug_ranges  0x0000000000000040       0x98 ..\obj\stm32f10x_gpio.o
- .debug_ranges  0x00000000000000d8       0x18 ..\obj\main.o
- .debug_ranges  0x00000000000000f0      0x108 ..\obj\stm32f10x_rcc.o
- .debug_ranges  0x00000000000001f8       0xf0 ..\obj\stm32f10x_usart.o
- .debug_ranges  0x00000000000002e8       0x20 ..\obj\usart1.o
+.debug_rnglists
+                0x0000000000000000      0x282
+ .debug_rnglists
+                0x0000000000000000       0x27 ..\obj\system_stm32f10x.o
+ .debug_rnglists
+                0x0000000000000027       0x19 ..\obj\startup_stm32f10x_md.o
+ .debug_rnglists
+                0x0000000000000040       0x7d ..\obj\stm32f10x_gpio.o
+ .debug_rnglists
+                0x00000000000000bd       0x19 ..\obj\main.o
+ .debug_rnglists
+                0x00000000000000d6       0xce ..\obj\stm32f10x_rcc.o
+ .debug_rnglists
+                0x00000000000001a4       0xbf ..\obj\stm32f10x_usart.o
+ .debug_rnglists
+                0x0000000000000263       0x1f ..\obj\usart1.o
 
-.debug_line     0x0000000000000000     0x1f79
- .debug_line    0x0000000000000000      0x3c2 ..\obj\system_stm32f10x.o
- .debug_line    0x00000000000003c2       0xb7 ..\obj\startup_stm32f10x_md.o
- .debug_line    0x0000000000000479      0x650 ..\obj\stm32f10x_gpio.o
- .debug_line    0x0000000000000ac9       0xb2 ..\obj\main.o
- .debug_line    0x0000000000000b7b      0x7d8 ..\obj\stm32f10x_rcc.o
- .debug_line    0x0000000000001353      0x784 ..\obj\stm32f10x_usart.o
- .debug_line    0x0000000000001ad7      0x4a2 ..\obj\usart1.o
+.debug_line     0x0000000000000000     0x223e
+ .debug_line    0x0000000000000000      0x436 ..\obj\system_stm32f10x.o
+ .debug_line    0x0000000000000436       0xc6 ..\obj\startup_stm32f10x_md.o
+ .debug_line    0x00000000000004fc      0x6d1 ..\obj\stm32f10x_gpio.o
+ .debug_line    0x0000000000000bcd       0xbf ..\obj\main.o
+ .debug_line    0x0000000000000c8c      0x859 ..\obj\stm32f10x_rcc.o
+ .debug_line    0x00000000000014e5      0x805 ..\obj\stm32f10x_usart.o
+ .debug_line    0x0000000000001cea      0x554 ..\obj\usart1.o
 
-.debug_str      0x0000000000000000     0x1383
- .debug_str     0x0000000000000000      0x289 ..\obj\system_stm32f10x.o
-                                        0x2f0 (size before relaxing)
- .debug_str     0x0000000000000289       0xae ..\obj\startup_stm32f10x_md.o
-                                        0x17c (size before relaxing)
- .debug_str     0x0000000000000337      0x3c5 ..\obj\stm32f10x_gpio.o
-                                        0x531 (size before relaxing)
- .debug_str     0x00000000000006fc       0x55 ..\obj\main.o
-                                        0x187 (size before relaxing)
- .debug_str     0x0000000000000751      0x3ca ..\obj\stm32f10x_rcc.o
-                                        0x61b (size before relaxing)
- .debug_str     0x0000000000000b1b      0x464 ..\obj\stm32f10x_usart.o
-                                        0x6d1 (size before relaxing)
- .debug_str     0x0000000000000f7f      0x404 ..\obj\usart1.o
-                                        0x803 (size before relaxing)
+.debug_str      0x0000000000000000     0x132a
+ .debug_str     0x0000000000000000      0x299 ..\obj\system_stm32f10x.o
+                                        0x300 (size before relaxing)
+ .debug_str     0x0000000000000299       0xbb ..\obj\startup_stm32f10x_md.o
+                                        0x18c (size before relaxing)
+ .debug_str     0x0000000000000354      0x3d2 ..\obj\stm32f10x_gpio.o
+                                        0x541 (size before relaxing)
+ .debug_str     0x0000000000000726       0x62 ..\obj\main.o
+                                        0x197 (size before relaxing)
+ .debug_str     0x0000000000000788      0x3d7 ..\obj\stm32f10x_rcc.o
+                                        0x62b (size before relaxing)
+ .debug_str     0x0000000000000b5f      0x471 ..\obj\stm32f10x_usart.o
+                                        0x6e1 (size before relaxing)
+ .debug_str     0x0000000000000fd0      0x35a ..\obj\usart1.o
+                                        0x75c (size before relaxing)
 
-.comment        0x0000000000000000       0x50
- .comment       0x0000000000000000       0x50 ..\obj\system_stm32f10x.o
-                                         0x51 (size before relaxing)
- .comment       0x0000000000000050       0x51 ..\obj\startup_stm32f10x_md.o
- .comment       0x0000000000000050       0x51 ..\obj\stm32f10x_gpio.o
- .comment       0x0000000000000050       0x51 ..\obj\main.o
- .comment       0x0000000000000050       0x51 ..\obj\stm32f10x_rcc.o
- .comment       0x0000000000000050       0x51 ..\obj\stm32f10x_usart.o
- .comment       0x0000000000000050       0x51 ..\obj\usart1.o
+.comment        0x0000000000000000       0x43
+ .comment       0x0000000000000000       0x43 ..\obj\system_stm32f10x.o
+                                         0x44 (size before relaxing)
+ .comment       0x0000000000000043       0x44 ..\obj\startup_stm32f10x_md.o
+ .comment       0x0000000000000043       0x44 ..\obj\stm32f10x_gpio.o
+ .comment       0x0000000000000043       0x44 ..\obj\main.o
+ .comment       0x0000000000000043       0x44 ..\obj\stm32f10x_rcc.o
+ .comment       0x0000000000000043       0x44 ..\obj\stm32f10x_usart.o
+ .comment       0x0000000000000043       0x44 ..\obj\usart1.o
 
 .ARM.attributes
                 0x0000000000000000       0x2d

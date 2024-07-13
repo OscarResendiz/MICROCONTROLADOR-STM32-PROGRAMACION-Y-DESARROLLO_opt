@@ -1,0 +1,346 @@
+2024-01-16 00:00:03,674 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 917731664 Bytes (1073741824)
+2024-01-16 00:00:08,005 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 936605048 Bytes (1073741824)
+2024-01-16 00:00:08,243 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 614813144 Bytes (1073741824)
+2024-01-16 00:00:08,573 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2024-01-16 00:00:08,574 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-01-16 00:00:08,574 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-01-16 00:00:08,574 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-01-16 00:00:08,575 [INFO] CodeGenerator:799 - code generatio: config db path: C:\ST\STM32CubeIDE_1.13.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.9.1.202307191849\\db\
+2024-01-16 00:00:08,714 [INFO] CodeEngine:255 - oldGeneratedFile, D:\Cursos\STM32\Cocox\GIT\Ejemplos\MatrizLed\matrizLed\MXTmpFiles\license.tmp_save
+2024-01-16 00:00:09,008 [INFO] CodeEngine:279 - Generated code: D:\Cursos\STM32\Cocox\GIT\Ejemplos\MatrizLed\matrizLed\MXTmpFiles\license.tmp
+2024-01-16 00:00:09,053 [INFO] CodeEngine:255 - oldGeneratedFile, D:\Cursos\STM32\Cocox\GIT\Ejemplos\MatrizLed\matrizLed\MXTmpFiles\gpio.tmp_save
+2024-01-16 00:00:09,339 [INFO] CodeEngine:279 - Generated code: D:\Cursos\STM32\Cocox\GIT\Ejemplos\MatrizLed\matrizLed\MXTmpFiles\gpio.tmp
+2024-01-16 00:00:09,421 [INFO] CodeEngine:255 - oldGeneratedFile, D:\Cursos\STM32\Cocox\GIT\Ejemplos\MatrizLed\matrizLed\Core\Src\stm32f1xx_it.c_save
+2024-01-16 00:00:09,914 [INFO] CodeEngine:279 - Generated code: D:\Cursos\STM32\Cocox\GIT\Ejemplos\MatrizLed\matrizLed\Core\Src\stm32f1xx_it.c
+2024-01-16 00:00:09,920 [INFO] CodeEngine:255 - oldGeneratedFile, D:\Cursos\STM32\Cocox\GIT\Ejemplos\MatrizLed\matrizLed\Core\Inc\stm32f1xx_it.h_save
+2024-01-16 00:00:09,980 [INFO] CodeEngine:279 - Generated code: D:\Cursos\STM32\Cocox\GIT\Ejemplos\MatrizLed\matrizLed\Core\Inc\stm32f1xx_it.h
+2024-01-16 00:00:10,013 [INFO] CodeEngine:255 - oldGeneratedFile, D:\Cursos\STM32\Cocox\GIT\Ejemplos\MatrizLed\matrizLed\Core\Src\stm32f1xx_hal_msp.c_save
+2024-01-16 00:00:10,142 [INFO] CodeEngine:279 - Generated code: D:\Cursos\STM32\Cocox\GIT\Ejemplos\MatrizLed\matrizLed\Core\Src\stm32f1xx_hal_msp.c
+2024-01-16 00:00:10,147 [INFO] CodeEngine:255 - oldGeneratedFile, D:\Cursos\STM32\Cocox\GIT\Ejemplos\MatrizLed\matrizLed\MXTmpFiles\system.tmp_save
+2024-01-16 00:00:10,221 [INFO] CodeEngine:279 - Generated code: D:\Cursos\STM32\Cocox\GIT\Ejemplos\MatrizLed\matrizLed\MXTmpFiles\system.tmp
+2024-01-16 00:00:10,252 [INFO] CodeEngine:311 - oldGeneratedFile, D:\Cursos\STM32\Cocox\GIT\Ejemplos\MatrizLed\matrizLed\Core\Inc\stm32f1xx_hal_conf.h_save
+2024-01-16 00:00:10,417 [INFO] CodeEngine:335 - Generated code: D:\Cursos\STM32\Cocox\GIT\Ejemplos\MatrizLed\matrizLed\Core\Inc\stm32f1xx_hal_conf.h
+2024-01-16 00:00:10,481 [INFO] CodeEngine:255 - oldGeneratedFile, D:\Cursos\STM32\Cocox\GIT\Ejemplos\MatrizLed\matrizLed\Core\Inc\main.h_save
+2024-01-16 00:00:10,619 [INFO] CodeEngine:279 - Generated code: D:\Cursos\STM32\Cocox\GIT\Ejemplos\MatrizLed\matrizLed\Core\Inc\main.h
+2024-01-16 00:00:10,636 [INFO] CodeEngine:255 - oldGeneratedFile, D:\Cursos\STM32\Cocox\GIT\Ejemplos\MatrizLed\matrizLed\Core\Src\main.c_save
+2024-01-16 00:00:11,004 [INFO] CodeEngine:279 - Generated code: D:\Cursos\STM32\Cocox\GIT\Ejemplos\MatrizLed\matrizLed\Core\Src\main.c
+2024-01-16 00:00:11,748 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 236mS.
+2024-01-16 00:00:11,751 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2024-01-16 00:00:12,097 [INFO] ConfigFileManager:1457 - The Die is : DIE410
+2024-01-16 00:00:15,238 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 3487mS.
+2024-01-16 00:00:15,239 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2024-01-16 00:00:15,240 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2024-01-16 00:21:19,346 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-01-16 00:21:19,431 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-01-16 00:21:41,557 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 608637600 Bytes (1073741824)
+2024-01-16 00:21:43,552 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 625941152 Bytes (1073741824)
+2024-01-16 00:21:43,693 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 643240608 Bytes (1073741824)
+2024-01-16 00:21:43,863 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2024-01-16 00:21:43,863 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-01-16 00:21:43,863 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-01-16 00:21:43,863 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-01-16 00:21:43,864 [INFO] CodeGenerator:799 - code generatio: config db path: C:\ST\STM32CubeIDE_1.13.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.9.1.202307191849\\db\
+2024-01-16 00:21:43,974 [INFO] CodeEngine:255 - oldGeneratedFile, D:\Cursos\STM32\Cocox\GIT\Ejemplos\MatrizLed\matrizLed\MXTmpFiles\license.tmp_save
+2024-01-16 00:21:44,070 [INFO] CodeEngine:279 - Generated code: D:\Cursos\STM32\Cocox\GIT\Ejemplos\MatrizLed\matrizLed\MXTmpFiles\license.tmp
+2024-01-16 00:21:44,088 [INFO] CodeEngine:255 - oldGeneratedFile, D:\Cursos\STM32\Cocox\GIT\Ejemplos\MatrizLed\matrizLed\MXTmpFiles\gpio.tmp_save
+2024-01-16 00:21:44,189 [INFO] CodeEngine:279 - Generated code: D:\Cursos\STM32\Cocox\GIT\Ejemplos\MatrizLed\matrizLed\MXTmpFiles\gpio.tmp
+2024-01-16 00:21:44,236 [INFO] CodeEngine:255 - oldGeneratedFile, D:\Cursos\STM32\Cocox\GIT\Ejemplos\MatrizLed\matrizLed\Core\Src\stm32f1xx_it.c_save
+2024-01-16 00:21:44,409 [INFO] CodeEngine:279 - Generated code: D:\Cursos\STM32\Cocox\GIT\Ejemplos\MatrizLed\matrizLed\Core\Src\stm32f1xx_it.c
+2024-01-16 00:21:44,416 [INFO] CodeEngine:255 - oldGeneratedFile, D:\Cursos\STM32\Cocox\GIT\Ejemplos\MatrizLed\matrizLed\Core\Inc\stm32f1xx_it.h_save
+2024-01-16 00:21:44,487 [INFO] CodeEngine:279 - Generated code: D:\Cursos\STM32\Cocox\GIT\Ejemplos\MatrizLed\matrizLed\Core\Inc\stm32f1xx_it.h
+2024-01-16 00:21:44,514 [INFO] CodeEngine:255 - oldGeneratedFile, D:\Cursos\STM32\Cocox\GIT\Ejemplos\MatrizLed\matrizLed\Core\Src\stm32f1xx_hal_msp.c_save
+2024-01-16 00:21:44,740 [INFO] CodeEngine:279 - Generated code: D:\Cursos\STM32\Cocox\GIT\Ejemplos\MatrizLed\matrizLed\Core\Src\stm32f1xx_hal_msp.c
+2024-01-16 00:21:44,750 [INFO] CodeEngine:255 - oldGeneratedFile, D:\Cursos\STM32\Cocox\GIT\Ejemplos\MatrizLed\matrizLed\MXTmpFiles\system.tmp_save
+2024-01-16 00:21:44,896 [INFO] CodeEngine:279 - Generated code: D:\Cursos\STM32\Cocox\GIT\Ejemplos\MatrizLed\matrizLed\MXTmpFiles\system.tmp
+2024-01-16 00:21:44,918 [INFO] CodeEngine:311 - oldGeneratedFile, D:\Cursos\STM32\Cocox\GIT\Ejemplos\MatrizLed\matrizLed\Core\Inc\stm32f1xx_hal_conf.h_save
+2024-01-16 00:21:45,237 [INFO] CodeEngine:335 - Generated code: D:\Cursos\STM32\Cocox\GIT\Ejemplos\MatrizLed\matrizLed\Core\Inc\stm32f1xx_hal_conf.h
+2024-01-16 00:21:45,307 [INFO] CodeEngine:255 - oldGeneratedFile, D:\Cursos\STM32\Cocox\GIT\Ejemplos\MatrizLed\matrizLed\Core\Inc\main.h_save
+2024-01-16 00:21:45,572 [INFO] CodeEngine:279 - Generated code: D:\Cursos\STM32\Cocox\GIT\Ejemplos\MatrizLed\matrizLed\Core\Inc\main.h
+2024-01-16 00:21:45,611 [INFO] CodeEngine:255 - oldGeneratedFile, D:\Cursos\STM32\Cocox\GIT\Ejemplos\MatrizLed\matrizLed\Core\Src\main.c_save
+2024-01-16 00:21:45,749 [INFO] CodeEngine:279 - Generated code: D:\Cursos\STM32\Cocox\GIT\Ejemplos\MatrizLed\matrizLed\Core\Src\main.c
+2024-01-16 00:21:46,269 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 119mS.
+2024-01-16 00:21:46,272 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2024-01-16 00:21:46,505 [INFO] ConfigFileManager:1457 - The Die is : DIE410
+2024-01-16 00:21:48,859 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 2587mS.
+2024-01-16 00:21:48,859 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2024-01-16 00:21:48,861 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2024-01-16 01:21:38,105 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-01-16 01:21:38,222 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-01-16 01:21:48,279 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 666873424 Bytes (1073741824)
+2024-01-16 01:21:51,490 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 683996120 Bytes (1073741824)
+2024-01-16 01:21:51,634 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 702197344 Bytes (1073741824)
+2024-01-16 01:21:51,810 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2024-01-16 01:21:51,811 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-01-16 01:21:51,811 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-01-16 01:21:51,811 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-01-16 01:21:51,812 [INFO] CodeGenerator:799 - code generatio: config db path: C:\ST\STM32CubeIDE_1.13.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.9.1.202307191849\\db\
+2024-01-16 01:21:51,926 [INFO] CodeEngine:255 - oldGeneratedFile, D:\Cursos\STM32\Cocox\GIT\Ejemplos\MatrizLed\matrizLed\MXTmpFiles\license.tmp_save
+2024-01-16 01:21:52,026 [INFO] CodeEngine:279 - Generated code: D:\Cursos\STM32\Cocox\GIT\Ejemplos\MatrizLed\matrizLed\MXTmpFiles\license.tmp
+2024-01-16 01:21:52,045 [INFO] CodeEngine:255 - oldGeneratedFile, D:\Cursos\STM32\Cocox\GIT\Ejemplos\MatrizLed\matrizLed\MXTmpFiles\gpio.tmp_save
+2024-01-16 01:21:52,138 [INFO] CodeEngine:279 - Generated code: D:\Cursos\STM32\Cocox\GIT\Ejemplos\MatrizLed\matrizLed\MXTmpFiles\gpio.tmp
+2024-01-16 01:21:52,187 [INFO] CodeEngine:255 - oldGeneratedFile, D:\Cursos\STM32\Cocox\GIT\Ejemplos\MatrizLed\matrizLed\Core\Src\stm32f1xx_it.c_save
+2024-01-16 01:21:52,452 [INFO] CodeEngine:279 - Generated code: D:\Cursos\STM32\Cocox\GIT\Ejemplos\MatrizLed\matrizLed\Core\Src\stm32f1xx_it.c
+2024-01-16 01:21:52,457 [INFO] CodeEngine:255 - oldGeneratedFile, D:\Cursos\STM32\Cocox\GIT\Ejemplos\MatrizLed\matrizLed\Core\Inc\stm32f1xx_it.h_save
+2024-01-16 01:21:52,529 [INFO] CodeEngine:279 - Generated code: D:\Cursos\STM32\Cocox\GIT\Ejemplos\MatrizLed\matrizLed\Core\Inc\stm32f1xx_it.h
+2024-01-16 01:21:52,764 [INFO] CodeEngine:255 - oldGeneratedFile, D:\Cursos\STM32\Cocox\GIT\Ejemplos\MatrizLed\matrizLed\Core\Src\stm32f1xx_hal_msp.c_save
+2024-01-16 01:21:52,915 [INFO] CodeEngine:279 - Generated code: D:\Cursos\STM32\Cocox\GIT\Ejemplos\MatrizLed\matrizLed\Core\Src\stm32f1xx_hal_msp.c
+2024-01-16 01:21:52,919 [INFO] CodeEngine:255 - oldGeneratedFile, D:\Cursos\STM32\Cocox\GIT\Ejemplos\MatrizLed\matrizLed\MXTmpFiles\system.tmp_save
+2024-01-16 01:21:52,984 [INFO] CodeEngine:279 - Generated code: D:\Cursos\STM32\Cocox\GIT\Ejemplos\MatrizLed\matrizLed\MXTmpFiles\system.tmp
+2024-01-16 01:21:53,003 [INFO] CodeEngine:311 - oldGeneratedFile, D:\Cursos\STM32\Cocox\GIT\Ejemplos\MatrizLed\matrizLed\Core\Inc\stm32f1xx_hal_conf.h_save
+2024-01-16 01:21:53,117 [INFO] CodeEngine:335 - Generated code: D:\Cursos\STM32\Cocox\GIT\Ejemplos\MatrizLed\matrizLed\Core\Inc\stm32f1xx_hal_conf.h
+2024-01-16 01:21:53,171 [INFO] CodeEngine:255 - oldGeneratedFile, D:\Cursos\STM32\Cocox\GIT\Ejemplos\MatrizLed\matrizLed\Core\Inc\main.h_save
+2024-01-16 01:21:53,279 [INFO] CodeEngine:279 - Generated code: D:\Cursos\STM32\Cocox\GIT\Ejemplos\MatrizLed\matrizLed\Core\Inc\main.h
+2024-01-16 01:21:53,293 [INFO] CodeEngine:255 - oldGeneratedFile, D:\Cursos\STM32\Cocox\GIT\Ejemplos\MatrizLed\matrizLed\Core\Src\main.c_save
+2024-01-16 01:21:53,397 [INFO] CodeEngine:279 - Generated code: D:\Cursos\STM32\Cocox\GIT\Ejemplos\MatrizLed\matrizLed\Core\Src\main.c
+2024-01-16 01:21:53,933 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 144mS.
+2024-01-16 01:21:53,936 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2024-01-16 01:21:54,266 [INFO] ConfigFileManager:1457 - The Die is : DIE410
+2024-01-16 01:21:56,271 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 2335mS.
+2024-01-16 01:21:56,272 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 1mS.
+2024-01-16 01:21:56,273 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2024-01-16 01:25:59,837 [INFO] MainUpdater:2868 - connection check result : 10
+2024-01-16 01:25:59,837 [INFO] MainUpdater:2868 - connection check result : 10
+2024-01-16 01:25:59,854 [INFO] MicroXplorer:468 - Change Database Path : 
+2024-01-16 01:25:59,854 [INFO] MicroXplorer:498 - Change Database Version : DB.6.0.91
+2024-01-16 01:25:59,884 [WARN] ThirdParty:871 - waiting for thirdparty lock release [close project]
+2024-01-16 01:25:59,884 [INFO] ThirdParty:873 - entering critical section [close project]
+2024-01-16 01:25:59,884 [INFO] ThirdParty:883 - exiting critical section [close project]
+2024-01-16 01:25:59,885 [INFO] PinOutPanel:1499 - setPackage(No Configuration,No Configuration)
+2024-01-16 01:25:59,893 [INFO] UtilMem:75 - Begin LoadConfig() Used Memory: 771742288 Bytes (1073741824)
+2024-01-16 01:26:02,642 [INFO] ServerAccessManage:473 - Download File stm32cube_db_v6021.zip
+2024-01-16 01:26:42,895 [INFO] FileExtend:240 - Unzip File : stm32cube_db_v6021.zip
+2024-01-16 01:26:42,896 [INFO] FileExtend:255 - Standard Zip Deflate
+2024-01-16 01:27:04,532 [INFO] LoadServerPackagesThread:196 - End of LoadServerPackages Thread
+2024-01-16 01:27:04,680 [INFO] CheckServerUpdateThread:120 - End of CheckServer Thread
+2024-01-16 01:27:06,515 [ERROR] FileExtend:455 - File entry not found
+2024-01-16 01:27:06,516 [INFO] FileExtend:240 - Unzip File : stm32cube_fw_f1_v180.zip
+2024-01-16 01:27:06,516 [INFO] FileExtend:255 - Standard Zip Deflate
+2024-01-16 01:27:36,345 [INFO] ServerAccessManage:473 - Download File stm32cube_fw_f1_v184.zip
+2024-01-16 01:28:15,472 [INFO] FileExtend:240 - Unzip File : stm32cube_fw_f1_v184.zip
+2024-01-16 01:28:15,472 [INFO] FileExtend:255 - Standard Zip Deflate
+2024-01-16 01:28:30,343 [INFO] LoadServerPackagesThread:196 - End of LoadServerPackages Thread
+2024-01-16 01:28:30,472 [INFO] CheckServerUpdateThread:120 - End of CheckServer Thread
+2024-01-16 01:28:30,480 [INFO] MicroXplorer:468 - Change Database Path : C:/Users/W10/.stm32cubemx/databases/DB.6.0.21/db/
+2024-01-16 01:28:30,480 [INFO] MicroXplorer:498 - Change Database Version : DB.6.0.21
+2024-01-16 01:28:30,480 [INFO] OpenFileManager:308 - Change cursor
+2024-01-16 01:28:30,498 [INFO] RulesReader:64 - Compatibility file has been processed (237 Rules)
+2024-01-16 01:28:30,501 [INFO] Mcu:1946 - Initializing MCU STM32F103C(8-B)Tx STM32F103C8Tx 
+2024-01-16 01:28:30,502 [INFO] Mcu:1959 - No CPN specified => set CPN to STM32F103C8T6
+2024-01-16 01:28:31,488 [INFO] Context:659 - Trying to add GPIOservice into a context  which must be forbidden
+2024-01-16 01:28:31,773 [INFO] RtosManager:555 - Registered RTOS mode: class=CMSIS, group=RTOS, mode=CMSIS_V1, owner=FREERTOS
+2024-01-16 01:28:31,773 [INFO] RtosManager:555 - Registered RTOS mode: class=CMSIS, group=RTOS2, mode=CMSIS_V2, owner=FREERTOS
+2024-01-16 01:28:31,773 [INFO] RtosManager:555 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V1, owner=FREERTOS
+2024-01-16 01:28:31,773 [INFO] RtosManager:555 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V2, owner=FREERTOS
+2024-01-16 01:28:31,773 [WARN] ModelIntegratedComponent:184 - Missing modes for component STMicroelectronics:FreeRTOS:0.0.1:STMicroelectronics:RTOS:FreeRTOS:Core:::10.2.0:
+2024-01-16 01:28:31,795 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-01-16 01:28:31,796 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-01-16 01:28:31,796 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-01-16 01:28:31,796 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-01-16 01:28:31,796 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-01-16 01:28:31,796 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-01-16 01:28:31,796 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-01-16 01:28:31,796 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-01-16 01:28:31,796 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-01-16 01:28:31,796 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-01-16 01:28:31,796 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-01-16 01:28:31,796 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-01-16 01:28:31,796 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-01-16 01:28:31,796 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-01-16 01:28:31,796 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-01-16 01:28:31,800 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-01-16 01:28:31,800 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-01-16 01:28:31,800 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-01-16 01:28:31,800 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-01-16 01:28:31,800 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-01-16 01:28:31,800 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-01-16 01:28:31,800 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-01-16 01:28:31,800 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-01-16 01:28:31,800 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-01-16 01:28:31,800 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-01-16 01:28:31,800 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-01-16 01:28:31,800 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-01-16 01:28:31,800 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-01-16 01:28:31,801 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-01-16 01:28:31,801 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-01-16 01:28:31,801 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-01-16 01:28:31,801 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-01-16 01:28:31,801 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-01-16 01:28:31,942 [INFO] ThirdPartyModel:298 - Start build external matchings
+2024-01-16 01:28:32,927 [INFO] ThirdPartyModel:316 - End build external matchings
+2024-01-16 01:28:32,943 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Parameter (ADCFreqValue) has invalid value (36000000)
+2024-01-16 01:28:32,944 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (FamilyName)
+2024-01-16 01:28:32,944 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Parameter (MCOFreq_Value) has invalid value (72000000)
+2024-01-16 01:28:32,944 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Parameter (USBFreq_Value) has invalid value (72000000)
+2024-01-16 01:28:33,191 [INFO] UtilMem:75 - End LoadConfig() Used Memory: 789471536 Bytes (1073741824)
+2024-01-16 01:28:33,210 [WARN] ThirdParty:833 - waiting for thirdparty lock release [change project]
+2024-01-16 01:28:33,210 [INFO] ThirdParty:835 - entering critical section [change project]
+2024-01-16 01:28:33,210 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ISPU 1.1.0
+2024-01-16 01:28:33,210 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USBPD 4.1
+2024-01-16 01:28:33,210 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 6.0.0
+2024-01-16 01:28:33,210 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 2.0.0
+2024-01-16 01:28:33,210 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-F4 1.1.0
+2024-01-16 01:28:33,210 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics LIBJPEG 8.0.0
+2024-01-16 01:28:33,210 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :wolfSSL I-CUBE-wolfSSL 5.6.3
+2024-01-16 01:28:33,210 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SMBUS 2.1.0
+2024-01-16 01:28:33,210 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 3.0.0
+2024-01-16 01:28:33,211 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-WB 2.0.0
+2024-01-16 01:28:33,211 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.23.0
+2024-01-16 01:28:33,211 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-F7 1.1.0
+2024-01-16 01:28:33,211 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-L5 2.0.0
+2024-01-16 01:28:33,211 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 2.0.0
+2024-01-16 01:28:33,211 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 9.6.0
+2024-01-16 01:28:33,211 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-EEPRMA1 4.2.0
+2024-01-16 01:28:33,211 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :ITTIA_DB I-CUBE-ITTIADB 8.8.0
+2024-01-16 01:28:33,211 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-MOTENV1 4.3.2
+2024-01-16 01:28:33,211 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALGOBUILD 1.3.0
+2024-01-16 01:28:33,211 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FreeRTOS 0.0.1
+2024-01-16 01:28:33,211 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-G0 1.1.0
+2024-01-16 01:28:33,211 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLEMGR 2.0.0
+2024-01-16 01:28:33,211 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 3.0.0
+2024-01-16 01:28:33,211 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SUBG2 5.0.0
+2024-01-16 01:28:33,216 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics STM32_WPAN 1.0.0
+2024-01-16 01:28:33,217 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.0.3
+2024-01-16 01:28:33,217 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-FLIGHT1 5.0.2
+2024-01-16 01:28:33,217 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 1.0.0
+2024-01-16 01:28:33,217 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOF1 3.3.1
+2024-01-16 01:28:33,217 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-G4 2.0.0
+2024-01-16 01:28:33,217 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.1.0
+2024-01-16 01:28:33,217 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-H7 3.1.0
+2024-01-16 01:28:33,217 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :Infineon AIROC-Wi-Fi-Bluetooth-STM32 1.5.1
+2024-01-16 01:28:33,218 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLEMGR 3.0.0
+2024-01-16 01:28:33,218 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.3.0
+2024-01-16 01:28:33,218 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-DISPLAY 3.0.0
+2024-01-16 01:28:33,218 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-MOTENVWB1 1.3.1
+2024-01-16 01:28:33,218 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 7.0.0
+2024-01-16 01:28:33,220 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-ATR-SIGFOX1 3.2.0
+2024-01-16 01:28:33,220 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ISPU 2.0.0
+2024-01-16 01:28:33,220 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics HAL Drivers 0.0.0
+2024-01-16 01:28:33,220 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.16.2
+2024-01-16 01:28:33,220 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :emotas I-CUBE-CANOPEN 1.3.0
+2024-01-16 01:28:33,220 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 10.0.0
+2024-01-16 01:28:33,221 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-FREERTOS 1.1.0
+2024-01-16 01:28:33,221 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.22.0
+2024-01-16 01:28:33,221 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC7 1.0.1
+2024-01-16 01:28:33,221 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.14.1
+2024-01-16 01:28:33,221 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.22.1
+2024-01-16 01:28:33,221 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC6 3.0.0
+2024-01-16 01:28:33,221 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-EEPRMA1 4.1.0
+2024-01-16 01:28:33,221 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :portGmbH I-Cube-SoM-uGOAL 1.1.0
+2024-01-16 01:28:33,221 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALS 1.0.1
+2024-01-16 01:28:33,221 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics ThreadX 1.0.0
+2024-01-16 01:28:33,221 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-SMARTAG2 1.2.0
+2024-01-16 01:28:33,221 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-WL 2.0.0
+2024-01-16 01:28:33,221 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :SEGGER I-CUBE-embOS 1.3.1
+2024-01-16 01:28:33,221 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 1.0.0
+2024-01-16 01:28:33,221 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 8.1.0
+2024-01-16 01:28:33,221 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-L4 2.0.0
+2024-01-16 01:28:33,221 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics ThreadX 0.0.2
+2024-01-16 01:28:33,221 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :WES I-CUBE-Cesium 1.3.0
+2024-01-16 01:28:33,221 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-ATR-ASTRA1 2.0.0
+2024-01-16 01:28:33,221 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.1.2
+2024-01-16 01:28:33,222 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SFXS2LP1 4.0.0
+2024-01-16 01:28:33,222 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE2 3.3.0
+2024-01-16 01:28:33,222 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOF1 3.4.0
+2024-01-16 01:28:33,222 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-H7 3.2.0
+2024-01-16 01:28:33,222 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.2.0
+2024-01-16 01:28:33,222 [INFO] ThirdParty:841 - exiting critical section [change project]
+2024-01-16 01:28:33,375 [INFO] PinOutPanel:1499 - setPackage(No Configuration,No Configuration)
+2024-01-16 01:28:33,376 [INFO] PinOutPanel:1499 - setPackage(STM32F103C8Tx,LQFP48)
+2024-01-16 01:28:33,644 [INFO] UtilMem:75 - Before build in PCC Used Memory: 906229136 Bytes (1073741824)
+2024-01-16 01:28:33,883 [INFO] UtilMem:75 - After build in PCC Used Memory: 947649952 Bytes (1073741824)
+2024-01-16 01:28:33,923 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-01-16 01:28:33,923 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-01-16 01:28:33,923 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-01-16 01:28:33,923 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-01-16 01:28:33,923 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-01-16 01:28:33,924 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-01-16 01:28:33,924 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-01-16 01:28:33,924 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-01-16 01:28:33,924 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-01-16 01:28:33,924 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-01-16 01:28:33,924 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-01-16 01:28:33,924 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-01-16 01:28:33,925 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-01-16 01:28:33,925 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-01-16 01:28:33,925 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-01-16 01:28:33,925 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-01-16 01:28:33,925 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-01-16 01:28:33,925 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-01-16 01:28:33,926 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-01-16 01:28:33,926 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-01-16 01:28:33,926 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-01-16 01:28:33,926 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-01-16 01:28:33,926 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-01-16 01:28:33,926 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-01-16 01:28:33,927 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-01-16 01:28:33,927 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-01-16 01:28:33,927 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-01-16 01:28:33,973 [INFO] CADModel:165 - CPN selected for project levelSTM32F103C8T6
+2024-01-16 01:28:33,973 [INFO] CADModel:114 - Register for checkConnection events
+2024-01-16 01:28:34,012 [INFO] OpenFileManager:328 - Restore cursor
+2024-01-16 01:28:34,026 [INFO] ApiDb:581 - Connected to CubeFinder SQLite database (C:\Users\W10\.stmcufinder\plugins\mcufinder\mcu\cube-finder-db.db)
+2024-01-16 01:35:29,072 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 637255856 Bytes (1073741824)
+2024-01-16 01:35:29,280 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2024-01-16 01:35:29,280 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-01-16 01:35:29,280 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-01-16 01:35:29,280 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-01-16 01:35:29,280 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-01-16 01:35:29,281 [INFO] CodeGenerator:799 - code generatio: config db path: C:/Users/W10/.stm32cubemx/databases/DB.6.0.21/db/
+2024-01-16 01:35:29,464 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\W10\Downloads\STM32F103_learn_Ch06_SPI_01-master\STM32F103_learn_Ch06_SPI_01-master\MXTmpFiles\license.tmp_save
+2024-01-16 01:35:29,544 [INFO] CodeEngine:279 - Generated code: C:\Users\W10\Downloads\STM32F103_learn_Ch06_SPI_01-master\STM32F103_learn_Ch06_SPI_01-master\MXTmpFiles\license.tmp
+2024-01-16 01:35:29,577 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\W10\Downloads\STM32F103_learn_Ch06_SPI_01-master\STM32F103_learn_Ch06_SPI_01-master\MXTmpFiles\gpio.tmp_save
+2024-01-16 01:35:29,662 [INFO] CodeEngine:279 - Generated code: C:\Users\W10\Downloads\STM32F103_learn_Ch06_SPI_01-master\STM32F103_learn_Ch06_SPI_01-master\MXTmpFiles\gpio.tmp
+2024-01-16 01:35:29,721 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\W10\Downloads\STM32F103_learn_Ch06_SPI_01-master\STM32F103_learn_Ch06_SPI_01-master\Core\Src\stm32f1xx_it.c_save
+2024-01-16 01:35:29,904 [INFO] CodeEngine:279 - Generated code: C:\Users\W10\Downloads\STM32F103_learn_Ch06_SPI_01-master\STM32F103_learn_Ch06_SPI_01-master\Core\Src\stm32f1xx_it.c
+2024-01-16 01:35:29,928 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\W10\Downloads\STM32F103_learn_Ch06_SPI_01-master\STM32F103_learn_Ch06_SPI_01-master\Core\Inc\stm32f1xx_it.h_save
+2024-01-16 01:35:30,017 [INFO] CodeEngine:279 - Generated code: C:\Users\W10\Downloads\STM32F103_learn_Ch06_SPI_01-master\STM32F103_learn_Ch06_SPI_01-master\Core\Inc\stm32f1xx_it.h
+2024-01-16 01:35:30,050 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\W10\Downloads\STM32F103_learn_Ch06_SPI_01-master\STM32F103_learn_Ch06_SPI_01-master\Core\Src\stm32f1xx_hal_msp.c_save
+2024-01-16 01:35:30,207 [INFO] CodeEngine:279 - Generated code: C:\Users\W10\Downloads\STM32F103_learn_Ch06_SPI_01-master\STM32F103_learn_Ch06_SPI_01-master\Core\Src\stm32f1xx_hal_msp.c
+2024-01-16 01:35:30,229 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\W10\Downloads\STM32F103_learn_Ch06_SPI_01-master\STM32F103_learn_Ch06_SPI_01-master\MXTmpFiles\system.tmp_save
+2024-01-16 01:35:30,307 [INFO] CodeEngine:279 - Generated code: C:\Users\W10\Downloads\STM32F103_learn_Ch06_SPI_01-master\STM32F103_learn_Ch06_SPI_01-master\MXTmpFiles\system.tmp
+2024-01-16 01:35:30,457 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\W10\Downloads\STM32F103_learn_Ch06_SPI_01-master\STM32F103_learn_Ch06_SPI_01-master\Core\Inc\stm32f1xx_hal_conf.h_save
+2024-01-16 01:35:30,860 [INFO] CodeEngine:335 - Generated code: C:\Users\W10\Downloads\STM32F103_learn_Ch06_SPI_01-master\STM32F103_learn_Ch06_SPI_01-master\Core\Inc\stm32f1xx_hal_conf.h
+2024-01-16 01:35:31,032 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\W10\Downloads\STM32F103_learn_Ch06_SPI_01-master\STM32F103_learn_Ch06_SPI_01-master\Core\Inc\main.h_save
+2024-01-16 01:35:31,308 [INFO] CodeEngine:279 - Generated code: C:\Users\W10\Downloads\STM32F103_learn_Ch06_SPI_01-master\STM32F103_learn_Ch06_SPI_01-master\Core\Inc\main.h
+2024-01-16 01:35:31,339 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\W10\Downloads\STM32F103_learn_Ch06_SPI_01-master\STM32F103_learn_Ch06_SPI_01-master\Core\Src\main.c_save
+2024-01-16 01:35:31,448 [INFO] CodeEngine:279 - Generated code: C:\Users\W10\Downloads\STM32F103_learn_Ch06_SPI_01-master\STM32F103_learn_Ch06_SPI_01-master\Core\Src\main.c
+2024-01-16 01:35:32,083 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 161mS.
+2024-01-16 01:35:32,087 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2024-01-16 01:35:32,309 [INFO] ConfigFileManager:1457 - The Die is : DIE410
+2024-01-16 01:35:32,333 [INFO] ApiDbMcu:507 - Load IP Config File for FATFS
+2024-01-16 01:35:32,364 [INFO] ApiDbMcu:507 - Load IP Config File for FREERTOS
+2024-01-16 01:35:32,390 [INFO] ApiDbMcu:507 - Load IP Config File for USB_DEVICE
+2024-01-16 01:35:35,202 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 3115mS.
+2024-01-16 01:35:35,203 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2024-01-16 01:35:35,206 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2024-01-16 01:35:35,748 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 792336024 Bytes (1073741824)
+2024-01-16 01:35:36,107 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2024-01-16 01:35:36,107 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-01-16 01:35:36,107 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-01-16 01:35:36,107 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-01-16 01:35:36,107 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-01-16 01:35:36,108 [INFO] CodeGenerator:799 - code generatio: config db path: C:/Users/W10/.stm32cubemx/databases/DB.6.0.21/db/
+2024-01-16 01:35:36,306 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\W10\Downloads\STM32F103_learn_Ch06_SPI_01-master\STM32F103_learn_Ch06_SPI_01-master\MXTmpFiles\license.tmp_save
+2024-01-16 01:35:36,746 [INFO] CodeEngine:279 - Generated code: C:\Users\W10\Downloads\STM32F103_learn_Ch06_SPI_01-master\STM32F103_learn_Ch06_SPI_01-master\MXTmpFiles\license.tmp
+2024-01-16 01:35:36,795 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\W10\Downloads\STM32F103_learn_Ch06_SPI_01-master\STM32F103_learn_Ch06_SPI_01-master\MXTmpFiles\gpio.tmp_save
+2024-01-16 01:35:36,992 [INFO] CodeEngine:279 - Generated code: C:\Users\W10\Downloads\STM32F103_learn_Ch06_SPI_01-master\STM32F103_learn_Ch06_SPI_01-master\MXTmpFiles\gpio.tmp
+2024-01-16 01:35:37,142 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\W10\Downloads\STM32F103_learn_Ch06_SPI_01-master\STM32F103_learn_Ch06_SPI_01-master\Core\Src\stm32f1xx_it.c_save
+2024-01-16 01:35:37,483 [INFO] CodeEngine:279 - Generated code: C:\Users\W10\Downloads\STM32F103_learn_Ch06_SPI_01-master\STM32F103_learn_Ch06_SPI_01-master\Core\Src\stm32f1xx_it.c
+2024-01-16 01:35:37,651 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\W10\Downloads\STM32F103_learn_Ch06_SPI_01-master\STM32F103_learn_Ch06_SPI_01-master\Core\Inc\stm32f1xx_it.h_save
+2024-01-16 01:35:37,745 [INFO] CodeEngine:279 - Generated code: C:\Users\W10\Downloads\STM32F103_learn_Ch06_SPI_01-master\STM32F103_learn_Ch06_SPI_01-master\Core\Inc\stm32f1xx_it.h
+2024-01-16 01:35:37,880 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\W10\Downloads\STM32F103_learn_Ch06_SPI_01-master\STM32F103_learn_Ch06_SPI_01-master\Core\Src\stm32f1xx_hal_msp.c_save
+2024-01-16 01:35:39,029 [INFO] CodeEngine:279 - Generated code: C:\Users\W10\Downloads\STM32F103_learn_Ch06_SPI_01-master\STM32F103_learn_Ch06_SPI_01-master\Core\Src\stm32f1xx_hal_msp.c
+2024-01-16 01:35:39,372 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\W10\Downloads\STM32F103_learn_Ch06_SPI_01-master\STM32F103_learn_Ch06_SPI_01-master\MXTmpFiles\system.tmp_save
+2024-01-16 01:35:39,455 [INFO] CodeEngine:279 - Generated code: C:\Users\W10\Downloads\STM32F103_learn_Ch06_SPI_01-master\STM32F103_learn_Ch06_SPI_01-master\MXTmpFiles\system.tmp
+2024-01-16 01:35:39,504 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\W10\Downloads\STM32F103_learn_Ch06_SPI_01-master\STM32F103_learn_Ch06_SPI_01-master\Core\Inc\stm32f1xx_hal_conf.h_save
+2024-01-16 01:35:39,624 [INFO] CodeEngine:335 - Generated code: C:\Users\W10\Downloads\STM32F103_learn_Ch06_SPI_01-master\STM32F103_learn_Ch06_SPI_01-master\Core\Inc\stm32f1xx_hal_conf.h
+2024-01-16 01:35:39,688 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\W10\Downloads\STM32F103_learn_Ch06_SPI_01-master\STM32F103_learn_Ch06_SPI_01-master\Core\Inc\main.h_save
+2024-01-16 01:35:40,036 [INFO] CodeEngine:279 - Generated code: C:\Users\W10\Downloads\STM32F103_learn_Ch06_SPI_01-master\STM32F103_learn_Ch06_SPI_01-master\Core\Inc\main.h
+2024-01-16 01:35:40,169 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\W10\Downloads\STM32F103_learn_Ch06_SPI_01-master\STM32F103_learn_Ch06_SPI_01-master\Core\Src\main.c_save
+2024-01-16 01:35:40,247 [INFO] CodeEngine:279 - Generated code: C:\Users\W10\Downloads\STM32F103_learn_Ch06_SPI_01-master\STM32F103_learn_Ch06_SPI_01-master\Core\Src\main.c
+2024-01-16 01:35:40,927 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 159mS.
+2024-01-16 01:35:40,931 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2024-01-16 01:35:41,263 [INFO] ConfigFileManager:1457 - The Die is : DIE410
+2024-01-16 01:35:43,801 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 2866mS.
+2024-01-16 01:35:43,801 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2024-01-16 01:35:43,832 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 2mS.

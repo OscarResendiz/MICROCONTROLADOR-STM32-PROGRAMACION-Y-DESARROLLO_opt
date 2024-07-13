@@ -1,22 +1,22 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <history>
-   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m3 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F103C8 -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\Prueba_Led\cmsis_boot -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\Prueba_Led -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\Prueba_Led\stm_lib\inc -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\Prueba_Led\stm_lib -ID:\Cursos\STM32\Cocox\GIT\Ejemplos -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\Prueba_Led\cmsis">
-      <target file="stm32f10x_rcc.o" lastModified="189b43fec52">
+   <processor signature="arm-none-eabi-gcc 13.1.0 x86_64-w64-mingw32 -mcpu=cortex-m3 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F103C8 -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\Prueba_Led\cmsis_boot -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\Prueba_Led -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\Prueba_Led\stm_lib\inc -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\Prueba_Led\stm_lib -ID:\Cursos\STM32\Cocox\GIT\Ejemplos -ID:\Cursos\STM32\Cocox\GIT\Ejemplos\Prueba_Led\cmsis">
+      <target file="stm32f10x_rcc.o" lastModified="18db5d78917">
          <source file="..\..\..\stm_lib\src\stm32f10x_rcc.c" lastModified="18808a217ef"/>
       </target>
-      <target file="startup_stm32f10x_md.o" lastModified="189b43feaaf">
+      <target file="startup_stm32f10x_md.o" lastModified="18db5d7876e">
          <source file="..\..\..\cmsis_boot\startup\startup_stm32f10x_md.c" lastModified="18808a156ec"/>
       </target>
-      <target file="system_stm32f10x.o" lastModified="189b43fea4b">
+      <target file="system_stm32f10x.o" lastModified="18db5d7871e">
          <source file="..\..\..\cmsis_boot\system_stm32f10x.c" lastModified="18808a156ef"/>
       </target>
-      <target file="main.o" lastModified="189b440d9f0">
-         <source file="..\..\..\main.c" lastModified="189b440d7fe"/>
+      <target file="main.o" lastModified="18db5deab14">
+         <source file="..\..\..\main.c" lastModified="18db5dea74e"/>
       </target>
-      <target file="syscalls.o" lastModified="189b43fed90">
+      <target file="syscalls.o" lastModified="18db5d789be">
          <source file="..\..\..\syscalls\syscalls.c" lastModified="18808a0b5cb"/>
       </target>
-      <target file="stm32f10x_gpio.o" lastModified="189b43feb45">
+      <target file="stm32f10x_gpio.o" lastModified="18db5d787fa">
          <source file="..\..\..\stm_lib\src\stm32f10x_gpio.c" lastModified="18808a217bd"/>
       </target>
    </processor>

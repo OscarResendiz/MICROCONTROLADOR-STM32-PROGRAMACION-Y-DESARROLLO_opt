@@ -7,9 +7,9 @@
 #include "stm32f10x_rcc.h"
 #include "stm32f10x_gpio.h"
 //Definimos el puerto y el pin que contendra el led
-#define LED_Pin GPIO_Pin_13
-#define LED_GPIO GPIOC
-#define RCC_APB2Peiph_GPIOx RCC_APB2Periph_GPIOC
+#define LED_Pin GPIO_Pin_15
+#define LED_GPIO GPIOA
+#define RCC_APB2Peiph_GPIOx RCC_APB2Periph_GPIOA
 //Declaracion de funciones que se utilizaran
 void Delay_ms(unsigned int nCount);
 GPIO_InitTypeDef GPIO_StructureInit;
